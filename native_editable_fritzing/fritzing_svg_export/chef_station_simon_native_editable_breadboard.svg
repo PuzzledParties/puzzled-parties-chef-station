@@ -1,0 +1,936 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<!-- Created with Fritzing (https://fritzing.org/) -->
+<svg xmlns="http://www.w3.org/2000/svg" baseProfile="tiny" height="18.4089in" version="1.2" viewBox="0 0 26888.9 18408.9" width="26.8889in" x="0in"  xmlns:svg="http://www.w3.org/2000/svg" y="0in">
+ <g id="watermark" >
+  <g >
+   <g >
+    <path d="M26545.4,18322.8c-8.38889,0,-15.7083,4.51389,-19.75,11.2361l-38.8333,0l55,-56.5417c2.02778,-2.02778,4.01389,-4.47222,5.94444,-7.23611c2.06944,-3.08333,3.16667,-6.65278,3.16667,-10.6667c0,-3.875,-1.34722,-7.19444,-3.98611,-9.86111c-2.63889,-2.61111,-6.16667,-3.98611,-10.4722,-3.98611l-64.3889,0c-4.23611,0,-7.70833,0.833333,-10.3056,2.36111c-3.04167,1.80556,-4.58333,5.11111,-4.58333,9.81944c0,4.56944,1.54167,7.80556,4.58333,9.61111c2.61111,1.54167,6.08333,2.33333,10.3056,2.33333l43.7222,0l-55.1944,56.75c-2.02778,2.04167,-4.01389,4.375,-5.90278,7c-2.125,2.94444,-3.19444,6.55556,-3.19444,10.7083c0,3.88889,1.33333,7.23611,4,9.875c2.61111,2.61111,6.13889,3.95833,10.4722,3.95833l59.9306,0c4.06944,6.48611,11.2778,10.7778,19.4444,10.7778c12.7222,0,23.0556,-10.3333,23.0556,-23.0694C26568.4,18333.2,26558.1,18322.8,26545.4,18322.8zM26545.4,18354.2c-4.63889,0,-8.38889,-3.76389,-8.38889,-8.38889c0,-4.625,3.75,-8.38889,8.38889,-8.38889c4.61111,0,8.38889,3.76389,8.38889,8.38889C26553.8,18350.5,26550,18354.2,26545.4,18354.2z" fill="#8C8C8C" />
+    <path d="M26310.1,18183.3c-12.6944,0,-23.0417,10.3472,-23.0417,23.0556c0,12.7222,10.3472,23.0556,23.0417,23.0556s23.0278,-10.3333,23.0278,-23.0556C26333.1,18193.7,26322.8,18183.3,26310.1,18183.3zM26310.1,18214.8c-4.625,0,-8.38889,-3.75,-8.38889,-8.375s3.76389,-8.375,8.38889,-8.375c4.59722,0,8.38889,3.75,8.38889,8.375S26314.7,18214.8,26310.1,18214.8z" fill="#8C8C8C" />
+    <path d="M26428.4,18248.1c-2.68056,-1.54167,-6.09722,-2.34722,-10.1667,-2.34722l-20.3472,0L26397.9,18210.7c0,-4.05556,-0.791667,-7.47222,-2.30556,-10.125C26394.4,18198.4,26391.7,18195.8,26386,18195.8c-4.72222,0,-8.02778,1.61111,-9.84722,4.75c-1.51389,2.68056,-2.31944,6.08333,-2.31944,10.125l0,35.0139l-6.68056,0c-4.09722,0,-7.48611,0.833333,-10.1528,2.34722c-3.16667,1.79167,-4.73611,5.11111,-4.73611,9.83333c0,5.72222,2.56944,8.375,4.73611,9.61111c2.66667,1.54167,6.08333,2.33333,10.1528,2.33333l6.68056,0l0,60.5833c0,3.84722,0.361111,7.40278,1.125,10.6667c0.777778,3.41667,2.13889,6.44444,4.13889,8.95833c2.02778,2.58333,4.79167,4.61111,8.26389,6.05556c3.34722,1.36111,7.70833,2.02778,12.9167,2.02778l12.4444,0c4.05556,0,7.48611,-0.75,10.1528,-2.30556c2.13889,-1.23611,4.73611,-3.90278,4.73611,-9.625c0,-4.69444,-1.58333,-8.02778,-4.73611,-9.84722c-2.66667,-1.51389,-6.09722,-2.33333,-10.1528,-2.33333l-11.4028,0c-1.91667,0,-2.63889,-0.263889,-2.875,-0.333333c-0.194444,-0.472222,-0.486111,-1.43056,-0.486111,-3.20833L26397.9,18269.9l20.3472,0c4.09722,0,7.51389,-0.791667,10.1944,-2.33333c2.11111,-1.25,4.72222,-3.88889,4.72222,-9.61111C26433.2,18253.2,26431.6,18249.9,26428.4,18248.1z" fill="#8C8C8C" />
+    <path d="M26311,18245.7l-16.5417,0c-4.05556,0,-7.47222,0.819444,-10.1528,2.34722c-3.13889,1.79167,-4.73611,5.11111,-4.73611,9.83333c0,5.72222,2.61111,8.38889,4.73611,9.59722c2.68056,1.56944,6.09722,2.33333,10.1528,2.33333l7.55556,0l0,74.4722c0,4.06944,0.791667,7.48611,2.31944,10.1389c1.81944,3.15278,5.09722,4.73611,9.83333,4.73611c5.70833,0,8.38889,-2.59722,9.61111,-4.73611c1.54167,-2.65278,2.33333,-6.08333,2.33333,-10.1389L26326.1,18260.8c0,-5.36111,-1.16667,-9.11111,-3.55556,-11.5278C26320.1,18246.9,26316.4,18245.7,26311,18245.7z" fill="#8C8C8C" />
+    <path d="M26257.7,18248.1c-2.68056,-1.54167,-6.11111,-2.34722,-10.1667,-2.34722l-8.38889,0c-3.47222,0,-6.91667,0.875,-10.1944,2.59722c-3.13889,1.65278,-6.01389,3.76389,-8.55556,6.29167l-8.94444,8.38889l0,-3.43056c0,-4.04167,-0.763889,-7.47222,-2.33333,-10.125c-1.77778,-3.16667,-5.11111,-4.72222,-9.81944,-4.72222c-5.69444,0,-8.38889,2.55556,-9.625,4.72222c-1.52778,2.65278,-2.31944,6.08333,-2.31944,10.125l0,66.6806c-6.59722,4.06944,-10.9861,11.3333,-10.9861,19.6111c0,12.7361,10.3472,23.0694,23.0278,23.0694c12.7222,0,23.0556,-10.3333,23.0556,-23.0694c0,-8.27778,-4.40278,-15.5417,-11,-19.6111l0,-30.6944l24.1389,-21.7222c1.38889,-1.25,2.76389,-2.27778,4.125,-3.01389c1.16667,-0.625,2.41667,-0.930556,3.80556,-0.930556l4,0c4.05556,0,7.48611,-0.777778,10.1667,-2.34722c2.15278,-1.22222,4.70833,-3.875,4.70833,-9.59722C26262.5,18253.2,26260.9,18249.9,26257.7,18248.1zM26199.4,18354.2c-4.61111,0,-8.375,-3.76389,-8.375,-8.38889c0,-4.625,3.76389,-8.38889,8.375,-8.38889c4.625,0,8.38889,3.76389,8.38889,8.38889C26207.8,18350.5,26204,18354.2,26199.4,18354.2z" fill="#8C8C8C" />
+    <path d="M26164.5,18199.2c-2.68056,-1.54167,-6.11111,-2.31944,-10.1528,-2.31944l-8.19444,0c-2.77778,0,-5.40278,0.0555556,-7.80556,0.222222c-2.44444,0.125,-4.79167,0.486111,-7.02778,0.972222c-2.33333,0.569444,-4.66667,1.51389,-6.88889,2.80556c-2.19444,1.29167,-4.43056,3.08333,-6.66667,5.30556c-4.63889,4.36111,-7.69444,9.11111,-9.05556,14.125c-1.30556,4.83333,-1.98611,10.2083,-1.98611,15.9861l0,9.41667l-6.70833,0c-4.05556,0,-7.48611,0.819444,-10.1389,2.34722c-3.15278,1.80556,-4.75,5.125,-4.75,9.83333c0,5.72222,2.56944,8.38889,4.73611,9.625c2.65278,1.54167,6.08333,2.30556,10.1389,2.30556l6.70833,0l0,74.4722c0,4.06944,0.791667,7.48611,2.31944,10.1389c1.80556,3.15278,5.09722,4.73611,9.83333,4.73611c5.70833,0,8.375,-2.59722,9.61111,-4.73611c1.54167,-2.65278,2.33333,-6.08333,2.33333,-10.1389l0,-74.4444l12.7778,0c4.06944,0,7.5,-0.791667,10.1667,-2.33333c2.15278,-1.25,4.72222,-3.88889,4.72222,-9.61111c0,-4.72222,-1.58333,-8.04167,-4.72222,-9.83333c-2.625,-1.54167,-6.05556,-2.36111,-10.125,-2.36111l-12.7778,0l0,-9.41667c0,-3.02778,0.263889,-5.69444,0.777778,-7.93056c0.444444,-1.95833,1.43056,-3.625,3.02778,-5.09722l0.0277778,-0.0555556l0.0277778,-0.0277778c1.13889,-1.13889,2.44444,-1.75,4.02778,-1.88889c2.08333,-0.208333,4.70833,-0.305556,7.83333,-0.305556l7.77778,0c4.04167,0,7.48611,-0.805556,10.1528,-2.33333c2.13889,-1.22222,4.70833,-3.90278,4.70833,-9.625C26169.2,18204.3,26167.6,18201,26164.5,18199.2z" fill="#8C8C8C" />
+    <path d="M26886.6,18249.5c-1.23611,-2.16667,-3.91667,-4.72222,-9.625,-4.72222c-4.70833,0,-8.02778,1.56944,-9.81944,4.72222c-1.08333,1.84722,-1.76389,4.06944,-2.11111,6.625l-0.291667,-0.291667c-3,-3.27778,-6.47222,-5.83333,-10.375,-7.48611c-3.84722,-1.65278,-7.81944,-2.54167,-11.7917,-2.54167l-9.84722,0c-3.45833,0,-6.47222,0.208333,-8.88889,0.569444c-2.52778,0.361111,-4.88889,1.02778,-7.08333,1.94444c-2.19444,0.916667,-4.34722,2.08333,-6.375,3.52778c-1.93056,1.34722,-4.20833,3.13889,-6.75,5.23611c-2.61111,2.16667,-4.75,4.19444,-6.43056,6.02778c-1.76389,1.95833,-3.19444,4.06944,-4.25,6.31944c-0.958333,2.22222,-1.69444,4.68056,-2.04167,7.26389c-0.361111,2.47222,-0.569444,5.43056,-0.569444,8.76389l0,33.1389c0,3.33333,0.208333,6.26389,0.569444,8.76389c0.347222,2.61111,1.08333,5.01389,2.04167,7.23611c1.02778,2.27778,2.48611,4.41667,4.25,6.34722c1.65278,1.79167,3.80556,3.80556,6.43056,6.01389c2.58333,2.125,4.86111,3.88889,6.75,5.26389c2.02778,1.43056,4.15278,2.61111,6.375,3.52778c2.19444,0.902778,4.56944,1.55556,7.08333,1.94444c2.41667,0.361111,5.40278,0.541667,8.88889,0.541667l9.84722,0c4.13889,0,8.20833,-0.916667,12.0833,-2.76389c3.38889,-1.58333,6.83333,-4.04167,10.1389,-7.26389l0,19.9167c0,2.5,-0.347222,4.63889,-1,6.45833c-0.597222,1.65278,-2.20833,3.58333,-4.77778,5.63889c-2.13889,1.76389,-4.29167,3.01389,-6.34722,3.66667c-2.08333,0.680556,-4.73611,1.02778,-7.81944,1.02778l-30.5972,0c-4.06944,0,-7.47222,0.763889,-10.1667,2.30556c-2.11111,1.22222,-4.72222,3.91667,-4.72222,9.61111c0,4.73611,1.59722,8.04167,4.72222,9.86111c2.69444,1.51389,6.09722,2.31944,10.1667,2.31944l32.3056,0c3.43056,0,6.43056,-0.208333,8.86111,-0.569444c2.48611,-0.361111,4.875,-1.01389,7.125,-1.94444c2.125,-0.888889,4.30556,-2.08333,6.31944,-3.52778c1.98611,-1.40278,4.23611,-3.15278,6.76389,-5.26389c2.56944,-2.125,4.76389,-4.15278,6.43056,-5.98611c1.77778,-1.95833,3.18056,-4.08333,4.22222,-6.33333c0.986111,-2.25,1.70833,-4.69444,2.05556,-7.26389c0.347222,-2.52778,0.569444,-5.45833,0.569444,-8.76389l0,-109.694C26888.9,18255.5,26888.2,18252.1,26886.6,18249.5zM26864.8,18311.4c0,2.61111,-0.861111,4.86111,-2.61111,6.80556c-2.08333,2.38889,-5.47222,5.59722,-9.94444,9.52778l-0.0277778,0.0416667l-0.0277778,0.0555556c-1.93056,1.80556,-4.04167,3.29167,-6.29167,4.51389c-2.05556,1.13889,-4.51389,1.68056,-7.30556,1.68056L26834.4,18334c-3.08333,0,-5.69444,-0.291667,-7.81944,-1c-2.05556,-0.680556,-4.18056,-1.90278,-6.29167,-3.66667c-3.20833,-2.58333,-4.375,-4.47222,-4.80556,-5.61111c-0.680556,-1.81944,-1,-3.95833,-1,-6.45833l0,-30.6389c0,-2.5,0.319444,-4.66667,1,-6.48611c0.402778,-1.13889,1.56944,-3.01389,4.80556,-5.59722c2.11111,-1.76389,4.23611,-3,6.29167,-3.68056c2.125,-0.680556,4.75,-1,7.81944,-1l4.18056,0c2.94444,0,5.38889,0.513889,7.30556,1.56944c2.11111,1.13889,4.27778,2.65278,6.34722,4.5c4.47222,4.06944,7.83333,7.34722,9.94444,9.72222c1.77778,2.02778,2.61111,4.22222,2.61111,6.83333L26864.8,18311.4z" fill="#8C8C8C" />
+    <path d="M26609.1,18183.3c-12.6944,0,-23.0556,10.3472,-23.0556,23.0556c0,12.7222,10.3611,23.0556,23.0556,23.0556s23.0556,-10.3333,23.0556,-23.0556C26632.2,18193.7,26621.8,18183.3,26609.1,18183.3zM26609.1,18214.8c-4.61111,0,-8.38889,-3.75,-8.38889,-8.375s3.76389,-8.375,8.38889,-8.375s8.38889,3.75,8.38889,8.375C26617.5,18211,26613.7,18214.8,26609.1,18214.8z" fill="#8C8C8C" />
+    <path d="M26757.5,18326l-1.48611,-47.4861c-0.152778,-2.47222,-0.291667,-4.69444,-0.430556,-6.79167c-0.138889,-2.25,-0.513889,-4.47222,-1.13889,-6.61111c-0.625,-2.19444,-1.52778,-4.29167,-2.75,-6.29167c-1.29167,-2.02778,-3,-4.01389,-5.13889,-5.83333c-3.125,-2.66667,-6.15278,-4.63889,-8.97222,-5.77778c-2.875,-1.16667,-6.40278,-1.76389,-10.4722,-1.76389l-14.0556,0c-3.59722,0,-6.95833,0.805556,-9.94444,2.27778c-2.73611,1.36111,-5.41667,2.81944,-7.94444,4.375l-0.0416667,0.0277778l-0.0416667,0.0416667l-11.625,7.70833l0,-0.569444c0,-4.04167,-0.791667,-7.48611,-2.33333,-10.1806c-1.79167,-3.13889,-5.09722,-4.70833,-9.81944,-4.70833c-5.70833,0,-8.38889,2.56944,-9.625,4.70833c-1.51389,2.69444,-2.33333,6.08333,-2.33333,10.1806l0,84.7083c0,4.09722,0.819444,7.48611,2.33333,10.1944c1.25,2.125,3.91667,4.69444,9.625,4.69444c4.72222,0,8.02778,-1.58333,9.81944,-4.69444c1.54167,-2.70833,2.33333,-6.09722,2.33333,-10.1944L26683.5,18287.9l27.125,-16.875c0.555556,-0.333333,1.13889,-0.666667,1.68056,-0.875c0.430556,-0.222222,0.972222,-0.347222,1.59722,-0.430556c0.680556,-0.166667,1.625,-0.222222,2.70833,-0.222222l5.02778,0c2.61111,0,4.63889,0.291667,6.04167,0.819444c1.13889,0.402778,1.98611,1.05556,2.5,1.98611c0.694444,1.08333,1.11111,2.5,1.36111,4.20833c0.277778,1.93056,0.472222,4.29167,0.625,7l1.33333,43.0139c-6.34722,4.125,-10.5833,11.2639,-10.5833,19.3611c0,12.7361,10.3611,23.0694,23.0556,23.0694c12.7222,0,23.0556,-10.3333,23.0556,-23.0694C26769,18337.4,26764.4,18329.9,26757.5,18326zM26745.9,18354.2c-4.63889,0,-8.36111,-3.76389,-8.36111,-8.38889c0,-4.625,3.72222,-8.38889,8.36111,-8.38889c4.625,0,8.38889,3.76389,8.38889,8.38889C26754.3,18350.5,26750.6,18354.2,26745.9,18354.2z" fill="#8C8C8C" />
+    <path d="M26610,18245.7l-16.5694,0c-4.06944,0,-7.48611,0.819444,-10.1528,2.34722c-3.13889,1.79167,-4.73611,5.11111,-4.73611,9.83333c0,5.72222,2.58333,8.38889,4.73611,9.59722c2.66667,1.56944,6.08333,2.33333,10.1528,2.33333l7.56944,0l0,74.4722c0,4.06944,0.763889,7.48611,2.33333,10.1389c1.76389,3.15278,5.06944,4.73611,9.81944,4.73611c5.69444,0,8.38889,-2.59722,9.59722,-4.73611c1.54167,-2.65278,2.36111,-6.08333,2.36111,-10.1389L26625.1,18260.8c0,-5.36111,-1.18056,-9.11111,-3.59722,-11.5278C26619.1,18246.9,26615.3,18245.7,26610,18245.7z" fill="#8C8C8C" />
+   </g>
+  </g>
+ </g>
+ <g partID="10250">
+  <g transform="translate(11888.9,14877.8)">
+   <g id="breadboard" >
+    <title >10k gate pulldown resistor</title>
+    <line stroke="#8b5e20" stroke-width="44.4444" x1="0" x2="400"  y1="266.667" y2="266.667"/>
+    <rect fill="#e7c99a" height="355.556" rx="88.8889" stroke="#946b2d" stroke-width="22.2222" width="1222.22" x="400"  y="88.8889"/>
+    <line stroke="#8b5e20" stroke-width="44.4444" x1="1622.22" x2="2022.22"  y1="266.667" y2="266.667"/>
+    <text dominant-baseline="middle" fill="#1f2933" font-family="Segoe UI, Arial, sans-serif" font-size="200" font-weight="700" text-anchor="middle" x="1011.11"  y="266.667">10k</text>
+    <circle cx="0" cy="266.667" fill="#f7fafc" id="apin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Pin A</title>
+    </circle>
+    <g cx="0" cy="266.667" fill="none" id="aterminal" r="16.6667" stroke="none" />
+    <circle cx="2022.22" cy="266.667" fill="#f7fafc" id="bpin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Pin B</title>
+    </circle>
+    <g cx="2022.22" cy="266.667" fill="none" id="bterminal" r="16.6667" stroke="none" />
+   </g>
+  </g>
+ </g>
+ <g partID="10240">
+  <g transform="translate(8222.22,14177.8)">
+   <g id="breadboard" >
+    <title >100 ohm gate resistor</title>
+    <line stroke="#8b5e20" stroke-width="44.4444" x1="0" x2="400"  y1="266.667" y2="266.667"/>
+    <rect fill="#e7c99a" height="355.556" rx="88.8889" stroke="#946b2d" stroke-width="22.2222" width="1222.22" x="400"  y="88.8889"/>
+    <line stroke="#8b5e20" stroke-width="44.4444" x1="1622.22" x2="2022.22"  y1="266.667" y2="266.667"/>
+    <text dominant-baseline="middle" fill="#1f2933" font-family="Segoe UI, Arial, sans-serif" font-size="200" font-weight="700" text-anchor="middle" x="1011.11"  y="266.667">100 ohm</text>
+    <circle cx="0" cy="266.667" fill="#f7fafc" id="apin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Pin A</title>
+    </circle>
+    <g cx="0" cy="266.667" fill="none" id="aterminal" r="16.6667" stroke="none" />
+    <circle cx="2022.22" cy="266.667" fill="#f7fafc" id="bpin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Pin B</title>
+    </circle>
+    <g cx="2022.22" cy="266.667" fill="none" id="bterminal" r="16.6667" stroke="none" />
+   </g>
+  </g>
+ </g>
+ <g partID="10230">
+  <g transform="translate(13777.8,13011.1)">
+   <g id="breadboard" >
+    <title >IRFB11N50APBF N-channel MOSFET TO-220</title>
+    <rect fill="#c7cdd4" height="400" rx="55.5556" stroke="#111111" stroke-width="16.6667" width="800" x="400"  y="66.6667"/>
+    <rect fill="#2f343b" height="1066.67" rx="88.8889" stroke="#111111" stroke-width="33.3333" width="1422.22" x="88.8889"  y="377.778"/>
+    <circle cx="800" cy="622.222" fill="#dfe5eb" r="100" stroke="#111111" stroke-width="11.1111" />
+    <text dominant-baseline="middle" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="144.444" font-weight="600" text-anchor="middle" x="800"  y="933.333">IRFB11N50APBF</text>
+    <text dominant-baseline="middle" fill="#1f2933" font-family="Segoe UI, Arial, sans-serif" font-size="155.556" font-weight="700" text-anchor="middle" x="333.333"  y="1711.11">G</text>
+    <text dominant-baseline="middle" fill="#1f2933" font-family="Segoe UI, Arial, sans-serif" font-size="155.556" font-weight="700" text-anchor="middle" x="800"  y="1711.11">D</text>
+    <text dominant-baseline="middle" fill="#1f2933" font-family="Segoe UI, Arial, sans-serif" font-size="155.556" font-weight="700" text-anchor="middle" x="1266.67"  y="1711.11">S</text>
+    <line stroke="#111111" stroke-width="55.5556" x1="333.333" x2="333.333"  y1="1444.44" y2="1622.22"/>
+    <line stroke="#111111" stroke-width="55.5556" x1="800" x2="800"  y1="1444.44" y2="1622.22"/>
+    <line stroke="#111111" stroke-width="55.5556" x1="1266.67" x2="1266.67"  y1="1444.44" y2="1622.22"/>
+    <circle cx="333.333" cy="1622.22" fill="#f7fafc" id="gatepin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Gate</title>
+    </circle>
+    <g cx="333.333" cy="1622.22" fill="none" id="gateterminal" r="16.6667" stroke="none" />
+    <circle cx="800" cy="1622.22" fill="#f7fafc" id="drainpin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Drain</title>
+    </circle>
+    <g cx="800" cy="1622.22" fill="none" id="drainterminal" r="16.6667" stroke="none" />
+    <circle cx="1266.67" cy="1622.22" fill="#f7fafc" id="sourcepin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Source</title>
+    </circle>
+    <g cx="1266.67" cy="1622.22" fill="none" id="sourceterminal" r="16.6667" stroke="none" />
+   </g>
+  </g>
+ </g>
+ <g partID="10220">
+  <g transform="translate(23777.8,12344.4)">
+   <g id="breadboard" >
+    <title >Ingredient 5 illuminated arcade button</title>
+    <rect fill="#eef2f7" height="2444.44" rx="111.111" stroke="#9aa5b1" stroke-width="22.2222" width="3111.11" x="0"  y="0"/>
+    <text dominant-baseline="middle" fill="#1f2933" font-family="Segoe UI, Arial, sans-serif" font-size="177.778" font-weight="700" text-anchor="middle" x="1555.56"  y="277.778">BTN5 terminal block</text>
+    <text dominant-baseline="middle" fill="#d71920" font-family="Segoe UI, Arial, sans-serif" font-size="177.778" font-weight="700" text-anchor="start" x="688.889"  y="666.667">LED +</text>
+    <text dominant-baseline="middle" fill="#f57c00" font-family="Segoe UI, Arial, sans-serif" font-size="177.778" font-weight="700" text-anchor="start" x="688.889"  y="1111.11">LED -</text>
+    <text dominant-baseline="middle" fill="#f4b400" font-family="Segoe UI, Arial, sans-serif" font-size="177.778" font-weight="700" text-anchor="start" x="688.889"  y="1555.56">SW SIG</text>
+    <text dominant-baseline="middle" fill="#111111" font-family="Segoe UI, Arial, sans-serif" font-size="177.778" font-weight="700" text-anchor="start" x="688.889"  y="2000">SW GND</text>
+    <circle cx="2388.89" cy="1222.22" fill="#1e88e5" r="533.333" stroke="#1f2933" stroke-width="44.4444" />
+    <circle cx="2388.89" cy="1222.22" fill="#ffffff" r="344.444" stroke="#f7fafc" stroke-width="16.6667" />
+    <text dominant-baseline="middle" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="200" font-weight="700" text-anchor="middle" x="2388.89"  y="1222.22">BTN5</text>
+    <text dominant-baseline="middle" fill="#1f2933" font-family="Segoe UI, Arial, sans-serif" font-size="177.778" font-weight="700" text-anchor="middle" x="1555.56"  y="2277.78">Ingredient 5</text>
+    <circle cx="311.111" cy="666.667" fill="#f7fafc" id="ledppin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >LED +</title>
+    </circle>
+    <g cx="311.111" cy="666.667" fill="none" id="ledpterminal" r="16.6667" stroke="none" />
+    <circle cx="311.111" cy="1111.11" fill="#f7fafc" id="ledmpin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >LED -</title>
+    </circle>
+    <g cx="311.111" cy="1111.11" fill="none" id="ledmterminal" r="16.6667" stroke="none" />
+    <circle cx="311.111" cy="1555.56" fill="#f7fafc" id="swsigpin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Switch signal</title>
+    </circle>
+    <g cx="311.111" cy="1555.56" fill="none" id="swsigterminal" r="16.6667" stroke="none" />
+    <circle cx="311.111" cy="2000" fill="#f7fafc" id="swgndpin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Switch GND</title>
+    </circle>
+    <g cx="311.111" cy="2000" fill="none" id="swgndterminal" r="16.6667" stroke="none" />
+   </g>
+  </g>
+ </g>
+ <g partID="10210">
+  <g transform="translate(11888.9,12100)">
+   <g id="breadboard" >
+    <title >10k gate pulldown resistor</title>
+    <line stroke="#8b5e20" stroke-width="44.4444" x1="0" x2="400"  y1="266.667" y2="266.667"/>
+    <rect fill="#e7c99a" height="355.556" rx="88.8889" stroke="#946b2d" stroke-width="22.2222" width="1222.22" x="400"  y="88.8889"/>
+    <line stroke="#8b5e20" stroke-width="44.4444" x1="1622.22" x2="2022.22"  y1="266.667" y2="266.667"/>
+    <text dominant-baseline="middle" fill="#1f2933" font-family="Segoe UI, Arial, sans-serif" font-size="200" font-weight="700" text-anchor="middle" x="1011.11"  y="266.667">10k</text>
+    <circle cx="0" cy="266.667" fill="#f7fafc" id="apin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Pin A</title>
+    </circle>
+    <g cx="0" cy="266.667" fill="none" id="aterminal" r="16.6667" stroke="none" />
+    <circle cx="2022.22" cy="266.667" fill="#f7fafc" id="bpin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Pin B</title>
+    </circle>
+    <g cx="2022.22" cy="266.667" fill="none" id="bterminal" r="16.6667" stroke="none" />
+   </g>
+  </g>
+ </g>
+ <g partID="10200">
+  <g transform="translate(8222.22,11400)">
+   <g id="breadboard" >
+    <title >100 ohm gate resistor</title>
+    <line stroke="#8b5e20" stroke-width="44.4444" x1="0" x2="400"  y1="266.667" y2="266.667"/>
+    <rect fill="#e7c99a" height="355.556" rx="88.8889" stroke="#946b2d" stroke-width="22.2222" width="1222.22" x="400"  y="88.8889"/>
+    <line stroke="#8b5e20" stroke-width="44.4444" x1="1622.22" x2="2022.22"  y1="266.667" y2="266.667"/>
+    <text dominant-baseline="middle" fill="#1f2933" font-family="Segoe UI, Arial, sans-serif" font-size="200" font-weight="700" text-anchor="middle" x="1011.11"  y="266.667">100 ohm</text>
+    <circle cx="0" cy="266.667" fill="#f7fafc" id="apin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Pin A</title>
+    </circle>
+    <g cx="0" cy="266.667" fill="none" id="aterminal" r="16.6667" stroke="none" />
+    <circle cx="2022.22" cy="266.667" fill="#f7fafc" id="bpin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Pin B</title>
+    </circle>
+    <g cx="2022.22" cy="266.667" fill="none" id="bterminal" r="16.6667" stroke="none" />
+   </g>
+  </g>
+ </g>
+ <g partID="10190">
+  <g transform="translate(13777.8,10233.3)">
+   <g id="breadboard" >
+    <title >IRFB11N50APBF N-channel MOSFET TO-220</title>
+    <rect fill="#c7cdd4" height="400" rx="55.5556" stroke="#111111" stroke-width="16.6667" width="800" x="400"  y="66.6667"/>
+    <rect fill="#2f343b" height="1066.67" rx="88.8889" stroke="#111111" stroke-width="33.3333" width="1422.22" x="88.8889"  y="377.778"/>
+    <circle cx="800" cy="622.222" fill="#dfe5eb" r="100" stroke="#111111" stroke-width="11.1111" />
+    <text dominant-baseline="middle" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="144.444" font-weight="600" text-anchor="middle" x="800"  y="933.333">IRFB11N50APBF</text>
+    <text dominant-baseline="middle" fill="#1f2933" font-family="Segoe UI, Arial, sans-serif" font-size="155.556" font-weight="700" text-anchor="middle" x="333.333"  y="1711.11">G</text>
+    <text dominant-baseline="middle" fill="#1f2933" font-family="Segoe UI, Arial, sans-serif" font-size="155.556" font-weight="700" text-anchor="middle" x="800"  y="1711.11">D</text>
+    <text dominant-baseline="middle" fill="#1f2933" font-family="Segoe UI, Arial, sans-serif" font-size="155.556" font-weight="700" text-anchor="middle" x="1266.67"  y="1711.11">S</text>
+    <line stroke="#111111" stroke-width="55.5556" x1="333.333" x2="333.333"  y1="1444.44" y2="1622.22"/>
+    <line stroke="#111111" stroke-width="55.5556" x1="800" x2="800"  y1="1444.44" y2="1622.22"/>
+    <line stroke="#111111" stroke-width="55.5556" x1="1266.67" x2="1266.67"  y1="1444.44" y2="1622.22"/>
+    <circle cx="333.333" cy="1622.22" fill="#f7fafc" id="gatepin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Gate</title>
+    </circle>
+    <g cx="333.333" cy="1622.22" fill="none" id="gateterminal" r="16.6667" stroke="none" />
+    <circle cx="800" cy="1622.22" fill="#f7fafc" id="drainpin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Drain</title>
+    </circle>
+    <g cx="800" cy="1622.22" fill="none" id="drainterminal" r="16.6667" stroke="none" />
+    <circle cx="1266.67" cy="1622.22" fill="#f7fafc" id="sourcepin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Source</title>
+    </circle>
+    <g cx="1266.67" cy="1622.22" fill="none" id="sourceterminal" r="16.6667" stroke="none" />
+   </g>
+  </g>
+ </g>
+ <g partID="10180">
+  <g transform="translate(23777.8,9566.67)">
+   <g id="breadboard" >
+    <title >Ingredient 4 illuminated arcade button</title>
+    <rect fill="#eef2f7" height="2444.44" rx="111.111" stroke="#9aa5b1" stroke-width="22.2222" width="3111.11" x="0"  y="0"/>
+    <text dominant-baseline="middle" fill="#1f2933" font-family="Segoe UI, Arial, sans-serif" font-size="177.778" font-weight="700" text-anchor="middle" x="1555.56"  y="277.778">BTN4 terminal block</text>
+    <text dominant-baseline="middle" fill="#d71920" font-family="Segoe UI, Arial, sans-serif" font-size="177.778" font-weight="700" text-anchor="start" x="688.889"  y="666.667">LED +</text>
+    <text dominant-baseline="middle" fill="#f57c00" font-family="Segoe UI, Arial, sans-serif" font-size="177.778" font-weight="700" text-anchor="start" x="688.889"  y="1111.11">LED -</text>
+    <text dominant-baseline="middle" fill="#f4b400" font-family="Segoe UI, Arial, sans-serif" font-size="177.778" font-weight="700" text-anchor="start" x="688.889"  y="1555.56">SW SIG</text>
+    <text dominant-baseline="middle" fill="#111111" font-family="Segoe UI, Arial, sans-serif" font-size="177.778" font-weight="700" text-anchor="start" x="688.889"  y="2000">SW GND</text>
+    <circle cx="2388.89" cy="1222.22" fill="#fbc02d" r="533.333" stroke="#1f2933" stroke-width="44.4444" />
+    <circle cx="2388.89" cy="1222.22" fill="#ffffff" r="344.444" stroke="#f7fafc" stroke-width="16.6667" />
+    <text dominant-baseline="middle" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="200" font-weight="700" text-anchor="middle" x="2388.89"  y="1222.22">BTN4</text>
+    <text dominant-baseline="middle" fill="#1f2933" font-family="Segoe UI, Arial, sans-serif" font-size="177.778" font-weight="700" text-anchor="middle" x="1555.56"  y="2277.78">Ingredient 4</text>
+    <circle cx="311.111" cy="666.667" fill="#f7fafc" id="ledppin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >LED +</title>
+    </circle>
+    <g cx="311.111" cy="666.667" fill="none" id="ledpterminal" r="16.6667" stroke="none" />
+    <circle cx="311.111" cy="1111.11" fill="#f7fafc" id="ledmpin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >LED -</title>
+    </circle>
+    <g cx="311.111" cy="1111.11" fill="none" id="ledmterminal" r="16.6667" stroke="none" />
+    <circle cx="311.111" cy="1555.56" fill="#f7fafc" id="swsigpin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Switch signal</title>
+    </circle>
+    <g cx="311.111" cy="1555.56" fill="none" id="swsigterminal" r="16.6667" stroke="none" />
+    <circle cx="311.111" cy="2000" fill="#f7fafc" id="swgndpin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Switch GND</title>
+    </circle>
+    <g cx="311.111" cy="2000" fill="none" id="swgndterminal" r="16.6667" stroke="none" />
+   </g>
+  </g>
+ </g>
+ <g partID="10170">
+  <g transform="translate(11888.9,9322.22)">
+   <g id="breadboard" >
+    <title >10k gate pulldown resistor</title>
+    <line stroke="#8b5e20" stroke-width="44.4444" x1="0" x2="400"  y1="266.667" y2="266.667"/>
+    <rect fill="#e7c99a" height="355.556" rx="88.8889" stroke="#946b2d" stroke-width="22.2222" width="1222.22" x="400"  y="88.8889"/>
+    <line stroke="#8b5e20" stroke-width="44.4444" x1="1622.22" x2="2022.22"  y1="266.667" y2="266.667"/>
+    <text dominant-baseline="middle" fill="#1f2933" font-family="Segoe UI, Arial, sans-serif" font-size="200" font-weight="700" text-anchor="middle" x="1011.11"  y="266.667">10k</text>
+    <circle cx="0" cy="266.667" fill="#f7fafc" id="apin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Pin A</title>
+    </circle>
+    <g cx="0" cy="266.667" fill="none" id="aterminal" r="16.6667" stroke="none" />
+    <circle cx="2022.22" cy="266.667" fill="#f7fafc" id="bpin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Pin B</title>
+    </circle>
+    <g cx="2022.22" cy="266.667" fill="none" id="bterminal" r="16.6667" stroke="none" />
+   </g>
+  </g>
+ </g>
+ <g partID="10160">
+  <g transform="translate(8222.22,8622.22)">
+   <g id="breadboard" >
+    <title >100 ohm gate resistor</title>
+    <line stroke="#8b5e20" stroke-width="44.4444" x1="0" x2="400"  y1="266.667" y2="266.667"/>
+    <rect fill="#e7c99a" height="355.556" rx="88.8889" stroke="#946b2d" stroke-width="22.2222" width="1222.22" x="400"  y="88.8889"/>
+    <line stroke="#8b5e20" stroke-width="44.4444" x1="1622.22" x2="2022.22"  y1="266.667" y2="266.667"/>
+    <text dominant-baseline="middle" fill="#1f2933" font-family="Segoe UI, Arial, sans-serif" font-size="200" font-weight="700" text-anchor="middle" x="1011.11"  y="266.667">100 ohm</text>
+    <circle cx="0" cy="266.667" fill="#f7fafc" id="apin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Pin A</title>
+    </circle>
+    <g cx="0" cy="266.667" fill="none" id="aterminal" r="16.6667" stroke="none" />
+    <circle cx="2022.22" cy="266.667" fill="#f7fafc" id="bpin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Pin B</title>
+    </circle>
+    <g cx="2022.22" cy="266.667" fill="none" id="bterminal" r="16.6667" stroke="none" />
+   </g>
+  </g>
+ </g>
+ <g partID="10150">
+  <g transform="translate(13777.8,7455.56)">
+   <g id="breadboard" >
+    <title >IRFB11N50APBF N-channel MOSFET TO-220</title>
+    <rect fill="#c7cdd4" height="400" rx="55.5556" stroke="#111111" stroke-width="16.6667" width="800" x="400"  y="66.6667"/>
+    <rect fill="#2f343b" height="1066.67" rx="88.8889" stroke="#111111" stroke-width="33.3333" width="1422.22" x="88.8889"  y="377.778"/>
+    <circle cx="800" cy="622.222" fill="#dfe5eb" r="100" stroke="#111111" stroke-width="11.1111" />
+    <text dominant-baseline="middle" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="144.444" font-weight="600" text-anchor="middle" x="800"  y="933.333">IRFB11N50APBF</text>
+    <text dominant-baseline="middle" fill="#1f2933" font-family="Segoe UI, Arial, sans-serif" font-size="155.556" font-weight="700" text-anchor="middle" x="333.333"  y="1711.11">G</text>
+    <text dominant-baseline="middle" fill="#1f2933" font-family="Segoe UI, Arial, sans-serif" font-size="155.556" font-weight="700" text-anchor="middle" x="800"  y="1711.11">D</text>
+    <text dominant-baseline="middle" fill="#1f2933" font-family="Segoe UI, Arial, sans-serif" font-size="155.556" font-weight="700" text-anchor="middle" x="1266.67"  y="1711.11">S</text>
+    <line stroke="#111111" stroke-width="55.5556" x1="333.333" x2="333.333"  y1="1444.44" y2="1622.22"/>
+    <line stroke="#111111" stroke-width="55.5556" x1="800" x2="800"  y1="1444.44" y2="1622.22"/>
+    <line stroke="#111111" stroke-width="55.5556" x1="1266.67" x2="1266.67"  y1="1444.44" y2="1622.22"/>
+    <circle cx="333.333" cy="1622.22" fill="#f7fafc" id="gatepin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Gate</title>
+    </circle>
+    <g cx="333.333" cy="1622.22" fill="none" id="gateterminal" r="16.6667" stroke="none" />
+    <circle cx="800" cy="1622.22" fill="#f7fafc" id="drainpin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Drain</title>
+    </circle>
+    <g cx="800" cy="1622.22" fill="none" id="drainterminal" r="16.6667" stroke="none" />
+    <circle cx="1266.67" cy="1622.22" fill="#f7fafc" id="sourcepin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Source</title>
+    </circle>
+    <g cx="1266.67" cy="1622.22" fill="none" id="sourceterminal" r="16.6667" stroke="none" />
+   </g>
+  </g>
+ </g>
+ <g partID="10140">
+  <g transform="translate(23777.8,6788.89)">
+   <g id="breadboard" >
+    <title >Ingredient 3 illuminated arcade button</title>
+    <rect fill="#eef2f7" height="2444.44" rx="111.111" stroke="#9aa5b1" stroke-width="22.2222" width="3111.11" x="0"  y="0"/>
+    <text dominant-baseline="middle" fill="#1f2933" font-family="Segoe UI, Arial, sans-serif" font-size="177.778" font-weight="700" text-anchor="middle" x="1555.56"  y="277.778">BTN3 terminal block</text>
+    <text dominant-baseline="middle" fill="#d71920" font-family="Segoe UI, Arial, sans-serif" font-size="177.778" font-weight="700" text-anchor="start" x="688.889"  y="666.667">LED +</text>
+    <text dominant-baseline="middle" fill="#f57c00" font-family="Segoe UI, Arial, sans-serif" font-size="177.778" font-weight="700" text-anchor="start" x="688.889"  y="1111.11">LED -</text>
+    <text dominant-baseline="middle" fill="#f4b400" font-family="Segoe UI, Arial, sans-serif" font-size="177.778" font-weight="700" text-anchor="start" x="688.889"  y="1555.56">SW SIG</text>
+    <text dominant-baseline="middle" fill="#111111" font-family="Segoe UI, Arial, sans-serif" font-size="177.778" font-weight="700" text-anchor="start" x="688.889"  y="2000">SW GND</text>
+    <circle cx="2388.89" cy="1222.22" fill="#ffffff" r="533.333" stroke="#1f2933" stroke-width="44.4444" />
+    <circle cx="2388.89" cy="1222.22" fill="#ffffff" r="344.444" stroke="#f7fafc" stroke-width="16.6667" />
+    <text dominant-baseline="middle" fill="#1f2933" font-family="Segoe UI, Arial, sans-serif" font-size="200" font-weight="700" text-anchor="middle" x="2388.89"  y="1222.22">BTN3</text>
+    <text dominant-baseline="middle" fill="#1f2933" font-family="Segoe UI, Arial, sans-serif" font-size="177.778" font-weight="700" text-anchor="middle" x="1555.56"  y="2277.78">Ingredient 3</text>
+    <circle cx="311.111" cy="666.667" fill="#f7fafc" id="ledppin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >LED +</title>
+    </circle>
+    <g cx="311.111" cy="666.667" fill="none" id="ledpterminal" r="16.6667" stroke="none" />
+    <circle cx="311.111" cy="1111.11" fill="#f7fafc" id="ledmpin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >LED -</title>
+    </circle>
+    <g cx="311.111" cy="1111.11" fill="none" id="ledmterminal" r="16.6667" stroke="none" />
+    <circle cx="311.111" cy="1555.56" fill="#f7fafc" id="swsigpin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Switch signal</title>
+    </circle>
+    <g cx="311.111" cy="1555.56" fill="none" id="swsigterminal" r="16.6667" stroke="none" />
+    <circle cx="311.111" cy="2000" fill="#f7fafc" id="swgndpin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Switch GND</title>
+    </circle>
+    <g cx="311.111" cy="2000" fill="none" id="swgndterminal" r="16.6667" stroke="none" />
+   </g>
+  </g>
+ </g>
+ <g partID="10130">
+  <g transform="translate(11888.9,6544.44)">
+   <g id="breadboard" >
+    <title >10k gate pulldown resistor</title>
+    <line stroke="#8b5e20" stroke-width="44.4444" x1="0" x2="400"  y1="266.667" y2="266.667"/>
+    <rect fill="#e7c99a" height="355.556" rx="88.8889" stroke="#946b2d" stroke-width="22.2222" width="1222.22" x="400"  y="88.8889"/>
+    <line stroke="#8b5e20" stroke-width="44.4444" x1="1622.22" x2="2022.22"  y1="266.667" y2="266.667"/>
+    <text dominant-baseline="middle" fill="#1f2933" font-family="Segoe UI, Arial, sans-serif" font-size="200" font-weight="700" text-anchor="middle" x="1011.11"  y="266.667">10k</text>
+    <circle cx="0" cy="266.667" fill="#f7fafc" id="apin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Pin A</title>
+    </circle>
+    <g cx="0" cy="266.667" fill="none" id="aterminal" r="16.6667" stroke="none" />
+    <circle cx="2022.22" cy="266.667" fill="#f7fafc" id="bpin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Pin B</title>
+    </circle>
+    <g cx="2022.22" cy="266.667" fill="none" id="bterminal" r="16.6667" stroke="none" />
+   </g>
+  </g>
+ </g>
+ <g partID="10120">
+  <g transform="translate(8222.22,5844.44)">
+   <g id="breadboard" >
+    <title >100 ohm gate resistor</title>
+    <line stroke="#8b5e20" stroke-width="44.4444" x1="0" x2="400"  y1="266.667" y2="266.667"/>
+    <rect fill="#e7c99a" height="355.556" rx="88.8889" stroke="#946b2d" stroke-width="22.2222" width="1222.22" x="400"  y="88.8889"/>
+    <line stroke="#8b5e20" stroke-width="44.4444" x1="1622.22" x2="2022.22"  y1="266.667" y2="266.667"/>
+    <text dominant-baseline="middle" fill="#1f2933" font-family="Segoe UI, Arial, sans-serif" font-size="200" font-weight="700" text-anchor="middle" x="1011.11"  y="266.667">100 ohm</text>
+    <circle cx="0" cy="266.667" fill="#f7fafc" id="apin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Pin A</title>
+    </circle>
+    <g cx="0" cy="266.667" fill="none" id="aterminal" r="16.6667" stroke="none" />
+    <circle cx="2022.22" cy="266.667" fill="#f7fafc" id="bpin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Pin B</title>
+    </circle>
+    <g cx="2022.22" cy="266.667" fill="none" id="bterminal" r="16.6667" stroke="none" />
+   </g>
+  </g>
+ </g>
+ <g partID="10110">
+  <g transform="translate(13777.8,4677.78)">
+   <g id="breadboard" >
+    <title >IRFB11N50APBF N-channel MOSFET TO-220</title>
+    <rect fill="#c7cdd4" height="400" rx="55.5556" stroke="#111111" stroke-width="16.6667" width="800" x="400"  y="66.6667"/>
+    <rect fill="#2f343b" height="1066.67" rx="88.8889" stroke="#111111" stroke-width="33.3333" width="1422.22" x="88.8889"  y="377.778"/>
+    <circle cx="800" cy="622.222" fill="#dfe5eb" r="100" stroke="#111111" stroke-width="11.1111" />
+    <text dominant-baseline="middle" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="144.444" font-weight="600" text-anchor="middle" x="800"  y="933.333">IRFB11N50APBF</text>
+    <text dominant-baseline="middle" fill="#1f2933" font-family="Segoe UI, Arial, sans-serif" font-size="155.556" font-weight="700" text-anchor="middle" x="333.333"  y="1711.11">G</text>
+    <text dominant-baseline="middle" fill="#1f2933" font-family="Segoe UI, Arial, sans-serif" font-size="155.556" font-weight="700" text-anchor="middle" x="800"  y="1711.11">D</text>
+    <text dominant-baseline="middle" fill="#1f2933" font-family="Segoe UI, Arial, sans-serif" font-size="155.556" font-weight="700" text-anchor="middle" x="1266.67"  y="1711.11">S</text>
+    <line stroke="#111111" stroke-width="55.5556" x1="333.333" x2="333.333"  y1="1444.44" y2="1622.22"/>
+    <line stroke="#111111" stroke-width="55.5556" x1="800" x2="800"  y1="1444.44" y2="1622.22"/>
+    <line stroke="#111111" stroke-width="55.5556" x1="1266.67" x2="1266.67"  y1="1444.44" y2="1622.22"/>
+    <circle cx="333.333" cy="1622.22" fill="#f7fafc" id="gatepin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Gate</title>
+    </circle>
+    <g cx="333.333" cy="1622.22" fill="none" id="gateterminal" r="16.6667" stroke="none" />
+    <circle cx="800" cy="1622.22" fill="#f7fafc" id="drainpin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Drain</title>
+    </circle>
+    <g cx="800" cy="1622.22" fill="none" id="drainterminal" r="16.6667" stroke="none" />
+    <circle cx="1266.67" cy="1622.22" fill="#f7fafc" id="sourcepin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Source</title>
+    </circle>
+    <g cx="1266.67" cy="1622.22" fill="none" id="sourceterminal" r="16.6667" stroke="none" />
+   </g>
+  </g>
+ </g>
+ <g partID="10100">
+  <g transform="translate(23777.8,4011.11)">
+   <g id="breadboard" >
+    <title >Ingredient 2 illuminated arcade button</title>
+    <rect fill="#eef2f7" height="2444.44" rx="111.111" stroke="#9aa5b1" stroke-width="22.2222" width="3111.11" x="0"  y="0"/>
+    <text dominant-baseline="middle" fill="#1f2933" font-family="Segoe UI, Arial, sans-serif" font-size="177.778" font-weight="700" text-anchor="middle" x="1555.56"  y="277.778">BTN2 terminal block</text>
+    <text dominant-baseline="middle" fill="#d71920" font-family="Segoe UI, Arial, sans-serif" font-size="177.778" font-weight="700" text-anchor="start" x="688.889"  y="666.667">LED +</text>
+    <text dominant-baseline="middle" fill="#f57c00" font-family="Segoe UI, Arial, sans-serif" font-size="177.778" font-weight="700" text-anchor="start" x="688.889"  y="1111.11">LED -</text>
+    <text dominant-baseline="middle" fill="#f4b400" font-family="Segoe UI, Arial, sans-serif" font-size="177.778" font-weight="700" text-anchor="start" x="688.889"  y="1555.56">SW SIG</text>
+    <text dominant-baseline="middle" fill="#111111" font-family="Segoe UI, Arial, sans-serif" font-size="177.778" font-weight="700" text-anchor="start" x="688.889"  y="2000">SW GND</text>
+    <circle cx="2388.89" cy="1222.22" fill="#43a047" r="533.333" stroke="#1f2933" stroke-width="44.4444" />
+    <circle cx="2388.89" cy="1222.22" fill="#ffffff" r="344.444" stroke="#f7fafc" stroke-width="16.6667" />
+    <text dominant-baseline="middle" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="200" font-weight="700" text-anchor="middle" x="2388.89"  y="1222.22">BTN2</text>
+    <text dominant-baseline="middle" fill="#1f2933" font-family="Segoe UI, Arial, sans-serif" font-size="177.778" font-weight="700" text-anchor="middle" x="1555.56"  y="2277.78">Ingredient 2</text>
+    <circle cx="311.111" cy="666.667" fill="#f7fafc" id="ledppin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >LED +</title>
+    </circle>
+    <g cx="311.111" cy="666.667" fill="none" id="ledpterminal" r="16.6667" stroke="none" />
+    <circle cx="311.111" cy="1111.11" fill="#f7fafc" id="ledmpin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >LED -</title>
+    </circle>
+    <g cx="311.111" cy="1111.11" fill="none" id="ledmterminal" r="16.6667" stroke="none" />
+    <circle cx="311.111" cy="1555.56" fill="#f7fafc" id="swsigpin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Switch signal</title>
+    </circle>
+    <g cx="311.111" cy="1555.56" fill="none" id="swsigterminal" r="16.6667" stroke="none" />
+    <circle cx="311.111" cy="2000" fill="#f7fafc" id="swgndpin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Switch GND</title>
+    </circle>
+    <g cx="311.111" cy="2000" fill="none" id="swgndterminal" r="16.6667" stroke="none" />
+   </g>
+  </g>
+ </g>
+ <g partID="10090">
+  <g transform="translate(11888.9,3766.67)">
+   <g id="breadboard" >
+    <title >10k gate pulldown resistor</title>
+    <line stroke="#8b5e20" stroke-width="44.4444" x1="0" x2="400"  y1="266.667" y2="266.667"/>
+    <rect fill="#e7c99a" height="355.556" rx="88.8889" stroke="#946b2d" stroke-width="22.2222" width="1222.22" x="400"  y="88.8889"/>
+    <line stroke="#8b5e20" stroke-width="44.4444" x1="1622.22" x2="2022.22"  y1="266.667" y2="266.667"/>
+    <text dominant-baseline="middle" fill="#1f2933" font-family="Segoe UI, Arial, sans-serif" font-size="200" font-weight="700" text-anchor="middle" x="1011.11"  y="266.667">10k</text>
+    <circle cx="0" cy="266.667" fill="#f7fafc" id="apin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Pin A</title>
+    </circle>
+    <g cx="0" cy="266.667" fill="none" id="aterminal" r="16.6667" stroke="none" />
+    <circle cx="2022.22" cy="266.667" fill="#f7fafc" id="bpin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Pin B</title>
+    </circle>
+    <g cx="2022.22" cy="266.667" fill="none" id="bterminal" r="16.6667" stroke="none" />
+   </g>
+  </g>
+ </g>
+ <g partID="10080">
+  <g transform="translate(8222.22,3066.67)">
+   <g id="breadboard" >
+    <title >100 ohm gate resistor</title>
+    <line stroke="#8b5e20" stroke-width="44.4444" x1="0" x2="400"  y1="266.667" y2="266.667"/>
+    <rect fill="#e7c99a" height="355.556" rx="88.8889" stroke="#946b2d" stroke-width="22.2222" width="1222.22" x="400"  y="88.8889"/>
+    <line stroke="#8b5e20" stroke-width="44.4444" x1="1622.22" x2="2022.22"  y1="266.667" y2="266.667"/>
+    <text dominant-baseline="middle" fill="#1f2933" font-family="Segoe UI, Arial, sans-serif" font-size="200" font-weight="700" text-anchor="middle" x="1011.11"  y="266.667">100 ohm</text>
+    <circle cx="0" cy="266.667" fill="#f7fafc" id="apin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Pin A</title>
+    </circle>
+    <g cx="0" cy="266.667" fill="none" id="aterminal" r="16.6667" stroke="none" />
+    <circle cx="2022.22" cy="266.667" fill="#f7fafc" id="bpin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Pin B</title>
+    </circle>
+    <g cx="2022.22" cy="266.667" fill="none" id="bterminal" r="16.6667" stroke="none" />
+   </g>
+  </g>
+ </g>
+ <g partID="10070">
+  <g transform="translate(13777.8,1900)">
+   <g id="breadboard" >
+    <title >IRFB11N50APBF N-channel MOSFET TO-220</title>
+    <rect fill="#c7cdd4" height="400" rx="55.5556" stroke="#111111" stroke-width="16.6667" width="800" x="400"  y="66.6667"/>
+    <rect fill="#2f343b" height="1066.67" rx="88.8889" stroke="#111111" stroke-width="33.3333" width="1422.22" x="88.8889"  y="377.778"/>
+    <circle cx="800" cy="622.222" fill="#dfe5eb" r="100" stroke="#111111" stroke-width="11.1111" />
+    <text dominant-baseline="middle" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="144.444" font-weight="600" text-anchor="middle" x="800"  y="933.333">IRFB11N50APBF</text>
+    <text dominant-baseline="middle" fill="#1f2933" font-family="Segoe UI, Arial, sans-serif" font-size="155.556" font-weight="700" text-anchor="middle" x="333.333"  y="1711.11">G</text>
+    <text dominant-baseline="middle" fill="#1f2933" font-family="Segoe UI, Arial, sans-serif" font-size="155.556" font-weight="700" text-anchor="middle" x="800"  y="1711.11">D</text>
+    <text dominant-baseline="middle" fill="#1f2933" font-family="Segoe UI, Arial, sans-serif" font-size="155.556" font-weight="700" text-anchor="middle" x="1266.67"  y="1711.11">S</text>
+    <line stroke="#111111" stroke-width="55.5556" x1="333.333" x2="333.333"  y1="1444.44" y2="1622.22"/>
+    <line stroke="#111111" stroke-width="55.5556" x1="800" x2="800"  y1="1444.44" y2="1622.22"/>
+    <line stroke="#111111" stroke-width="55.5556" x1="1266.67" x2="1266.67"  y1="1444.44" y2="1622.22"/>
+    <circle cx="333.333" cy="1622.22" fill="#f7fafc" id="gatepin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Gate</title>
+    </circle>
+    <g cx="333.333" cy="1622.22" fill="none" id="gateterminal" r="16.6667" stroke="none" />
+    <circle cx="800" cy="1622.22" fill="#f7fafc" id="drainpin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Drain</title>
+    </circle>
+    <g cx="800" cy="1622.22" fill="none" id="drainterminal" r="16.6667" stroke="none" />
+    <circle cx="1266.67" cy="1622.22" fill="#f7fafc" id="sourcepin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Source</title>
+    </circle>
+    <g cx="1266.67" cy="1622.22" fill="none" id="sourceterminal" r="16.6667" stroke="none" />
+   </g>
+  </g>
+ </g>
+ <g partID="10060">
+  <g transform="translate(23777.8,1233.33)">
+   <g id="breadboard" >
+    <title >Ingredient 1 illuminated arcade button</title>
+    <rect fill="#eef2f7" height="2444.44" rx="111.111" stroke="#9aa5b1" stroke-width="22.2222" width="3111.11" x="0"  y="0"/>
+    <text dominant-baseline="middle" fill="#1f2933" font-family="Segoe UI, Arial, sans-serif" font-size="177.778" font-weight="700" text-anchor="middle" x="1555.56"  y="277.778">BTN1 terminal block</text>
+    <text dominant-baseline="middle" fill="#d71920" font-family="Segoe UI, Arial, sans-serif" font-size="177.778" font-weight="700" text-anchor="start" x="688.889"  y="666.667">LED +</text>
+    <text dominant-baseline="middle" fill="#f57c00" font-family="Segoe UI, Arial, sans-serif" font-size="177.778" font-weight="700" text-anchor="start" x="688.889"  y="1111.11">LED -</text>
+    <text dominant-baseline="middle" fill="#f4b400" font-family="Segoe UI, Arial, sans-serif" font-size="177.778" font-weight="700" text-anchor="start" x="688.889"  y="1555.56">SW SIG</text>
+    <text dominant-baseline="middle" fill="#111111" font-family="Segoe UI, Arial, sans-serif" font-size="177.778" font-weight="700" text-anchor="start" x="688.889"  y="2000">SW GND</text>
+    <circle cx="2388.89" cy="1222.22" fill="#e53935" r="533.333" stroke="#1f2933" stroke-width="44.4444" />
+    <circle cx="2388.89" cy="1222.22" fill="#ffffff" r="344.444" stroke="#f7fafc" stroke-width="16.6667" />
+    <text dominant-baseline="middle" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="200" font-weight="700" text-anchor="middle" x="2388.89"  y="1222.22">BTN1</text>
+    <text dominant-baseline="middle" fill="#1f2933" font-family="Segoe UI, Arial, sans-serif" font-size="177.778" font-weight="700" text-anchor="middle" x="1555.56"  y="2277.78">Ingredient 1</text>
+    <circle cx="311.111" cy="666.667" fill="#f7fafc" id="ledppin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >LED +</title>
+    </circle>
+    <g cx="311.111" cy="666.667" fill="none" id="ledpterminal" r="16.6667" stroke="none" />
+    <circle cx="311.111" cy="1111.11" fill="#f7fafc" id="ledmpin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >LED -</title>
+    </circle>
+    <g cx="311.111" cy="1111.11" fill="none" id="ledmterminal" r="16.6667" stroke="none" />
+    <circle cx="311.111" cy="1555.56" fill="#f7fafc" id="swsigpin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Switch signal</title>
+    </circle>
+    <g cx="311.111" cy="1555.56" fill="none" id="swsigterminal" r="16.6667" stroke="none" />
+    <circle cx="311.111" cy="2000" fill="#f7fafc" id="swgndpin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Switch GND</title>
+    </circle>
+    <g cx="311.111" cy="2000" fill="none" id="swgndterminal" r="16.6667" stroke="none" />
+   </g>
+  </g>
+ </g>
+ <g partID="10050">
+  <g transform="translate(0,15444.4)">
+   <g id="breadboard" >
+    <title >Visible wiring notes</title>
+    <rect fill="#ffffff" height="1944.44" rx="111.111" stroke="#9aa5b1" stroke-width="22.2222" width="9777.78" x="0"  y="0"/>
+    <text dominant-baseline="middle" fill="#1f2933" font-family="Segoe UI, Arial, sans-serif" font-size="244.444" font-weight="700" text-anchor="start" x="222.222"  y="288.889">Notes</text>
+    <text dominant-baseline="middle" fill="#1f2933" font-family="Segoe UI, Arial, sans-serif" font-size="200" font-weight="500" text-anchor="start" x="222.222"  y="711.111">All grounds must be common.</text>
+    <text dominant-baseline="middle" fill="#1f2933" font-family="Segoe UI, Arial, sans-serif" font-size="200" font-weight="500" text-anchor="start" x="222.222"  y="1022.22">Do not connect lamp negatives together if individual flashing is required.</text>
+    <text dominant-baseline="middle" fill="#1f2933" font-family="Segoe UI, Arial, sans-serif" font-size="200" font-weight="500" text-anchor="start" x="222.222"  y="1333.33">Shared +V is OK; switched low side controls each lamp.</text>
+    <text dominant-baseline="middle" fill="#1f2933" font-family="Segoe UI, Arial, sans-serif" font-size="200" font-weight="500" text-anchor="start" x="222.222"  y="1644.44">Use INPUT_PULLUP. IRFB11N50APBF is not logic-level; replace if LEDs are dim.</text>
+   </g>
+  </g>
+ </g>
+ <g partID="10040">
+  <g transform="translate(6222.22,17555.6)">
+   <g id="breadboard" >
+    <title >Common ground rail</title>
+    <rect fill="#f4f4f5" height="533.333" rx="88.8889" stroke="#111111" stroke-width="22.2222" width="10000" x="0"  y="0"/>
+    <line stroke="#111111" stroke-width="88.8889" x1="266.667" x2="9733.33"  y1="266.667" y2="266.667"/>
+    <text dominant-baseline="middle" fill="#111111" font-family="Segoe UI, Arial, sans-serif" font-size="177.778" font-weight="700" text-anchor="middle" x="5000"  y="166.667">COMMON GROUND: ESP32 + 12V supply - + switches + MOSFET sources</text>
+    <circle cx="488.889" cy="266.667" fill="#f7fafc" id="tap0pin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Tap 0</title>
+    </circle>
+    <g cx="488.889" cy="266.667" fill="none" id="tap0terminal" r="16.6667" stroke="none" />
+    <circle cx="1311.11" cy="266.667" fill="#f7fafc" id="tap1pin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Tap 1</title>
+    </circle>
+    <g cx="1311.11" cy="266.667" fill="none" id="tap1terminal" r="16.6667" stroke="none" />
+    <circle cx="2133.33" cy="266.667" fill="#f7fafc" id="tap2pin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Tap 2</title>
+    </circle>
+    <g cx="2133.33" cy="266.667" fill="none" id="tap2terminal" r="16.6667" stroke="none" />
+    <circle cx="2955.56" cy="266.667" fill="#f7fafc" id="tap3pin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Tap 3</title>
+    </circle>
+    <g cx="2955.56" cy="266.667" fill="none" id="tap3terminal" r="16.6667" stroke="none" />
+    <circle cx="3777.78" cy="266.667" fill="#f7fafc" id="tap4pin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Tap 4</title>
+    </circle>
+    <g cx="3777.78" cy="266.667" fill="none" id="tap4terminal" r="16.6667" stroke="none" />
+    <circle cx="4600" cy="266.667" fill="#f7fafc" id="tap5pin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Tap 5</title>
+    </circle>
+    <g cx="4600" cy="266.667" fill="none" id="tap5terminal" r="16.6667" stroke="none" />
+    <circle cx="5422.22" cy="266.667" fill="#f7fafc" id="tap6pin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Tap 6</title>
+    </circle>
+    <g cx="5422.22" cy="266.667" fill="none" id="tap6terminal" r="16.6667" stroke="none" />
+    <circle cx="6244.44" cy="266.667" fill="#f7fafc" id="tap7pin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Tap 7</title>
+    </circle>
+    <g cx="6244.44" cy="266.667" fill="none" id="tap7terminal" r="16.6667" stroke="none" />
+    <circle cx="7066.67" cy="266.667" fill="#f7fafc" id="tap8pin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Tap 8</title>
+    </circle>
+    <g cx="7066.67" cy="266.667" fill="none" id="tap8terminal" r="16.6667" stroke="none" />
+    <circle cx="7888.89" cy="266.667" fill="#f7fafc" id="tap9pin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Tap 9</title>
+    </circle>
+    <g cx="7888.89" cy="266.667" fill="none" id="tap9terminal" r="16.6667" stroke="none" />
+    <circle cx="8711.11" cy="266.667" fill="#f7fafc" id="tap10pin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Tap 10</title>
+    </circle>
+    <g cx="8711.11" cy="266.667" fill="none" id="tap10terminal" r="16.6667" stroke="none" />
+    <circle cx="9533.33" cy="266.667" fill="#f7fafc" id="tap11pin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Tap 11</title>
+    </circle>
+    <g cx="9533.33" cy="266.667" fill="none" id="tap11terminal" r="16.6667" stroke="none" />
+   </g>
+  </g>
+ </g>
+ <g partID="10030">
+  <g transform="translate(6222.22,111.111)">
+   <g id="breadboard" >
+    <title >+12V lamp rail</title>
+    <rect fill="#fff7f7" height="533.333" rx="88.8889" stroke="#d71920" stroke-width="22.2222" width="10000" x="0"  y="0"/>
+    <line stroke="#d71920" stroke-width="88.8889" x1="266.667" x2="9733.33"  y1="266.667" y2="266.667"/>
+    <text dominant-baseline="middle" fill="#d71920" font-family="Segoe UI, Arial, sans-serif" font-size="200" font-weight="700" text-anchor="middle" x="5000"  y="166.667">+12V lamp rail (shared LED positives)</text>
+    <circle cx="488.889" cy="266.667" fill="#f7fafc" id="tap0pin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Tap 0</title>
+    </circle>
+    <g cx="488.889" cy="266.667" fill="none" id="tap0terminal" r="16.6667" stroke="none" />
+    <circle cx="1311.11" cy="266.667" fill="#f7fafc" id="tap1pin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Tap 1</title>
+    </circle>
+    <g cx="1311.11" cy="266.667" fill="none" id="tap1terminal" r="16.6667" stroke="none" />
+    <circle cx="2133.33" cy="266.667" fill="#f7fafc" id="tap2pin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Tap 2</title>
+    </circle>
+    <g cx="2133.33" cy="266.667" fill="none" id="tap2terminal" r="16.6667" stroke="none" />
+    <circle cx="2955.56" cy="266.667" fill="#f7fafc" id="tap3pin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Tap 3</title>
+    </circle>
+    <g cx="2955.56" cy="266.667" fill="none" id="tap3terminal" r="16.6667" stroke="none" />
+    <circle cx="3777.78" cy="266.667" fill="#f7fafc" id="tap4pin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Tap 4</title>
+    </circle>
+    <g cx="3777.78" cy="266.667" fill="none" id="tap4terminal" r="16.6667" stroke="none" />
+    <circle cx="4600" cy="266.667" fill="#f7fafc" id="tap5pin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Tap 5</title>
+    </circle>
+    <g cx="4600" cy="266.667" fill="none" id="tap5terminal" r="16.6667" stroke="none" />
+    <circle cx="5422.22" cy="266.667" fill="#f7fafc" id="tap6pin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Tap 6</title>
+    </circle>
+    <g cx="5422.22" cy="266.667" fill="none" id="tap6terminal" r="16.6667" stroke="none" />
+    <circle cx="6244.44" cy="266.667" fill="#f7fafc" id="tap7pin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Tap 7</title>
+    </circle>
+    <g cx="6244.44" cy="266.667" fill="none" id="tap7terminal" r="16.6667" stroke="none" />
+    <circle cx="7066.67" cy="266.667" fill="#f7fafc" id="tap8pin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Tap 8</title>
+    </circle>
+    <g cx="7066.67" cy="266.667" fill="none" id="tap8terminal" r="16.6667" stroke="none" />
+    <circle cx="7888.89" cy="266.667" fill="#f7fafc" id="tap9pin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Tap 9</title>
+    </circle>
+    <g cx="7888.89" cy="266.667" fill="none" id="tap9terminal" r="16.6667" stroke="none" />
+    <circle cx="8711.11" cy="266.667" fill="#f7fafc" id="tap10pin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Tap 10</title>
+    </circle>
+    <g cx="8711.11" cy="266.667" fill="none" id="tap10terminal" r="16.6667" stroke="none" />
+    <circle cx="9533.33" cy="266.667" fill="#f7fafc" id="tap11pin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >Tap 11</title>
+    </circle>
+    <g cx="9533.33" cy="266.667" fill="none" id="tap11terminal" r="16.6667" stroke="none" />
+   </g>
+  </g>
+ </g>
+ <g partID="10020">
+  <g id="breadboard" >
+   <title >External 12V lamp supply</title>
+   <rect fill="#ffffff" height="1111.11" rx="111.111" stroke="#9aa5b1" stroke-width="22.2222" width="2111.11" x="0"  y="0"/>
+   <text dominant-baseline="middle" fill="#1f2933" font-family="Segoe UI, Arial, sans-serif" font-size="222.222" font-weight="700" text-anchor="middle" x="1055.56"  y="266.667">External 12V</text>
+   <text dominant-baseline="middle" fill="#1f2933" font-family="Segoe UI, Arial, sans-serif" font-size="188.889" font-weight="700" text-anchor="middle" x="1055.56"  y="544.444">lamp supply</text>
+   <text dominant-baseline="middle" fill="#d71920" font-family="Segoe UI, Arial, sans-serif" font-size="222.222" font-weight="700" text-anchor="middle" x="611.111"  y="866.667">+</text>
+   <text dominant-baseline="middle" fill="#111111" font-family="Segoe UI, Arial, sans-serif" font-size="222.222" font-weight="700" text-anchor="middle" x="1500"  y="866.667">-</text>
+   <circle cx="611.111" cy="688.889" fill="#f7fafc" id="pluspin" r="50" stroke="#111111" stroke-width="16.6667" >
+    <title >+12V</title>
+   </circle>
+   <g cx="611.111" cy="688.889" fill="none" id="plusterminal" r="16.6667" stroke="none" />
+   <circle cx="1500" cy="688.889" fill="#f7fafc" id="minuspin" r="50" stroke="#111111" stroke-width="16.6667" >
+    <title >GND</title>
+   </circle>
+   <g cx="1500" cy="688.889" fill="none" id="minusterminal" r="16.6667" stroke="none" />
+  </g>
+ </g>
+ <g partID="10010">
+  <g transform="translate(0,1777.78)">
+   <g id="breadboard" >
+    <title >ESP32 DevKit</title>
+    <rect fill="#2a9d8f" height="7111.11" rx="200" stroke="#1f756b" stroke-width="55.5556" width="5000" x="0"  y="0"/>
+    <rect fill="#c7cdd4" height="600" rx="88.8889" stroke="#1f756b" stroke-width="22.2222" width="2000" x="1500"  y="200"/>
+    <text dominant-baseline="middle" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="355.556" font-weight="700" text-anchor="middle" x="2500"  y="1333.33">ESP32 DevKit</text>
+    <text dominant-baseline="middle" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="200" font-weight="700" text-anchor="middle" x="2500"  y="1755.56">Inputs: INPUT_PULLUP</text>
+    <text dominant-baseline="middle" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="177.778" font-weight="400" text-anchor="middle" x="2500"  y="2044.44">unpressed=HIGH  pressed=LOW</text>
+    <text dominant-baseline="middle" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="244.444" font-weight="700" text-anchor="start" x="1133.33"  y="6622.22">GND</text>
+    <rect fill="#e6edf3" height="355.556" rx="55.5556" stroke="#1f756b" stroke-width="16.6667" width="1177.78" x="3177.78"  y="511.111"/>
+    <text dominant-baseline="middle" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="177.778" font-weight="500" text-anchor="end" x="3111.11"  y="688.889">GPIO 16</text>
+    <rect fill="#e6edf3" height="355.556" rx="55.5556" stroke="#1f756b" stroke-width="16.6667" width="1177.78" x="3177.78"  y="1044.44"/>
+    <text dominant-baseline="middle" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="177.778" font-weight="500" text-anchor="end" x="3111.11"  y="1222.22">GPIO 21</text>
+    <rect fill="#e6edf3" height="355.556" rx="55.5556" stroke="#1f756b" stroke-width="16.6667" width="1177.78" x="3177.78"  y="1622.22"/>
+    <text dominant-baseline="middle" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="177.778" font-weight="500" text-anchor="end" x="3111.11"  y="1800">GPIO 17</text>
+    <rect fill="#e6edf3" height="355.556" rx="55.5556" stroke="#1f756b" stroke-width="16.6667" width="1177.78" x="3177.78"  y="2155.56"/>
+    <text dominant-baseline="middle" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="177.778" font-weight="500" text-anchor="end" x="3111.11"  y="2333.33">GPIO 22</text>
+    <rect fill="#e6edf3" height="355.556" rx="55.5556" stroke="#1f756b" stroke-width="16.6667" width="1177.78" x="3177.78"  y="2733.33"/>
+    <text dominant-baseline="middle" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="177.778" font-weight="500" text-anchor="end" x="3111.11"  y="2911.11">GPIO 18</text>
+    <rect fill="#e6edf3" height="355.556" rx="55.5556" stroke="#1f756b" stroke-width="16.6667" width="1177.78" x="3177.78"  y="3266.67"/>
+    <text dominant-baseline="middle" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="177.778" font-weight="500" text-anchor="end" x="3111.11"  y="3444.44">GPIO 23</text>
+    <rect fill="#e6edf3" height="355.556" rx="55.5556" stroke="#1f756b" stroke-width="16.6667" width="1177.78" x="3177.78"  y="3844.44"/>
+    <text dominant-baseline="middle" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="177.778" font-weight="500" text-anchor="end" x="3111.11"  y="4022.22">GPIO 19</text>
+    <rect fill="#e6edf3" height="355.556" rx="55.5556" stroke="#1f756b" stroke-width="16.6667" width="1177.78" x="3177.78"  y="4377.78"/>
+    <text dominant-baseline="middle" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="177.778" font-weight="500" text-anchor="end" x="3111.11"  y="4555.56">GPIO 25</text>
+    <rect fill="#e6edf3" height="355.556" rx="55.5556" stroke="#1f756b" stroke-width="16.6667" width="1177.78" x="3177.78"  y="4955.56"/>
+    <text dominant-baseline="middle" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="177.778" font-weight="500" text-anchor="end" x="3111.11"  y="5133.33">GPIO 26</text>
+    <rect fill="#e6edf3" height="355.556" rx="55.5556" stroke="#1f756b" stroke-width="16.6667" width="1177.78" x="3177.78"  y="5488.89"/>
+    <text dominant-baseline="middle" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="177.778" font-weight="500" text-anchor="end" x="3111.11"  y="5666.67">GPIO 27</text>
+    <circle cx="2888.89" cy="6611.11" fill="#f7fafc" id="gndpin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >GND</title>
+    </circle>
+    <g cx="2888.89" cy="6611.11" fill="none" id="gndterminal" r="16.6667" stroke="none" />
+    <circle cx="4666.67" cy="688.889" fill="#f7fafc" id="gpio16pin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >GPIO 16 BTN1 switch</title>
+    </circle>
+    <g cx="4666.67" cy="688.889" fill="none" id="gpio16terminal" r="16.6667" stroke="none" />
+    <circle cx="4666.67" cy="1222.22" fill="#f7fafc" id="gpio21pin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >GPIO 21 BTN1 lamp</title>
+    </circle>
+    <g cx="4666.67" cy="1222.22" fill="none" id="gpio21terminal" r="16.6667" stroke="none" />
+    <circle cx="4666.67" cy="1800" fill="#f7fafc" id="gpio17pin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >GPIO 17 BTN2 switch</title>
+    </circle>
+    <g cx="4666.67" cy="1800" fill="none" id="gpio17terminal" r="16.6667" stroke="none" />
+    <circle cx="4666.67" cy="2333.33" fill="#f7fafc" id="gpio22pin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >GPIO 22 BTN2 lamp</title>
+    </circle>
+    <g cx="4666.67" cy="2333.33" fill="none" id="gpio22terminal" r="16.6667" stroke="none" />
+    <circle cx="4666.67" cy="2911.11" fill="#f7fafc" id="gpio18pin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >GPIO 18 BTN3 switch</title>
+    </circle>
+    <g cx="4666.67" cy="2911.11" fill="none" id="gpio18terminal" r="16.6667" stroke="none" />
+    <circle cx="4666.67" cy="3444.44" fill="#f7fafc" id="gpio23pin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >GPIO 23 BTN3 lamp</title>
+    </circle>
+    <g cx="4666.67" cy="3444.44" fill="none" id="gpio23terminal" r="16.6667" stroke="none" />
+    <circle cx="4666.67" cy="4022.22" fill="#f7fafc" id="gpio19pin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >GPIO 19 BTN4 switch</title>
+    </circle>
+    <g cx="4666.67" cy="4022.22" fill="none" id="gpio19terminal" r="16.6667" stroke="none" />
+    <circle cx="4666.67" cy="4555.56" fill="#f7fafc" id="gpio25pin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >GPIO 25 BTN4 lamp</title>
+    </circle>
+    <g cx="4666.67" cy="4555.56" fill="none" id="gpio25terminal" r="16.6667" stroke="none" />
+    <circle cx="4666.67" cy="5133.33" fill="#f7fafc" id="gpio26pin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >GPIO 26 BTN5 switch</title>
+    </circle>
+    <g cx="4666.67" cy="5133.33" fill="none" id="gpio26terminal" r="16.6667" stroke="none" />
+    <circle cx="4666.67" cy="5666.67" fill="#f7fafc" id="gpio27pin" r="50" stroke="#111111" stroke-width="16.6667" >
+     <title >GPIO 27 BTN5 lamp</title>
+    </circle>
+    <g cx="4666.67" cy="5666.67" fill="none" id="gpio27terminal" r="16.6667" stroke="none" />
+   </g>
+  </g>
+ </g>
+ <g partID="50480">
+  <line stroke="#111111" stroke-linecap="round" stroke-width="30.2222" x1="13911.1" x2="12466.7" y1="15144.4" y2="17822.2"/>
+  <line stroke="#111111" stroke-linecap="round" stroke-width="8" x1="13911.1" x2="12466.7" y1="15144.4" y2="17822.2"/>
+ </g>
+ <g partID="50470">
+  <line stroke="#178f46" stroke-linecap="round" stroke-width="30.2222" x1="14111.1" x2="11888.9" y1="14633.3" y2="15144.4"/>
+  <line stroke="#178f46" stroke-linecap="round" stroke-width="8" x1="14111.1" x2="11888.9" y1="14633.3" y2="15144.4"/>
+ </g>
+ <g partID="50460">
+  <line stroke="#178f46" stroke-linecap="round" stroke-width="32.2222" x1="10244.4" x2="14111.1" y1="14444.4" y2="14633.3"/>
+  <line stroke="#178f46" stroke-linecap="round" stroke-width="10" x1="10244.4" x2="14111.1" y1="14444.4" y2="14633.3"/>
+ </g>
+ <g partID="50450">
+  <line stroke="#178f46" stroke-linecap="round" stroke-width="32.2222" x1="4666.67" x2="8222.22" y1="7444.44" y2="14444.4"/>
+  <line stroke="#178f46" stroke-linecap="round" stroke-width="10" x1="4666.67" x2="8222.22" y1="7444.44" y2="14444.4"/>
+ </g>
+ <g partID="50440">
+  <line stroke="#f4b400" stroke-linecap="round" stroke-width="32.2222" x1="4666.67" x2="24088.9" y1="6911.11" y2="13900"/>
+  <line stroke="#f4b400" stroke-linecap="round" stroke-width="10" x1="4666.67" x2="24088.9" y1="6911.11" y2="13900"/>
+ </g>
+ <g partID="50430">
+  <line stroke="#111111" stroke-linecap="round" stroke-width="34.2222" x1="24088.9" x2="15755.6" y1="14344.4" y2="17822.2"/>
+  <line stroke="#111111" stroke-linecap="round" stroke-width="12" x1="24088.9" x2="15755.6" y1="14344.4" y2="17822.2"/>
+ </g>
+ <g partID="50420">
+  <line stroke="#111111" stroke-linecap="round" stroke-width="34.2222" x1="15044.4" x2="11644.4" y1="14633.3" y2="17822.2"/>
+  <line stroke="#111111" stroke-linecap="round" stroke-width="12" x1="15044.4" x2="11644.4" y1="14633.3" y2="17822.2"/>
+ </g>
+ <g partID="50410">
+  <line stroke="#f57c00" stroke-linecap="round" stroke-width="34.2222" x1="24088.9" x2="14577.8" y1="13455.6" y2="14633.3"/>
+  <line stroke="#f57c00" stroke-linecap="round" stroke-width="12" x1="24088.9" x2="14577.8" y1="13455.6" y2="14633.3"/>
+ </g>
+ <g partID="50400">
+  <line stroke="#d71920" stroke-linecap="round" stroke-width="34.2222" x1="10822.2" x2="24088.9" y1="377.778" y2="13011.1"/>
+  <line stroke="#d71920" stroke-linecap="round" stroke-width="12" x1="10822.2" x2="24088.9" y1="377.778" y2="13011.1"/>
+ </g>
+ <g partID="50390">
+  <line stroke="#111111" stroke-linecap="round" stroke-width="30.2222" x1="13911.1" x2="11644.4" y1="12366.7" y2="17822.2"/>
+  <line stroke="#111111" stroke-linecap="round" stroke-width="8" x1="13911.1" x2="11644.4" y1="12366.7" y2="17822.2"/>
+ </g>
+ <g partID="50380">
+  <line stroke="#178f46" stroke-linecap="round" stroke-width="30.2222" x1="14111.1" x2="11888.9" y1="11855.6" y2="12366.7"/>
+  <line stroke="#178f46" stroke-linecap="round" stroke-width="8" x1="14111.1" x2="11888.9" y1="11855.6" y2="12366.7"/>
+ </g>
+ <g partID="50370">
+  <line stroke="#178f46" stroke-linecap="round" stroke-width="32.2222" x1="10244.4" x2="14111.1" y1="11666.7" y2="11855.6"/>
+  <line stroke="#178f46" stroke-linecap="round" stroke-width="10" x1="10244.4" x2="14111.1" y1="11666.7" y2="11855.6"/>
+ </g>
+ <g partID="50360">
+  <line stroke="#178f46" stroke-linecap="round" stroke-width="32.2222" x1="4666.67" x2="8222.22" y1="6333.33" y2="11666.7"/>
+  <line stroke="#178f46" stroke-linecap="round" stroke-width="10" x1="4666.67" x2="8222.22" y1="6333.33" y2="11666.7"/>
+ </g>
+ <g partID="50350">
+  <line stroke="#1e88e5" stroke-linecap="round" stroke-width="32.2222" x1="4666.67" x2="24088.9" y1="5800" y2="11122.2"/>
+  <line stroke="#1e88e5" stroke-linecap="round" stroke-width="10" x1="4666.67" x2="24088.9" y1="5800" y2="11122.2"/>
+ </g>
+ <g partID="50340">
+  <line stroke="#111111" stroke-linecap="round" stroke-width="34.2222" x1="24088.9" x2="14933.3" y1="11566.7" y2="17822.2"/>
+  <line stroke="#111111" stroke-linecap="round" stroke-width="12" x1="24088.9" x2="14933.3" y1="11566.7" y2="17822.2"/>
+ </g>
+ <g partID="50330">
+  <line stroke="#111111" stroke-linecap="round" stroke-width="34.2222" x1="15044.4" x2="10822.2" y1="11855.6" y2="17822.2"/>
+  <line stroke="#111111" stroke-linecap="round" stroke-width="12" x1="15044.4" x2="10822.2" y1="11855.6" y2="17822.2"/>
+ </g>
+ <g partID="50320">
+  <line stroke="#f57c00" stroke-linecap="round" stroke-width="34.2222" x1="24088.9" x2="14577.8" y1="10677.8" y2="11855.6"/>
+  <line stroke="#f57c00" stroke-linecap="round" stroke-width="12" x1="24088.9" x2="14577.8" y1="10677.8" y2="11855.6"/>
+ </g>
+ <g partID="50310">
+  <line stroke="#d71920" stroke-linecap="round" stroke-width="34.2222" x1="10000" x2="24088.9" y1="377.778" y2="10233.3"/>
+  <line stroke="#d71920" stroke-linecap="round" stroke-width="12" x1="10000" x2="24088.9" y1="377.778" y2="10233.3"/>
+ </g>
+ <g partID="50300">
+  <line stroke="#111111" stroke-linecap="round" stroke-width="30.2222" x1="13911.1" x2="10822.2" y1="9588.89" y2="17822.2"/>
+  <line stroke="#111111" stroke-linecap="round" stroke-width="8" x1="13911.1" x2="10822.2" y1="9588.89" y2="17822.2"/>
+ </g>
+ <g partID="50290">
+  <line stroke="#178f46" stroke-linecap="round" stroke-width="30.2222" x1="14111.1" x2="11888.9" y1="9077.78" y2="9588.89"/>
+  <line stroke="#178f46" stroke-linecap="round" stroke-width="8" x1="14111.1" x2="11888.9" y1="9077.78" y2="9588.89"/>
+ </g>
+ <g partID="50280">
+  <line stroke="#178f46" stroke-linecap="round" stroke-width="32.2222" x1="10244.4" x2="14111.1" y1="8888.89" y2="9077.78"/>
+  <line stroke="#178f46" stroke-linecap="round" stroke-width="10" x1="10244.4" x2="14111.1" y1="8888.89" y2="9077.78"/>
+ </g>
+ <g partID="50270">
+  <line stroke="#178f46" stroke-linecap="round" stroke-width="32.2222" x1="4666.67" x2="8222.22" y1="5222.22" y2="8888.89"/>
+  <line stroke="#178f46" stroke-linecap="round" stroke-width="10" x1="4666.67" x2="8222.22" y1="5222.22" y2="8888.89"/>
+ </g>
+ <g partID="50260">
+  <line stroke="#f4b400" stroke-linecap="round" stroke-width="32.2222" x1="4666.67" x2="24088.9" y1="4688.89" y2="8344.44"/>
+  <line stroke="#f4b400" stroke-linecap="round" stroke-width="10" x1="4666.67" x2="24088.9" y1="4688.89" y2="8344.44"/>
+ </g>
+ <g partID="50250">
+  <line stroke="#111111" stroke-linecap="round" stroke-width="34.2222" x1="24088.9" x2="14111.1" y1="8788.89" y2="17822.2"/>
+  <line stroke="#111111" stroke-linecap="round" stroke-width="12" x1="24088.9" x2="14111.1" y1="8788.89" y2="17822.2"/>
+ </g>
+ <g partID="50240">
+  <line stroke="#111111" stroke-linecap="round" stroke-width="34.2222" x1="15044.4" x2="10000" y1="9077.78" y2="17822.2"/>
+  <line stroke="#111111" stroke-linecap="round" stroke-width="12" x1="15044.4" x2="10000" y1="9077.78" y2="17822.2"/>
+ </g>
+ <g partID="50230">
+  <line stroke="#f57c00" stroke-linecap="round" stroke-width="34.2222" x1="24088.9" x2="14577.8" y1="7900" y2="9077.78"/>
+  <line stroke="#f57c00" stroke-linecap="round" stroke-width="12" x1="24088.9" x2="14577.8" y1="7900" y2="9077.78"/>
+ </g>
+ <g partID="50220">
+  <line stroke="#d71920" stroke-linecap="round" stroke-width="34.2222" x1="9177.78" x2="24088.9" y1="377.778" y2="7455.56"/>
+  <line stroke="#d71920" stroke-linecap="round" stroke-width="12" x1="9177.78" x2="24088.9" y1="377.778" y2="7455.56"/>
+ </g>
+ <g partID="50210">
+  <line stroke="#111111" stroke-linecap="round" stroke-width="30.2222" x1="13911.1" x2="10000" y1="6811.11" y2="17822.2"/>
+  <line stroke="#111111" stroke-linecap="round" stroke-width="8" x1="13911.1" x2="10000" y1="6811.11" y2="17822.2"/>
+ </g>
+ <g partID="50200">
+  <line stroke="#178f46" stroke-linecap="round" stroke-width="30.2222" x1="14111.1" x2="11888.9" y1="6300" y2="6811.11"/>
+  <line stroke="#178f46" stroke-linecap="round" stroke-width="8" x1="14111.1" x2="11888.9" y1="6300" y2="6811.11"/>
+ </g>
+ <g partID="50190">
+  <line stroke="#178f46" stroke-linecap="round" stroke-width="32.2222" x1="10244.4" x2="14111.1" y1="6111.11" y2="6300"/>
+  <line stroke="#178f46" stroke-linecap="round" stroke-width="10" x1="10244.4" x2="14111.1" y1="6111.11" y2="6300"/>
+ </g>
+ <g partID="50180">
+  <line stroke="#178f46" stroke-linecap="round" stroke-width="32.2222" x1="4666.67" x2="8222.22" y1="4111.11" y2="6111.11"/>
+  <line stroke="#178f46" stroke-linecap="round" stroke-width="10" x1="4666.67" x2="8222.22" y1="4111.11" y2="6111.11"/>
+ </g>
+ <g partID="50170">
+  <line stroke="#1e88e5" stroke-linecap="round" stroke-width="32.2222" x1="4666.67" x2="24088.9" y1="3577.78" y2="5566.67"/>
+  <line stroke="#1e88e5" stroke-linecap="round" stroke-width="10" x1="4666.67" x2="24088.9" y1="3577.78" y2="5566.67"/>
+ </g>
+ <g partID="50160">
+  <line stroke="#111111" stroke-linecap="round" stroke-width="34.2222" x1="24088.9" x2="13288.9" y1="6011.11" y2="17822.2"/>
+  <line stroke="#111111" stroke-linecap="round" stroke-width="12" x1="24088.9" x2="13288.9" y1="6011.11" y2="17822.2"/>
+ </g>
+ <g partID="50150">
+  <line stroke="#111111" stroke-linecap="round" stroke-width="34.2222" x1="15044.4" x2="9177.78" y1="6300" y2="17822.2"/>
+  <line stroke="#111111" stroke-linecap="round" stroke-width="12" x1="15044.4" x2="9177.78" y1="6300" y2="17822.2"/>
+ </g>
+ <g partID="50140">
+  <line stroke="#f57c00" stroke-linecap="round" stroke-width="34.2222" x1="24088.9" x2="14577.8" y1="5122.22" y2="6300"/>
+  <line stroke="#f57c00" stroke-linecap="round" stroke-width="12" x1="24088.9" x2="14577.8" y1="5122.22" y2="6300"/>
+ </g>
+ <g partID="50130">
+  <line stroke="#d71920" stroke-linecap="round" stroke-width="34.2222" x1="8355.56" x2="24088.9" y1="377.778" y2="4677.78"/>
+  <line stroke="#d71920" stroke-linecap="round" stroke-width="12" x1="8355.56" x2="24088.9" y1="377.778" y2="4677.78"/>
+ </g>
+ <g partID="50120">
+  <line stroke="#111111" stroke-linecap="round" stroke-width="30.2222" x1="13911.1" x2="9177.78" y1="4033.33" y2="17822.2"/>
+  <line stroke="#111111" stroke-linecap="round" stroke-width="8" x1="13911.1" x2="9177.78" y1="4033.33" y2="17822.2"/>
+ </g>
+ <g partID="50110">
+  <line stroke="#178f46" stroke-linecap="round" stroke-width="30.2222" x1="14111.1" x2="11888.9" y1="3522.22" y2="4033.33"/>
+  <line stroke="#178f46" stroke-linecap="round" stroke-width="8" x1="14111.1" x2="11888.9" y1="3522.22" y2="4033.33"/>
+ </g>
+ <g partID="50100">
+  <line stroke="#178f46" stroke-linecap="round" stroke-width="32.2222" x1="10244.4" x2="14111.1" y1="3333.33" y2="3522.22"/>
+  <line stroke="#178f46" stroke-linecap="round" stroke-width="10" x1="10244.4" x2="14111.1" y1="3333.33" y2="3522.22"/>
+ </g>
+ <g partID="50090">
+  <line stroke="#178f46" stroke-linecap="round" stroke-width="32.2222" x1="4666.67" x2="8222.22" y1="3000" y2="3333.33"/>
+  <line stroke="#178f46" stroke-linecap="round" stroke-width="10" x1="4666.67" x2="8222.22" y1="3000" y2="3333.33"/>
+ </g>
+ <g partID="50080">
+  <line stroke="#f4b400" stroke-linecap="round" stroke-width="32.2222" x1="4666.67" x2="24088.9" y1="2466.67" y2="2788.89"/>
+  <line stroke="#f4b400" stroke-linecap="round" stroke-width="10" x1="4666.67" x2="24088.9" y1="2466.67" y2="2788.89"/>
+ </g>
+ <g partID="50070">
+  <line stroke="#111111" stroke-linecap="round" stroke-width="34.2222" x1="24088.9" x2="12466.7" y1="3233.33" y2="17822.2"/>
+  <line stroke="#111111" stroke-linecap="round" stroke-width="12" x1="24088.9" x2="12466.7" y1="3233.33" y2="17822.2"/>
+ </g>
+ <g partID="50060">
+  <line stroke="#111111" stroke-linecap="round" stroke-width="34.2222" x1="15044.4" x2="8355.56" y1="3522.22" y2="17822.2"/>
+  <line stroke="#111111" stroke-linecap="round" stroke-width="12" x1="15044.4" x2="8355.56" y1="3522.22" y2="17822.2"/>
+ </g>
+ <g partID="50050">
+  <line stroke="#f57c00" stroke-linecap="round" stroke-width="34.2222" x1="24088.9" x2="14577.8" y1="2344.44" y2="3522.22"/>
+  <line stroke="#f57c00" stroke-linecap="round" stroke-width="12" x1="24088.9" x2="14577.8" y1="2344.44" y2="3522.22"/>
+ </g>
+ <g partID="50040">
+  <line stroke="#d71920" stroke-linecap="round" stroke-width="34.2222" x1="7533.33" x2="24088.9" y1="377.778" y2="1900"/>
+  <line stroke="#d71920" stroke-linecap="round" stroke-width="12" x1="7533.33" x2="24088.9" y1="377.778" y2="1900"/>
+ </g>
+ <g partID="50030">
+  <line stroke="#111111" stroke-linecap="round" stroke-width="34.2222" x1="2888.89" x2="7533.33" y1="8388.89" y2="17822.2"/>
+  <line stroke="#111111" stroke-linecap="round" stroke-width="12" x1="2888.89" x2="7533.33" y1="8388.89" y2="17822.2"/>
+ </g>
+ <g partID="50020">
+  <line stroke="#111111" stroke-linecap="round" stroke-width="34.2222" x1="1500" x2="6711.11" y1="688.889" y2="17822.2"/>
+  <line stroke="#111111" stroke-linecap="round" stroke-width="12" x1="1500" x2="6711.11" y1="688.889" y2="17822.2"/>
+ </g>
+ <g partID="50010">
+  <line stroke="#d71920" stroke-linecap="round" stroke-width="34.2222" x1="611.111" x2="6711.11" y1="688.889" y2="377.778"/>
+  <line stroke="#d71920" stroke-linecap="round" stroke-width="12" x1="611.111" x2="6711.11" y1="688.889" y2="377.778"/>
+ </g>
+</svg>

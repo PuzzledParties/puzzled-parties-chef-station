@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+
+# Local editor and OS metadata
+.idea/
+.vscode/
+desktop.ini
+
+# Fritzing local backup/temp files
+*.fzz.bak
+*.fz.bak
+*.autosave

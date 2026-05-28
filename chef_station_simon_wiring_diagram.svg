@@ -1,0 +1,1423 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3000" height="2320" viewBox="0 0 3000 2320">
+<defs>
+<filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+<feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.16"/>
+</filter>
+</defs>
+<rect x="0" y="0" width="3000" height="2320" fill="#fbfaf7"/>
+<g id="breadboard">
+<text x="70" y="40" font-family="Segoe UI, Arial, sans-serif" font-size="42" font-weight="700" fill="#1f2933" text-anchor="start" alignment-baseline="hanging">Chef Station &quot;Simon&quot; ESP32 Illuminated Button Wiring</text>
+<text x="72" y="90" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="400" fill="#52606d" text-anchor="start" alignment-baseline="hanging">Five momentary switch inputs + five individually switched lamp outputs</text>
+<polyline points="70,160 2930,160" fill="none" stroke="#d71920" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="260.0" cy="160.0" rx="8.0" ry="8.0" fill="#d71920" stroke="#d71920" stroke-width="1"/>
+<rect x="275" y="116" width="870" height="34" fill="#fbfaf7" stroke="#fbfaf7" stroke-width="1"/>
+<text x="285" y="119" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700" fill="#d71920" text-anchor="start" alignment-baseline="hanging">+12V lamp supply rail - shared lamp positives only</text>
+<polyline points="70,2200 2930,2200" fill="none" stroke="#111111" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="260.0" cy="2200.0" rx="8.0" ry="8.0" fill="#111111" stroke="#111111" stroke-width="1"/>
+<rect x="275" y="2128" width="1260" height="36" fill="#fbfaf7" stroke="#fbfaf7" stroke-width="1"/>
+<text x="285" y="2131" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700" fill="#111111" text-anchor="start" alignment-baseline="hanging">COMMON GROUND RAIL: ESP32 GND + supply - + switch GND + MOSFET sources</text>
+<rect x="600" y="255" width="1405" height="1290" rx="10" fill="#f1ead7" stroke="#d8ccb0" stroke-width="3"/>
+<text x="622" y="275" font-family="Segoe UI, Arial, sans-serif" font-size="27" font-weight="700" fill="#52606d" text-anchor="start" alignment-baseline="hanging">Perfboard area: MOSFET low-side lamp drivers</text>
+<ellipse cx="635.0" cy="335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="635.0" cy="375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="635.0" cy="415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="635.0" cy="455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="635.0" cy="495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="635.0" cy="535.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="635.0" cy="575.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="635.0" cy="615.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="635.0" cy="655.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="635.0" cy="695.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="635.0" cy="735.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="635.0" cy="775.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="635.0" cy="815.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="635.0" cy="855.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="635.0" cy="895.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="635.0" cy="935.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="635.0" cy="975.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="635.0" cy="1015.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="635.0" cy="1055.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="635.0" cy="1095.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="635.0" cy="1135.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="635.0" cy="1175.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="635.0" cy="1215.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="635.0" cy="1255.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="635.0" cy="1295.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="635.0" cy="1335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="635.0" cy="1375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="635.0" cy="1415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="635.0" cy="1455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="635.0" cy="1495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="675.0" cy="335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="675.0" cy="375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="675.0" cy="415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="675.0" cy="455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="675.0" cy="495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="675.0" cy="535.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="675.0" cy="575.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="675.0" cy="615.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="675.0" cy="655.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="675.0" cy="695.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="675.0" cy="735.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="675.0" cy="775.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="675.0" cy="815.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="675.0" cy="855.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="675.0" cy="895.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="675.0" cy="935.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="675.0" cy="975.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="675.0" cy="1015.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="675.0" cy="1055.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="675.0" cy="1095.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="675.0" cy="1135.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="675.0" cy="1175.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="675.0" cy="1215.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="675.0" cy="1255.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="675.0" cy="1295.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="675.0" cy="1335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="675.0" cy="1375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="675.0" cy="1415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="675.0" cy="1455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="675.0" cy="1495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="715.0" cy="335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="715.0" cy="375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="715.0" cy="415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="715.0" cy="455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="715.0" cy="495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="715.0" cy="535.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="715.0" cy="575.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="715.0" cy="615.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="715.0" cy="655.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="715.0" cy="695.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="715.0" cy="735.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="715.0" cy="775.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="715.0" cy="815.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="715.0" cy="855.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="715.0" cy="895.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="715.0" cy="935.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="715.0" cy="975.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="715.0" cy="1015.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="715.0" cy="1055.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="715.0" cy="1095.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="715.0" cy="1135.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="715.0" cy="1175.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="715.0" cy="1215.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="715.0" cy="1255.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="715.0" cy="1295.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="715.0" cy="1335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="715.0" cy="1375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="715.0" cy="1415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="715.0" cy="1455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="715.0" cy="1495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="755.0" cy="335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="755.0" cy="375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="755.0" cy="415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="755.0" cy="455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="755.0" cy="495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="755.0" cy="535.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="755.0" cy="575.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="755.0" cy="615.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="755.0" cy="655.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="755.0" cy="695.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="755.0" cy="735.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="755.0" cy="775.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="755.0" cy="815.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="755.0" cy="855.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="755.0" cy="895.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="755.0" cy="935.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="755.0" cy="975.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="755.0" cy="1015.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="755.0" cy="1055.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="755.0" cy="1095.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="755.0" cy="1135.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="755.0" cy="1175.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="755.0" cy="1215.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="755.0" cy="1255.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="755.0" cy="1295.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="755.0" cy="1335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="755.0" cy="1375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="755.0" cy="1415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="755.0" cy="1455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="755.0" cy="1495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="795.0" cy="335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="795.0" cy="375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="795.0" cy="415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="795.0" cy="455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="795.0" cy="495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="795.0" cy="535.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="795.0" cy="575.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="795.0" cy="615.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="795.0" cy="655.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="795.0" cy="695.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="795.0" cy="735.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="795.0" cy="775.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="795.0" cy="815.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="795.0" cy="855.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="795.0" cy="895.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="795.0" cy="935.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="795.0" cy="975.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="795.0" cy="1015.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="795.0" cy="1055.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="795.0" cy="1095.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="795.0" cy="1135.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="795.0" cy="1175.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="795.0" cy="1215.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="795.0" cy="1255.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="795.0" cy="1295.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="795.0" cy="1335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="795.0" cy="1375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="795.0" cy="1415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="795.0" cy="1455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="795.0" cy="1495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="835.0" cy="335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="835.0" cy="375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="835.0" cy="415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="835.0" cy="455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="835.0" cy="495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="835.0" cy="535.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="835.0" cy="575.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="835.0" cy="615.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="835.0" cy="655.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="835.0" cy="695.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="835.0" cy="735.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="835.0" cy="775.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="835.0" cy="815.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="835.0" cy="855.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="835.0" cy="895.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="835.0" cy="935.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="835.0" cy="975.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="835.0" cy="1015.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="835.0" cy="1055.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="835.0" cy="1095.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="835.0" cy="1135.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="835.0" cy="1175.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="835.0" cy="1215.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="835.0" cy="1255.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="835.0" cy="1295.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="835.0" cy="1335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="835.0" cy="1375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="835.0" cy="1415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="835.0" cy="1455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="835.0" cy="1495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="875.0" cy="335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="875.0" cy="375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="875.0" cy="415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="875.0" cy="455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="875.0" cy="495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="875.0" cy="535.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="875.0" cy="575.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="875.0" cy="615.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="875.0" cy="655.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="875.0" cy="695.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="875.0" cy="735.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="875.0" cy="775.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="875.0" cy="815.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="875.0" cy="855.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="875.0" cy="895.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="875.0" cy="935.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="875.0" cy="975.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="875.0" cy="1015.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="875.0" cy="1055.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="875.0" cy="1095.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="875.0" cy="1135.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="875.0" cy="1175.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="875.0" cy="1215.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="875.0" cy="1255.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="875.0" cy="1295.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="875.0" cy="1335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="875.0" cy="1375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="875.0" cy="1415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="875.0" cy="1455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="875.0" cy="1495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="915.0" cy="335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="915.0" cy="375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="915.0" cy="415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="915.0" cy="455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="915.0" cy="495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="915.0" cy="535.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="915.0" cy="575.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="915.0" cy="615.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="915.0" cy="655.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="915.0" cy="695.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="915.0" cy="735.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="915.0" cy="775.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="915.0" cy="815.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="915.0" cy="855.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="915.0" cy="895.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="915.0" cy="935.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="915.0" cy="975.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="915.0" cy="1015.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="915.0" cy="1055.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="915.0" cy="1095.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="915.0" cy="1135.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="915.0" cy="1175.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="915.0" cy="1215.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="915.0" cy="1255.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="915.0" cy="1295.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="915.0" cy="1335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="915.0" cy="1375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="915.0" cy="1415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="915.0" cy="1455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="915.0" cy="1495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="955.0" cy="335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="955.0" cy="375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="955.0" cy="415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="955.0" cy="455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="955.0" cy="495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="955.0" cy="535.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="955.0" cy="575.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="955.0" cy="615.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="955.0" cy="655.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="955.0" cy="695.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="955.0" cy="735.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="955.0" cy="775.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="955.0" cy="815.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="955.0" cy="855.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="955.0" cy="895.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="955.0" cy="935.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="955.0" cy="975.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="955.0" cy="1015.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="955.0" cy="1055.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="955.0" cy="1095.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="955.0" cy="1135.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="955.0" cy="1175.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="955.0" cy="1215.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="955.0" cy="1255.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="955.0" cy="1295.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="955.0" cy="1335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="955.0" cy="1375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="955.0" cy="1415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="955.0" cy="1455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="955.0" cy="1495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="995.0" cy="335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="995.0" cy="375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="995.0" cy="415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="995.0" cy="455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="995.0" cy="495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="995.0" cy="535.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="995.0" cy="575.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="995.0" cy="615.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="995.0" cy="655.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="995.0" cy="695.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="995.0" cy="735.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="995.0" cy="775.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="995.0" cy="815.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="995.0" cy="855.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="995.0" cy="895.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="995.0" cy="935.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="995.0" cy="975.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="995.0" cy="1015.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="995.0" cy="1055.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="995.0" cy="1095.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="995.0" cy="1135.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="995.0" cy="1175.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="995.0" cy="1215.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="995.0" cy="1255.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="995.0" cy="1295.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="995.0" cy="1335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="995.0" cy="1375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="995.0" cy="1415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="995.0" cy="1455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="995.0" cy="1495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1035.0" cy="335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1035.0" cy="375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1035.0" cy="415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1035.0" cy="455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1035.0" cy="495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1035.0" cy="535.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1035.0" cy="575.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1035.0" cy="615.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1035.0" cy="655.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1035.0" cy="695.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1035.0" cy="735.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1035.0" cy="775.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1035.0" cy="815.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1035.0" cy="855.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1035.0" cy="895.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1035.0" cy="935.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1035.0" cy="975.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1035.0" cy="1015.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1035.0" cy="1055.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1035.0" cy="1095.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1035.0" cy="1135.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1035.0" cy="1175.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1035.0" cy="1215.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1035.0" cy="1255.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1035.0" cy="1295.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1035.0" cy="1335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1035.0" cy="1375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1035.0" cy="1415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1035.0" cy="1455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1035.0" cy="1495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1075.0" cy="335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1075.0" cy="375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1075.0" cy="415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1075.0" cy="455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1075.0" cy="495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1075.0" cy="535.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1075.0" cy="575.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1075.0" cy="615.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1075.0" cy="655.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1075.0" cy="695.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1075.0" cy="735.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1075.0" cy="775.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1075.0" cy="815.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1075.0" cy="855.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1075.0" cy="895.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1075.0" cy="935.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1075.0" cy="975.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1075.0" cy="1015.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1075.0" cy="1055.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1075.0" cy="1095.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1075.0" cy="1135.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1075.0" cy="1175.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1075.0" cy="1215.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1075.0" cy="1255.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1075.0" cy="1295.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1075.0" cy="1335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1075.0" cy="1375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1075.0" cy="1415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1075.0" cy="1455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1075.0" cy="1495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1115.0" cy="335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1115.0" cy="375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1115.0" cy="415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1115.0" cy="455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1115.0" cy="495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1115.0" cy="535.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1115.0" cy="575.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1115.0" cy="615.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1115.0" cy="655.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1115.0" cy="695.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1115.0" cy="735.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1115.0" cy="775.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1115.0" cy="815.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1115.0" cy="855.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1115.0" cy="895.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1115.0" cy="935.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1115.0" cy="975.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1115.0" cy="1015.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1115.0" cy="1055.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1115.0" cy="1095.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1115.0" cy="1135.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1115.0" cy="1175.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1115.0" cy="1215.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1115.0" cy="1255.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1115.0" cy="1295.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1115.0" cy="1335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1115.0" cy="1375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1115.0" cy="1415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1115.0" cy="1455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1115.0" cy="1495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1155.0" cy="335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1155.0" cy="375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1155.0" cy="415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1155.0" cy="455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1155.0" cy="495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1155.0" cy="535.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1155.0" cy="575.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1155.0" cy="615.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1155.0" cy="655.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1155.0" cy="695.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1155.0" cy="735.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1155.0" cy="775.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1155.0" cy="815.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1155.0" cy="855.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1155.0" cy="895.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1155.0" cy="935.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1155.0" cy="975.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1155.0" cy="1015.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1155.0" cy="1055.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1155.0" cy="1095.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1155.0" cy="1135.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1155.0" cy="1175.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1155.0" cy="1215.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1155.0" cy="1255.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1155.0" cy="1295.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1155.0" cy="1335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1155.0" cy="1375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1155.0" cy="1415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1155.0" cy="1455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1155.0" cy="1495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1195.0" cy="335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1195.0" cy="375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1195.0" cy="415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1195.0" cy="455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1195.0" cy="495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1195.0" cy="535.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1195.0" cy="575.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1195.0" cy="615.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1195.0" cy="655.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1195.0" cy="695.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1195.0" cy="735.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1195.0" cy="775.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1195.0" cy="815.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1195.0" cy="855.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1195.0" cy="895.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1195.0" cy="935.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1195.0" cy="975.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1195.0" cy="1015.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1195.0" cy="1055.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1195.0" cy="1095.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1195.0" cy="1135.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1195.0" cy="1175.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1195.0" cy="1215.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1195.0" cy="1255.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1195.0" cy="1295.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1195.0" cy="1335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1195.0" cy="1375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1195.0" cy="1415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1195.0" cy="1455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1195.0" cy="1495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1235.0" cy="335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1235.0" cy="375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1235.0" cy="415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1235.0" cy="455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1235.0" cy="495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1235.0" cy="535.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1235.0" cy="575.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1235.0" cy="615.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1235.0" cy="655.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1235.0" cy="695.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1235.0" cy="735.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1235.0" cy="775.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1235.0" cy="815.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1235.0" cy="855.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1235.0" cy="895.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1235.0" cy="935.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1235.0" cy="975.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1235.0" cy="1015.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1235.0" cy="1055.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1235.0" cy="1095.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1235.0" cy="1135.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1235.0" cy="1175.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1235.0" cy="1215.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1235.0" cy="1255.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1235.0" cy="1295.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1235.0" cy="1335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1235.0" cy="1375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1235.0" cy="1415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1235.0" cy="1455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1235.0" cy="1495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1275.0" cy="335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1275.0" cy="375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1275.0" cy="415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1275.0" cy="455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1275.0" cy="495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1275.0" cy="535.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1275.0" cy="575.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1275.0" cy="615.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1275.0" cy="655.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1275.0" cy="695.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1275.0" cy="735.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1275.0" cy="775.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1275.0" cy="815.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1275.0" cy="855.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1275.0" cy="895.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1275.0" cy="935.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1275.0" cy="975.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1275.0" cy="1015.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1275.0" cy="1055.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1275.0" cy="1095.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1275.0" cy="1135.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1275.0" cy="1175.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1275.0" cy="1215.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1275.0" cy="1255.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1275.0" cy="1295.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1275.0" cy="1335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1275.0" cy="1375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1275.0" cy="1415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1275.0" cy="1455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1275.0" cy="1495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1315.0" cy="335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1315.0" cy="375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1315.0" cy="415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1315.0" cy="455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1315.0" cy="495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1315.0" cy="535.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1315.0" cy="575.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1315.0" cy="615.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1315.0" cy="655.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1315.0" cy="695.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1315.0" cy="735.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1315.0" cy="775.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1315.0" cy="815.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1315.0" cy="855.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1315.0" cy="895.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1315.0" cy="935.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1315.0" cy="975.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1315.0" cy="1015.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1315.0" cy="1055.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1315.0" cy="1095.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1315.0" cy="1135.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1315.0" cy="1175.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1315.0" cy="1215.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1315.0" cy="1255.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1315.0" cy="1295.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1315.0" cy="1335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1315.0" cy="1375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1315.0" cy="1415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1315.0" cy="1455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1315.0" cy="1495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1355.0" cy="335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1355.0" cy="375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1355.0" cy="415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1355.0" cy="455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1355.0" cy="495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1355.0" cy="535.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1355.0" cy="575.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1355.0" cy="615.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1355.0" cy="655.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1355.0" cy="695.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1355.0" cy="735.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1355.0" cy="775.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1355.0" cy="815.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1355.0" cy="855.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1355.0" cy="895.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1355.0" cy="935.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1355.0" cy="975.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1355.0" cy="1015.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1355.0" cy="1055.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1355.0" cy="1095.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1355.0" cy="1135.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1355.0" cy="1175.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1355.0" cy="1215.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1355.0" cy="1255.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1355.0" cy="1295.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1355.0" cy="1335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1355.0" cy="1375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1355.0" cy="1415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1355.0" cy="1455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1355.0" cy="1495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1395.0" cy="335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1395.0" cy="375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1395.0" cy="415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1395.0" cy="455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1395.0" cy="495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1395.0" cy="535.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1395.0" cy="575.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1395.0" cy="615.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1395.0" cy="655.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1395.0" cy="695.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1395.0" cy="735.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1395.0" cy="775.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1395.0" cy="815.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1395.0" cy="855.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1395.0" cy="895.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1395.0" cy="935.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1395.0" cy="975.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1395.0" cy="1015.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1395.0" cy="1055.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1395.0" cy="1095.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1395.0" cy="1135.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1395.0" cy="1175.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1395.0" cy="1215.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1395.0" cy="1255.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1395.0" cy="1295.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1395.0" cy="1335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1395.0" cy="1375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1395.0" cy="1415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1395.0" cy="1455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1395.0" cy="1495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1435.0" cy="335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1435.0" cy="375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1435.0" cy="415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1435.0" cy="455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1435.0" cy="495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1435.0" cy="535.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1435.0" cy="575.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1435.0" cy="615.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1435.0" cy="655.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1435.0" cy="695.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1435.0" cy="735.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1435.0" cy="775.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1435.0" cy="815.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1435.0" cy="855.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1435.0" cy="895.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1435.0" cy="935.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1435.0" cy="975.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1435.0" cy="1015.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1435.0" cy="1055.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1435.0" cy="1095.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1435.0" cy="1135.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1435.0" cy="1175.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1435.0" cy="1215.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1435.0" cy="1255.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1435.0" cy="1295.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1435.0" cy="1335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1435.0" cy="1375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1435.0" cy="1415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1435.0" cy="1455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1435.0" cy="1495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1475.0" cy="335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1475.0" cy="375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1475.0" cy="415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1475.0" cy="455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1475.0" cy="495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1475.0" cy="535.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1475.0" cy="575.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1475.0" cy="615.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1475.0" cy="655.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1475.0" cy="695.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1475.0" cy="735.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1475.0" cy="775.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1475.0" cy="815.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1475.0" cy="855.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1475.0" cy="895.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1475.0" cy="935.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1475.0" cy="975.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1475.0" cy="1015.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1475.0" cy="1055.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1475.0" cy="1095.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1475.0" cy="1135.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1475.0" cy="1175.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1475.0" cy="1215.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1475.0" cy="1255.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1475.0" cy="1295.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1475.0" cy="1335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1475.0" cy="1375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1475.0" cy="1415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1475.0" cy="1455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1475.0" cy="1495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1515.0" cy="335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1515.0" cy="375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1515.0" cy="415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1515.0" cy="455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1515.0" cy="495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1515.0" cy="535.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1515.0" cy="575.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1515.0" cy="615.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1515.0" cy="655.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1515.0" cy="695.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1515.0" cy="735.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1515.0" cy="775.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1515.0" cy="815.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1515.0" cy="855.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1515.0" cy="895.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1515.0" cy="935.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1515.0" cy="975.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1515.0" cy="1015.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1515.0" cy="1055.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1515.0" cy="1095.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1515.0" cy="1135.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1515.0" cy="1175.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1515.0" cy="1215.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1515.0" cy="1255.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1515.0" cy="1295.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1515.0" cy="1335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1515.0" cy="1375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1515.0" cy="1415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1515.0" cy="1455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1515.0" cy="1495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1555.0" cy="335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1555.0" cy="375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1555.0" cy="415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1555.0" cy="455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1555.0" cy="495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1555.0" cy="535.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1555.0" cy="575.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1555.0" cy="615.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1555.0" cy="655.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1555.0" cy="695.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1555.0" cy="735.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1555.0" cy="775.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1555.0" cy="815.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1555.0" cy="855.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1555.0" cy="895.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1555.0" cy="935.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1555.0" cy="975.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1555.0" cy="1015.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1555.0" cy="1055.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1555.0" cy="1095.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1555.0" cy="1135.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1555.0" cy="1175.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1555.0" cy="1215.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1555.0" cy="1255.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1555.0" cy="1295.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1555.0" cy="1335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1555.0" cy="1375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1555.0" cy="1415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1555.0" cy="1455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1555.0" cy="1495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1595.0" cy="335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1595.0" cy="375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1595.0" cy="415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1595.0" cy="455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1595.0" cy="495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1595.0" cy="535.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1595.0" cy="575.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1595.0" cy="615.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1595.0" cy="655.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1595.0" cy="695.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1595.0" cy="735.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1595.0" cy="775.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1595.0" cy="815.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1595.0" cy="855.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1595.0" cy="895.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1595.0" cy="935.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1595.0" cy="975.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1595.0" cy="1015.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1595.0" cy="1055.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1595.0" cy="1095.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1595.0" cy="1135.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1595.0" cy="1175.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1595.0" cy="1215.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1595.0" cy="1255.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1595.0" cy="1295.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1595.0" cy="1335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1595.0" cy="1375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1595.0" cy="1415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1595.0" cy="1455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1595.0" cy="1495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1635.0" cy="335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1635.0" cy="375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1635.0" cy="415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1635.0" cy="455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1635.0" cy="495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1635.0" cy="535.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1635.0" cy="575.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1635.0" cy="615.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1635.0" cy="655.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1635.0" cy="695.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1635.0" cy="735.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1635.0" cy="775.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1635.0" cy="815.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1635.0" cy="855.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1635.0" cy="895.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1635.0" cy="935.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1635.0" cy="975.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1635.0" cy="1015.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1635.0" cy="1055.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1635.0" cy="1095.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1635.0" cy="1135.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1635.0" cy="1175.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1635.0" cy="1215.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1635.0" cy="1255.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1635.0" cy="1295.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1635.0" cy="1335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1635.0" cy="1375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1635.0" cy="1415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1635.0" cy="1455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1635.0" cy="1495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1675.0" cy="335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1675.0" cy="375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1675.0" cy="415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1675.0" cy="455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1675.0" cy="495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1675.0" cy="535.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1675.0" cy="575.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1675.0" cy="615.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1675.0" cy="655.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1675.0" cy="695.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1675.0" cy="735.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1675.0" cy="775.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1675.0" cy="815.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1675.0" cy="855.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1675.0" cy="895.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1675.0" cy="935.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1675.0" cy="975.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1675.0" cy="1015.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1675.0" cy="1055.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1675.0" cy="1095.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1675.0" cy="1135.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1675.0" cy="1175.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1675.0" cy="1215.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1675.0" cy="1255.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1675.0" cy="1295.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1675.0" cy="1335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1675.0" cy="1375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1675.0" cy="1415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1675.0" cy="1455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1675.0" cy="1495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1715.0" cy="335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1715.0" cy="375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1715.0" cy="415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1715.0" cy="455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1715.0" cy="495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1715.0" cy="535.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1715.0" cy="575.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1715.0" cy="615.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1715.0" cy="655.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1715.0" cy="695.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1715.0" cy="735.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1715.0" cy="775.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1715.0" cy="815.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1715.0" cy="855.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1715.0" cy="895.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1715.0" cy="935.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1715.0" cy="975.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1715.0" cy="1015.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1715.0" cy="1055.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1715.0" cy="1095.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1715.0" cy="1135.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1715.0" cy="1175.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1715.0" cy="1215.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1715.0" cy="1255.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1715.0" cy="1295.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1715.0" cy="1335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1715.0" cy="1375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1715.0" cy="1415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1715.0" cy="1455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1715.0" cy="1495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1755.0" cy="335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1755.0" cy="375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1755.0" cy="415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1755.0" cy="455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1755.0" cy="495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1755.0" cy="535.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1755.0" cy="575.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1755.0" cy="615.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1755.0" cy="655.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1755.0" cy="695.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1755.0" cy="735.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1755.0" cy="775.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1755.0" cy="815.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1755.0" cy="855.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1755.0" cy="895.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1755.0" cy="935.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1755.0" cy="975.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1755.0" cy="1015.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1755.0" cy="1055.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1755.0" cy="1095.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1755.0" cy="1135.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1755.0" cy="1175.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1755.0" cy="1215.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1755.0" cy="1255.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1755.0" cy="1295.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1755.0" cy="1335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1755.0" cy="1375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1755.0" cy="1415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1755.0" cy="1455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1755.0" cy="1495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1795.0" cy="335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1795.0" cy="375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1795.0" cy="415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1795.0" cy="455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1795.0" cy="495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1795.0" cy="535.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1795.0" cy="575.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1795.0" cy="615.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1795.0" cy="655.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1795.0" cy="695.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1795.0" cy="735.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1795.0" cy="775.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1795.0" cy="815.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1795.0" cy="855.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1795.0" cy="895.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1795.0" cy="935.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1795.0" cy="975.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1795.0" cy="1015.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1795.0" cy="1055.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1795.0" cy="1095.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1795.0" cy="1135.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1795.0" cy="1175.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1795.0" cy="1215.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1795.0" cy="1255.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1795.0" cy="1295.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1795.0" cy="1335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1795.0" cy="1375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1795.0" cy="1415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1795.0" cy="1455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1795.0" cy="1495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1835.0" cy="335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1835.0" cy="375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1835.0" cy="415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1835.0" cy="455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1835.0" cy="495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1835.0" cy="535.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1835.0" cy="575.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1835.0" cy="615.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1835.0" cy="655.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1835.0" cy="695.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1835.0" cy="735.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1835.0" cy="775.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1835.0" cy="815.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1835.0" cy="855.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1835.0" cy="895.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1835.0" cy="935.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1835.0" cy="975.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1835.0" cy="1015.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1835.0" cy="1055.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1835.0" cy="1095.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1835.0" cy="1135.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1835.0" cy="1175.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1835.0" cy="1215.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1835.0" cy="1255.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1835.0" cy="1295.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1835.0" cy="1335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1835.0" cy="1375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1835.0" cy="1415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1835.0" cy="1455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1835.0" cy="1495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1875.0" cy="335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1875.0" cy="375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1875.0" cy="415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1875.0" cy="455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1875.0" cy="495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1875.0" cy="535.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1875.0" cy="575.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1875.0" cy="615.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1875.0" cy="655.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1875.0" cy="695.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1875.0" cy="735.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1875.0" cy="775.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1875.0" cy="815.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1875.0" cy="855.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1875.0" cy="895.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1875.0" cy="935.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1875.0" cy="975.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1875.0" cy="1015.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1875.0" cy="1055.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1875.0" cy="1095.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1875.0" cy="1135.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1875.0" cy="1175.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1875.0" cy="1215.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1875.0" cy="1255.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1875.0" cy="1295.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1875.0" cy="1335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1875.0" cy="1375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1875.0" cy="1415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1875.0" cy="1455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1875.0" cy="1495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1915.0" cy="335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1915.0" cy="375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1915.0" cy="415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1915.0" cy="455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1915.0" cy="495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1915.0" cy="535.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1915.0" cy="575.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1915.0" cy="615.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1915.0" cy="655.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1915.0" cy="695.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1915.0" cy="735.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1915.0" cy="775.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1915.0" cy="815.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1915.0" cy="855.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1915.0" cy="895.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1915.0" cy="935.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1915.0" cy="975.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1915.0" cy="1015.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1915.0" cy="1055.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1915.0" cy="1095.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1915.0" cy="1135.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1915.0" cy="1175.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1915.0" cy="1215.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1915.0" cy="1255.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1915.0" cy="1295.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1915.0" cy="1335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1915.0" cy="1375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1915.0" cy="1415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1915.0" cy="1455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1915.0" cy="1495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1955.0" cy="335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1955.0" cy="375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1955.0" cy="415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1955.0" cy="455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1955.0" cy="495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1955.0" cy="535.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1955.0" cy="575.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1955.0" cy="615.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1955.0" cy="655.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1955.0" cy="695.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1955.0" cy="735.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1955.0" cy="775.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1955.0" cy="815.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1955.0" cy="855.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1955.0" cy="895.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1955.0" cy="935.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1955.0" cy="975.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1955.0" cy="1015.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1955.0" cy="1055.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1955.0" cy="1095.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1955.0" cy="1135.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1955.0" cy="1175.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1955.0" cy="1215.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1955.0" cy="1255.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1955.0" cy="1295.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1955.0" cy="1335.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1955.0" cy="1375.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1955.0" cy="1415.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1955.0" cy="1455.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<ellipse cx="1955.0" cy="1495.0" rx="3.0" ry="3.0" fill="#d9d2c3" stroke="#d9d2c3" stroke-width="1"/>
+<rect x="80" y="180" width="285" height="120" rx="10" fill="#ffffff" stroke="#9aa5b1" stroke-width="3" filter="url(#shadow)"/>
+<text x="222.5" y="208" font-family="Segoe UI, Arial, sans-serif" font-size="27" font-weight="700" fill="#1f2933" text-anchor="middle" alignment-baseline="middle">External 12V</text>
+<text x="222.5" y="235" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" fill="#1f2933" text-anchor="middle" alignment-baseline="middle">lamp supply</text>
+<ellipse cx="154.0" cy="268.0" rx="12.0" ry="12.0" fill="#d71920" stroke="#1f2933" stroke-width="2"/>
+<ellipse cx="290.0" cy="268.0" rx="12.0" ry="12.0" fill="#111111" stroke="#1f2933" stroke-width="2"/>
+<text x="154" y="291" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700" fill="#d71920" text-anchor="middle" alignment-baseline="middle">+</text>
+<text x="290" y="291" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700" fill="#111111" text-anchor="middle" alignment-baseline="middle">-</text>
+<polyline points="154,268 154,160" fill="none" stroke="#d71920" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="290,268 290,2200" fill="none" stroke="#111111" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1515,295 1515,2200" fill="none" stroke="#111111" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="1515.0" cy="2200.0" rx="7.0" ry="7.0" fill="#111111" stroke="#111111" stroke-width="1"/>
+<text x="1538" y="305" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" fill="#111111" text-anchor="start" alignment-baseline="hanging">MOSFET sources + pulldowns to common GND</text>
+<polyline points="2080,160 2080,1475" fill="none" stroke="#d71920" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="2030,310 2030,2200" fill="none" stroke="#111111" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="2080.0" cy="160.0" rx="7.0" ry="7.0" fill="#d71920" stroke="#d71920" stroke-width="1"/>
+<ellipse cx="2030.0" cy="2200.0" rx="7.0" ry="7.0" fill="#111111" stroke="#111111" stroke-width="1"/>
+<text x="2105" y="185" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" fill="#d71920" text-anchor="start" alignment-baseline="hanging">shared lamp + feed</text>
+<text x="2054" y="1490" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#111111" text-anchor="start" alignment-baseline="hanging">switch GND taps</text>
+<rect x="110" y="300" width="440" height="1260" rx="20" fill="#2a9d8f" stroke="#1f756b" stroke-width="5" filter="url(#shadow)"/>
+<rect x="235" y="325" width="190" height="57" rx="8" fill="#c7cdd4" stroke="#1f756b" stroke-width="3"/>
+<text x="330.0" y="430" font-family="Segoe UI, Arial, sans-serif" font-size="36" font-weight="700" fill="#ffffff" text-anchor="middle" alignment-baseline="middle">ESP32 DevKit</text>
+<text x="330.0" y="475" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle" alignment-baseline="middle">Inputs: INPUT_PULLUP</text>
+<text x="330.0" y="507" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400" fill="#ffffff" text-anchor="middle" alignment-baseline="middle">unpressed = HIGH   pressed = LOW</text>
+<ellipse cx="165.0" cy="1465.0" rx="11.0" ry="11.0" fill="#111111" stroke="#ffffff" stroke-width="2"/>
+<text x="194" y="1457" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" fill="#ffffff" text-anchor="start" alignment-baseline="hanging">GND</text>
+<polyline points="165,1465 165,2200" fill="none" stroke="#111111" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="486" y="319" width="56" height="34" rx="4" fill="#ffffff" stroke="#1f756b" stroke-width="2"/>
+<rect x="486" y="447" width="56" height="34" rx="4" fill="#ffffff" stroke="#1f756b" stroke-width="2"/>
+<text x="472" y="336" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400" fill="#ffffff" text-anchor="end" alignment-baseline="middle">GPIO 16  BTN1 switch</text>
+<text x="472" y="464" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400" fill="#ffffff" text-anchor="end" alignment-baseline="middle">GPIO 21  BTN1 lamp</text>
+<rect x="486" y="559" width="56" height="34" rx="4" fill="#ffffff" stroke="#1f756b" stroke-width="2"/>
+<rect x="486" y="687" width="56" height="34" rx="4" fill="#ffffff" stroke="#1f756b" stroke-width="2"/>
+<text x="472" y="576" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400" fill="#ffffff" text-anchor="end" alignment-baseline="middle">GPIO 17  BTN2 switch</text>
+<text x="472" y="704" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400" fill="#ffffff" text-anchor="end" alignment-baseline="middle">GPIO 22  BTN2 lamp</text>
+<rect x="486" y="799" width="56" height="34" rx="4" fill="#ffffff" stroke="#1f756b" stroke-width="2"/>
+<rect x="486" y="927" width="56" height="34" rx="4" fill="#ffffff" stroke="#1f756b" stroke-width="2"/>
+<text x="472" y="816" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400" fill="#ffffff" text-anchor="end" alignment-baseline="middle">GPIO 18  BTN3 switch</text>
+<text x="472" y="944" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400" fill="#ffffff" text-anchor="end" alignment-baseline="middle">GPIO 23  BTN3 lamp</text>
+<rect x="486" y="1039" width="56" height="34" rx="4" fill="#ffffff" stroke="#1f756b" stroke-width="2"/>
+<rect x="486" y="1167" width="56" height="34" rx="4" fill="#ffffff" stroke="#1f756b" stroke-width="2"/>
+<text x="472" y="1056" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400" fill="#ffffff" text-anchor="end" alignment-baseline="middle">GPIO 19  BTN4 switch</text>
+<text x="472" y="1184" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400" fill="#ffffff" text-anchor="end" alignment-baseline="middle">GPIO 25  BTN4 lamp</text>
+<rect x="486" y="1279" width="56" height="34" rx="4" fill="#ffffff" stroke="#1f756b" stroke-width="2"/>
+<rect x="486" y="1407" width="56" height="34" rx="4" fill="#ffffff" stroke="#1f756b" stroke-width="2"/>
+<text x="472" y="1296" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400" fill="#ffffff" text-anchor="end" alignment-baseline="middle">GPIO 26  BTN5 switch</text>
+<text x="472" y="1424" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400" fill="#ffffff" text-anchor="end" alignment-baseline="middle">GPIO 27  BTN5 lamp</text>
+<rect x="1260" y="205" width="350" height="43" rx="8" fill="#ffffff" stroke="#9aa5b1" stroke-width="2"/>
+<text x="1435" y="226" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" fill="#1f2933" text-anchor="middle" alignment-baseline="middle">TO-220 front pinout: Gate / Drain / Source</text>
+<text x="1435" y="252" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="400" fill="#52606d" text-anchor="middle" alignment-baseline="middle">tab = Drain</text>
+<polyline points="2080,328 2170,328" fill="none" stroke="#d71920" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="2080.0" cy="328.0" rx="6.0" ry="6.0" fill="#d71920" stroke="#d71920" stroke-width="1"/>
+<polyline points="2030,482 2170,482" fill="none" stroke="#111111" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="2030.0" cy="482.0" rx="6.0" ry="6.0" fill="#111111" stroke="#111111" stroke-width="1"/>
+<polyline points="550,336 665,336 665,285 1960,285 1960,434 2170,434" fill="none" stroke="#f4b400" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="690" y="263" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#f4b400" text-anchor="start" alignment-baseline="hanging">BTN1 switch -&gt; GPIO 16</text>
+<polyline points="550,464 735,464" fill="none" stroke="#178f46" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="735,464.0 785,464.0" fill="none" stroke="#178f46" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="785" y="448" width="130" height="32" rx="9" fill="#e7c99a" stroke="#946b2d" stroke-width="2"/>
+<polyline points="915,464.0 965,464.0" fill="none" stroke="#178f46" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="850.0" y="464.0" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" fill="#1f2933" text-anchor="middle" alignment-baseline="middle">100 ohm</text>
+<polyline points="965,464 1168,464 1168,484 1315,484" fill="none" stroke="#178f46" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="1168.0" cy="484.0" rx="7.0" ry="7.0" fill="#178f46" stroke="#178f46" stroke-width="1"/>
+<text x="930" y="422" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#178f46" text-anchor="start" alignment-baseline="hanging">GPIO 21 lamp PWM/flash</text>
+<polyline points="1168,484 1210,484 1210,506" fill="none" stroke="#178f46" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="1188" y="506" width="44" height="72" rx="9" fill="#e7c99a" stroke="#946b2d" stroke-width="2"/>
+<text x="1210.0" y="542.0" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#1f2933" text-anchor="middle" alignment-baseline="middle">10k</text>
+<polyline points="1210,578 1210,598 1515,598" fill="none" stroke="#111111" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1242" y="542" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="400" fill="#52606d" text-anchor="start" alignment-baseline="hanging">gate pulldown</text>
+<rect x="1314" y="314" width="82" height="36" rx="4" fill="#c7cdd4" stroke="#2f343b" stroke-width="2"/>
+<rect x="1280" y="342" width="150" height="106" rx="10" fill="#2f343b" stroke="#111111" stroke-width="3"/>
+<ellipse cx="1355.0" cy="366.0" rx="10.0" ry="10.0" fill="#c7cdd4" stroke="#111111" stroke-width="1"/>
+<text x="1355.0" y="397" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle" alignment-baseline="middle">Q1</text>
+<text x="1355.0" y="424" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="400" fill="#ffffff" text-anchor="middle" alignment-baseline="middle">IRFB11N50APBF</text>
+<polyline points="1315,448 1315,484" fill="none" stroke="#c7cdd4" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1315" y="506" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" fill="#1f2933" text-anchor="middle" alignment-baseline="middle">G</text>
+<polyline points="1355,448 1355,484" fill="none" stroke="#c7cdd4" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1355" y="506" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" fill="#1f2933" text-anchor="middle" alignment-baseline="middle">D</text>
+<polyline points="1395,448 1395,484" fill="none" stroke="#c7cdd4" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1395" y="506" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" fill="#1f2933" text-anchor="middle" alignment-baseline="middle">S</text>
+<text x="1309" y="528" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="400" fill="#52606d" text-anchor="middle" alignment-baseline="middle">Gate</text>
+<text x="1355" y="528" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="400" fill="#52606d" text-anchor="middle" alignment-baseline="middle">Drain</text>
+<text x="1403" y="528" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="400" fill="#52606d" text-anchor="middle" alignment-baseline="middle">Source</text>
+<polyline points="1355,484 1355,376 2170,376" fill="none" stroke="#f57c00" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1605" y="353" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" fill="#f57c00" text-anchor="start" alignment-baseline="hanging">BTN1 individual lamp -</text>
+<polyline points="1395,484 1515,484" fill="none" stroke="#111111" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="1515.0" cy="484.0" rx="6.0" ry="6.0" fill="#111111" stroke="#111111" stroke-width="1"/>
+<rect x="2170" y="290" width="265" height="220" rx="8" fill="#eef2f7" stroke="#9aa5b1" stroke-width="2"/>
+<text x="2302.5" y="312" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700" fill="#1f2933" text-anchor="middle" alignment-baseline="middle">BTN1 terminal block</text>
+<ellipse cx="2170.0" cy="328.0" rx="9.0" ry="9.0" fill="#d71920" stroke="#1f2933" stroke-width="2"/>
+<ellipse cx="2435.0" cy="328.0" rx="9.0" ry="9.0" fill="#ffffff" stroke="#9aa5b1" stroke-width="2"/>
+<text x="2225" y="328" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700" fill="#d71920" text-anchor="start" alignment-baseline="middle">LED +</text>
+<ellipse cx="2170.0" cy="376.0" rx="9.0" ry="9.0" fill="#f57c00" stroke="#1f2933" stroke-width="2"/>
+<ellipse cx="2435.0" cy="376.0" rx="9.0" ry="9.0" fill="#ffffff" stroke="#9aa5b1" stroke-width="2"/>
+<text x="2225" y="376" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700" fill="#f57c00" text-anchor="start" alignment-baseline="middle">LED -</text>
+<ellipse cx="2170.0" cy="434.0" rx="9.0" ry="9.0" fill="#f4b400" stroke="#1f2933" stroke-width="2"/>
+<ellipse cx="2435.0" cy="434.0" rx="9.0" ry="9.0" fill="#ffffff" stroke="#9aa5b1" stroke-width="2"/>
+<text x="2225" y="434" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700" fill="#f4b400" text-anchor="start" alignment-baseline="middle">SW SIG</text>
+<ellipse cx="2170.0" cy="482.0" rx="9.0" ry="9.0" fill="#111111" stroke="#1f2933" stroke-width="2"/>
+<ellipse cx="2435.0" cy="482.0" rx="9.0" ry="9.0" fill="#ffffff" stroke="#9aa5b1" stroke-width="2"/>
+<text x="2225" y="482" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700" fill="#1f2933" text-anchor="start" alignment-baseline="middle">SW GND</text>
+<ellipse cx="2700.0" cy="400.0" rx="84.0" ry="84.0" fill="#e53935" stroke="#1f2933" stroke-width="4"/>
+<ellipse cx="2700.0" cy="400.0" rx="54.0" ry="54.0" fill="#ffffff55" stroke="#ffffff" stroke-width="2"/>
+<text x="2700" y="395" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle" alignment-baseline="middle">BTN1</text>
+<text x="2700" y="505" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700" fill="#1f2933" text-anchor="middle" alignment-baseline="middle">Ingredient 1</text>
+<text x="2700" y="535" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="400" fill="#52606d" text-anchor="middle" alignment-baseline="middle">illuminated arcade button</text>
+<polyline points="2435,328 2520,348" fill="none" stroke="#d71920" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="2435,376 2520,384" fill="none" stroke="#f57c00" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="2525" y="333" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#1f2933" text-anchor="start" alignment-baseline="hanging">lamp</text>
+<polyline points="2435,434 2520,425" fill="none" stroke="#f4b400" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="2435,482 2520,458" fill="none" stroke="#111111" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="2525" y="436" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#1f2933" text-anchor="start" alignment-baseline="hanging">switch</text>
+<polyline points="2080,568 2170,568" fill="none" stroke="#d71920" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="2080.0" cy="568.0" rx="6.0" ry="6.0" fill="#d71920" stroke="#d71920" stroke-width="1"/>
+<polyline points="2030,722 2170,722" fill="none" stroke="#111111" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="2030.0" cy="722.0" rx="6.0" ry="6.0" fill="#111111" stroke="#111111" stroke-width="1"/>
+<polyline points="550,576 665,576 665,525 1960,525 1960,674 2170,674" fill="none" stroke="#1e88e5" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="690" y="503" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#1e88e5" text-anchor="start" alignment-baseline="hanging">BTN2 switch -&gt; GPIO 17</text>
+<polyline points="550,704 735,704" fill="none" stroke="#178f46" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="735,704.0 785,704.0" fill="none" stroke="#178f46" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="785" y="688" width="130" height="32" rx="9" fill="#e7c99a" stroke="#946b2d" stroke-width="2"/>
+<polyline points="915,704.0 965,704.0" fill="none" stroke="#178f46" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="850.0" y="704.0" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" fill="#1f2933" text-anchor="middle" alignment-baseline="middle">100 ohm</text>
+<polyline points="965,704 1168,704 1168,724 1315,724" fill="none" stroke="#178f46" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="1168.0" cy="724.0" rx="7.0" ry="7.0" fill="#178f46" stroke="#178f46" stroke-width="1"/>
+<text x="930" y="662" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#178f46" text-anchor="start" alignment-baseline="hanging">GPIO 22 lamp PWM/flash</text>
+<polyline points="1168,724 1210,724 1210,746" fill="none" stroke="#178f46" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="1188" y="746" width="44" height="72" rx="9" fill="#e7c99a" stroke="#946b2d" stroke-width="2"/>
+<text x="1210.0" y="782.0" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#1f2933" text-anchor="middle" alignment-baseline="middle">10k</text>
+<polyline points="1210,818 1210,838 1515,838" fill="none" stroke="#111111" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1242" y="782" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="400" fill="#52606d" text-anchor="start" alignment-baseline="hanging">gate pulldown</text>
+<rect x="1314" y="554" width="82" height="36" rx="4" fill="#c7cdd4" stroke="#2f343b" stroke-width="2"/>
+<rect x="1280" y="582" width="150" height="106" rx="10" fill="#2f343b" stroke="#111111" stroke-width="3"/>
+<ellipse cx="1355.0" cy="606.0" rx="10.0" ry="10.0" fill="#c7cdd4" stroke="#111111" stroke-width="1"/>
+<text x="1355.0" y="637" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle" alignment-baseline="middle">Q2</text>
+<text x="1355.0" y="664" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="400" fill="#ffffff" text-anchor="middle" alignment-baseline="middle">IRFB11N50APBF</text>
+<polyline points="1315,688 1315,724" fill="none" stroke="#c7cdd4" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1315" y="746" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" fill="#1f2933" text-anchor="middle" alignment-baseline="middle">G</text>
+<polyline points="1355,688 1355,724" fill="none" stroke="#c7cdd4" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1355" y="746" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" fill="#1f2933" text-anchor="middle" alignment-baseline="middle">D</text>
+<polyline points="1395,688 1395,724" fill="none" stroke="#c7cdd4" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1395" y="746" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" fill="#1f2933" text-anchor="middle" alignment-baseline="middle">S</text>
+<text x="1309" y="768" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="400" fill="#52606d" text-anchor="middle" alignment-baseline="middle">Gate</text>
+<text x="1355" y="768" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="400" fill="#52606d" text-anchor="middle" alignment-baseline="middle">Drain</text>
+<text x="1403" y="768" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="400" fill="#52606d" text-anchor="middle" alignment-baseline="middle">Source</text>
+<polyline points="1355,724 1355,616 2170,616" fill="none" stroke="#f57c00" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1605" y="593" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" fill="#f57c00" text-anchor="start" alignment-baseline="hanging">BTN2 individual lamp -</text>
+<polyline points="1395,724 1515,724" fill="none" stroke="#111111" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="1515.0" cy="724.0" rx="6.0" ry="6.0" fill="#111111" stroke="#111111" stroke-width="1"/>
+<rect x="2170" y="530" width="265" height="220" rx="8" fill="#eef2f7" stroke="#9aa5b1" stroke-width="2"/>
+<text x="2302.5" y="552" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700" fill="#1f2933" text-anchor="middle" alignment-baseline="middle">BTN2 terminal block</text>
+<ellipse cx="2170.0" cy="568.0" rx="9.0" ry="9.0" fill="#d71920" stroke="#1f2933" stroke-width="2"/>
+<ellipse cx="2435.0" cy="568.0" rx="9.0" ry="9.0" fill="#ffffff" stroke="#9aa5b1" stroke-width="2"/>
+<text x="2225" y="568" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700" fill="#d71920" text-anchor="start" alignment-baseline="middle">LED +</text>
+<ellipse cx="2170.0" cy="616.0" rx="9.0" ry="9.0" fill="#f57c00" stroke="#1f2933" stroke-width="2"/>
+<ellipse cx="2435.0" cy="616.0" rx="9.0" ry="9.0" fill="#ffffff" stroke="#9aa5b1" stroke-width="2"/>
+<text x="2225" y="616" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700" fill="#f57c00" text-anchor="start" alignment-baseline="middle">LED -</text>
+<ellipse cx="2170.0" cy="674.0" rx="9.0" ry="9.0" fill="#f4b400" stroke="#1f2933" stroke-width="2"/>
+<ellipse cx="2435.0" cy="674.0" rx="9.0" ry="9.0" fill="#ffffff" stroke="#9aa5b1" stroke-width="2"/>
+<text x="2225" y="674" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700" fill="#f4b400" text-anchor="start" alignment-baseline="middle">SW SIG</text>
+<ellipse cx="2170.0" cy="722.0" rx="9.0" ry="9.0" fill="#111111" stroke="#1f2933" stroke-width="2"/>
+<ellipse cx="2435.0" cy="722.0" rx="9.0" ry="9.0" fill="#ffffff" stroke="#9aa5b1" stroke-width="2"/>
+<text x="2225" y="722" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700" fill="#1f2933" text-anchor="start" alignment-baseline="middle">SW GND</text>
+<ellipse cx="2700.0" cy="640.0" rx="84.0" ry="84.0" fill="#43a047" stroke="#1f2933" stroke-width="4"/>
+<ellipse cx="2700.0" cy="640.0" rx="54.0" ry="54.0" fill="#ffffff55" stroke="#ffffff" stroke-width="2"/>
+<text x="2700" y="635" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle" alignment-baseline="middle">BTN2</text>
+<text x="2700" y="745" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700" fill="#1f2933" text-anchor="middle" alignment-baseline="middle">Ingredient 2</text>
+<text x="2700" y="775" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="400" fill="#52606d" text-anchor="middle" alignment-baseline="middle">illuminated arcade button</text>
+<polyline points="2435,568 2520,588" fill="none" stroke="#d71920" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="2435,616 2520,624" fill="none" stroke="#f57c00" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="2525" y="573" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#1f2933" text-anchor="start" alignment-baseline="hanging">lamp</text>
+<polyline points="2435,674 2520,665" fill="none" stroke="#f4b400" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="2435,722 2520,698" fill="none" stroke="#111111" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="2525" y="676" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#1f2933" text-anchor="start" alignment-baseline="hanging">switch</text>
+<polyline points="2080,808 2170,808" fill="none" stroke="#d71920" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="2080.0" cy="808.0" rx="6.0" ry="6.0" fill="#d71920" stroke="#d71920" stroke-width="1"/>
+<polyline points="2030,962 2170,962" fill="none" stroke="#111111" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="2030.0" cy="962.0" rx="6.0" ry="6.0" fill="#111111" stroke="#111111" stroke-width="1"/>
+<polyline points="550,816 665,816 665,765 1960,765 1960,914 2170,914" fill="none" stroke="#f4b400" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="690" y="743" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#f4b400" text-anchor="start" alignment-baseline="hanging">BTN3 switch -&gt; GPIO 18</text>
+<polyline points="550,944 735,944" fill="none" stroke="#178f46" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="735,944.0 785,944.0" fill="none" stroke="#178f46" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="785" y="928" width="130" height="32" rx="9" fill="#e7c99a" stroke="#946b2d" stroke-width="2"/>
+<polyline points="915,944.0 965,944.0" fill="none" stroke="#178f46" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="850.0" y="944.0" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" fill="#1f2933" text-anchor="middle" alignment-baseline="middle">100 ohm</text>
+<polyline points="965,944 1168,944 1168,964 1315,964" fill="none" stroke="#178f46" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="1168.0" cy="964.0" rx="7.0" ry="7.0" fill="#178f46" stroke="#178f46" stroke-width="1"/>
+<text x="930" y="902" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#178f46" text-anchor="start" alignment-baseline="hanging">GPIO 23 lamp PWM/flash</text>
+<polyline points="1168,964 1210,964 1210,986" fill="none" stroke="#178f46" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="1188" y="986" width="44" height="72" rx="9" fill="#e7c99a" stroke="#946b2d" stroke-width="2"/>
+<text x="1210.0" y="1022.0" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#1f2933" text-anchor="middle" alignment-baseline="middle">10k</text>
+<polyline points="1210,1058 1210,1078 1515,1078" fill="none" stroke="#111111" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1242" y="1022" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="400" fill="#52606d" text-anchor="start" alignment-baseline="hanging">gate pulldown</text>
+<rect x="1314" y="794" width="82" height="36" rx="4" fill="#c7cdd4" stroke="#2f343b" stroke-width="2"/>
+<rect x="1280" y="822" width="150" height="106" rx="10" fill="#2f343b" stroke="#111111" stroke-width="3"/>
+<ellipse cx="1355.0" cy="846.0" rx="10.0" ry="10.0" fill="#c7cdd4" stroke="#111111" stroke-width="1"/>
+<text x="1355.0" y="877" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle" alignment-baseline="middle">Q3</text>
+<text x="1355.0" y="904" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="400" fill="#ffffff" text-anchor="middle" alignment-baseline="middle">IRFB11N50APBF</text>
+<polyline points="1315,928 1315,964" fill="none" stroke="#c7cdd4" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1315" y="986" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" fill="#1f2933" text-anchor="middle" alignment-baseline="middle">G</text>
+<polyline points="1355,928 1355,964" fill="none" stroke="#c7cdd4" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1355" y="986" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" fill="#1f2933" text-anchor="middle" alignment-baseline="middle">D</text>
+<polyline points="1395,928 1395,964" fill="none" stroke="#c7cdd4" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1395" y="986" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" fill="#1f2933" text-anchor="middle" alignment-baseline="middle">S</text>
+<text x="1309" y="1008" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="400" fill="#52606d" text-anchor="middle" alignment-baseline="middle">Gate</text>
+<text x="1355" y="1008" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="400" fill="#52606d" text-anchor="middle" alignment-baseline="middle">Drain</text>
+<text x="1403" y="1008" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="400" fill="#52606d" text-anchor="middle" alignment-baseline="middle">Source</text>
+<polyline points="1355,964 1355,856 2170,856" fill="none" stroke="#f57c00" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1605" y="833" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" fill="#f57c00" text-anchor="start" alignment-baseline="hanging">BTN3 individual lamp -</text>
+<polyline points="1395,964 1515,964" fill="none" stroke="#111111" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="1515.0" cy="964.0" rx="6.0" ry="6.0" fill="#111111" stroke="#111111" stroke-width="1"/>
+<rect x="2170" y="770" width="265" height="220" rx="8" fill="#eef2f7" stroke="#9aa5b1" stroke-width="2"/>
+<text x="2302.5" y="792" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700" fill="#1f2933" text-anchor="middle" alignment-baseline="middle">BTN3 terminal block</text>
+<ellipse cx="2170.0" cy="808.0" rx="9.0" ry="9.0" fill="#d71920" stroke="#1f2933" stroke-width="2"/>
+<ellipse cx="2435.0" cy="808.0" rx="9.0" ry="9.0" fill="#ffffff" stroke="#9aa5b1" stroke-width="2"/>
+<text x="2225" y="808" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700" fill="#d71920" text-anchor="start" alignment-baseline="middle">LED +</text>
+<ellipse cx="2170.0" cy="856.0" rx="9.0" ry="9.0" fill="#f57c00" stroke="#1f2933" stroke-width="2"/>
+<ellipse cx="2435.0" cy="856.0" rx="9.0" ry="9.0" fill="#ffffff" stroke="#9aa5b1" stroke-width="2"/>
+<text x="2225" y="856" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700" fill="#f57c00" text-anchor="start" alignment-baseline="middle">LED -</text>
+<ellipse cx="2170.0" cy="914.0" rx="9.0" ry="9.0" fill="#f4b400" stroke="#1f2933" stroke-width="2"/>
+<ellipse cx="2435.0" cy="914.0" rx="9.0" ry="9.0" fill="#ffffff" stroke="#9aa5b1" stroke-width="2"/>
+<text x="2225" y="914" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700" fill="#f4b400" text-anchor="start" alignment-baseline="middle">SW SIG</text>
+<ellipse cx="2170.0" cy="962.0" rx="9.0" ry="9.0" fill="#111111" stroke="#1f2933" stroke-width="2"/>
+<ellipse cx="2435.0" cy="962.0" rx="9.0" ry="9.0" fill="#ffffff" stroke="#9aa5b1" stroke-width="2"/>
+<text x="2225" y="962" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700" fill="#1f2933" text-anchor="start" alignment-baseline="middle">SW GND</text>
+<ellipse cx="2700.0" cy="880.0" rx="84.0" ry="84.0" fill="#ffffff" stroke="#1f2933" stroke-width="4"/>
+<ellipse cx="2700.0" cy="880.0" rx="54.0" ry="54.0" fill="#ffffff55" stroke="#ffffff" stroke-width="2"/>
+<text x="2700" y="875" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700" fill="#1f2933" text-anchor="middle" alignment-baseline="middle">BTN3</text>
+<text x="2700" y="985" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700" fill="#1f2933" text-anchor="middle" alignment-baseline="middle">Ingredient 3</text>
+<text x="2700" y="1015" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="400" fill="#52606d" text-anchor="middle" alignment-baseline="middle">illuminated arcade button</text>
+<polyline points="2435,808 2520,828" fill="none" stroke="#d71920" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="2435,856 2520,864" fill="none" stroke="#f57c00" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="2525" y="813" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#1f2933" text-anchor="start" alignment-baseline="hanging">lamp</text>
+<polyline points="2435,914 2520,905" fill="none" stroke="#f4b400" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="2435,962 2520,938" fill="none" stroke="#111111" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="2525" y="916" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#1f2933" text-anchor="start" alignment-baseline="hanging">switch</text>
+<polyline points="2080,1048 2170,1048" fill="none" stroke="#d71920" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="2080.0" cy="1048.0" rx="6.0" ry="6.0" fill="#d71920" stroke="#d71920" stroke-width="1"/>
+<polyline points="2030,1202 2170,1202" fill="none" stroke="#111111" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="2030.0" cy="1202.0" rx="6.0" ry="6.0" fill="#111111" stroke="#111111" stroke-width="1"/>
+<polyline points="550,1056 665,1056 665,1005 1960,1005 1960,1154 2170,1154" fill="none" stroke="#1e88e5" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="690" y="983" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#1e88e5" text-anchor="start" alignment-baseline="hanging">BTN4 switch -&gt; GPIO 19</text>
+<polyline points="550,1184 735,1184" fill="none" stroke="#178f46" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="735,1184.0 785,1184.0" fill="none" stroke="#178f46" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="785" y="1168" width="130" height="32" rx="9" fill="#e7c99a" stroke="#946b2d" stroke-width="2"/>
+<polyline points="915,1184.0 965,1184.0" fill="none" stroke="#178f46" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="850.0" y="1184.0" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" fill="#1f2933" text-anchor="middle" alignment-baseline="middle">100 ohm</text>
+<polyline points="965,1184 1168,1184 1168,1204 1315,1204" fill="none" stroke="#178f46" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="1168.0" cy="1204.0" rx="7.0" ry="7.0" fill="#178f46" stroke="#178f46" stroke-width="1"/>
+<text x="930" y="1142" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#178f46" text-anchor="start" alignment-baseline="hanging">GPIO 25 lamp PWM/flash</text>
+<polyline points="1168,1204 1210,1204 1210,1226" fill="none" stroke="#178f46" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="1188" y="1226" width="44" height="72" rx="9" fill="#e7c99a" stroke="#946b2d" stroke-width="2"/>
+<text x="1210.0" y="1262.0" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#1f2933" text-anchor="middle" alignment-baseline="middle">10k</text>
+<polyline points="1210,1298 1210,1318 1515,1318" fill="none" stroke="#111111" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1242" y="1262" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="400" fill="#52606d" text-anchor="start" alignment-baseline="hanging">gate pulldown</text>
+<rect x="1314" y="1034" width="82" height="36" rx="4" fill="#c7cdd4" stroke="#2f343b" stroke-width="2"/>
+<rect x="1280" y="1062" width="150" height="106" rx="10" fill="#2f343b" stroke="#111111" stroke-width="3"/>
+<ellipse cx="1355.0" cy="1086.0" rx="10.0" ry="10.0" fill="#c7cdd4" stroke="#111111" stroke-width="1"/>
+<text x="1355.0" y="1117" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle" alignment-baseline="middle">Q4</text>
+<text x="1355.0" y="1144" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="400" fill="#ffffff" text-anchor="middle" alignment-baseline="middle">IRFB11N50APBF</text>
+<polyline points="1315,1168 1315,1204" fill="none" stroke="#c7cdd4" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1315" y="1226" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" fill="#1f2933" text-anchor="middle" alignment-baseline="middle">G</text>
+<polyline points="1355,1168 1355,1204" fill="none" stroke="#c7cdd4" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1355" y="1226" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" fill="#1f2933" text-anchor="middle" alignment-baseline="middle">D</text>
+<polyline points="1395,1168 1395,1204" fill="none" stroke="#c7cdd4" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1395" y="1226" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" fill="#1f2933" text-anchor="middle" alignment-baseline="middle">S</text>
+<text x="1309" y="1248" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="400" fill="#52606d" text-anchor="middle" alignment-baseline="middle">Gate</text>
+<text x="1355" y="1248" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="400" fill="#52606d" text-anchor="middle" alignment-baseline="middle">Drain</text>
+<text x="1403" y="1248" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="400" fill="#52606d" text-anchor="middle" alignment-baseline="middle">Source</text>
+<polyline points="1355,1204 1355,1096 2170,1096" fill="none" stroke="#f57c00" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1605" y="1073" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" fill="#f57c00" text-anchor="start" alignment-baseline="hanging">BTN4 individual lamp -</text>
+<polyline points="1395,1204 1515,1204" fill="none" stroke="#111111" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="1515.0" cy="1204.0" rx="6.0" ry="6.0" fill="#111111" stroke="#111111" stroke-width="1"/>
+<rect x="2170" y="1010" width="265" height="220" rx="8" fill="#eef2f7" stroke="#9aa5b1" stroke-width="2"/>
+<text x="2302.5" y="1032" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700" fill="#1f2933" text-anchor="middle" alignment-baseline="middle">BTN4 terminal block</text>
+<ellipse cx="2170.0" cy="1048.0" rx="9.0" ry="9.0" fill="#d71920" stroke="#1f2933" stroke-width="2"/>
+<ellipse cx="2435.0" cy="1048.0" rx="9.0" ry="9.0" fill="#ffffff" stroke="#9aa5b1" stroke-width="2"/>
+<text x="2225" y="1048" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700" fill="#d71920" text-anchor="start" alignment-baseline="middle">LED +</text>
+<ellipse cx="2170.0" cy="1096.0" rx="9.0" ry="9.0" fill="#f57c00" stroke="#1f2933" stroke-width="2"/>
+<ellipse cx="2435.0" cy="1096.0" rx="9.0" ry="9.0" fill="#ffffff" stroke="#9aa5b1" stroke-width="2"/>
+<text x="2225" y="1096" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700" fill="#f57c00" text-anchor="start" alignment-baseline="middle">LED -</text>
+<ellipse cx="2170.0" cy="1154.0" rx="9.0" ry="9.0" fill="#f4b400" stroke="#1f2933" stroke-width="2"/>
+<ellipse cx="2435.0" cy="1154.0" rx="9.0" ry="9.0" fill="#ffffff" stroke="#9aa5b1" stroke-width="2"/>
+<text x="2225" y="1154" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700" fill="#f4b400" text-anchor="start" alignment-baseline="middle">SW SIG</text>
+<ellipse cx="2170.0" cy="1202.0" rx="9.0" ry="9.0" fill="#111111" stroke="#1f2933" stroke-width="2"/>
+<ellipse cx="2435.0" cy="1202.0" rx="9.0" ry="9.0" fill="#ffffff" stroke="#9aa5b1" stroke-width="2"/>
+<text x="2225" y="1202" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700" fill="#1f2933" text-anchor="start" alignment-baseline="middle">SW GND</text>
+<ellipse cx="2700.0" cy="1120.0" rx="84.0" ry="84.0" fill="#fbc02d" stroke="#1f2933" stroke-width="4"/>
+<ellipse cx="2700.0" cy="1120.0" rx="54.0" ry="54.0" fill="#ffffff55" stroke="#ffffff" stroke-width="2"/>
+<text x="2700" y="1115" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle" alignment-baseline="middle">BTN4</text>
+<text x="2700" y="1225" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700" fill="#1f2933" text-anchor="middle" alignment-baseline="middle">Ingredient 4</text>
+<text x="2700" y="1255" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="400" fill="#52606d" text-anchor="middle" alignment-baseline="middle">illuminated arcade button</text>
+<polyline points="2435,1048 2520,1068" fill="none" stroke="#d71920" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="2435,1096 2520,1104" fill="none" stroke="#f57c00" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="2525" y="1053" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#1f2933" text-anchor="start" alignment-baseline="hanging">lamp</text>
+<polyline points="2435,1154 2520,1145" fill="none" stroke="#f4b400" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="2435,1202 2520,1178" fill="none" stroke="#111111" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="2525" y="1156" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#1f2933" text-anchor="start" alignment-baseline="hanging">switch</text>
+<polyline points="2080,1288 2170,1288" fill="none" stroke="#d71920" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="2080.0" cy="1288.0" rx="6.0" ry="6.0" fill="#d71920" stroke="#d71920" stroke-width="1"/>
+<polyline points="2030,1442 2170,1442" fill="none" stroke="#111111" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="2030.0" cy="1442.0" rx="6.0" ry="6.0" fill="#111111" stroke="#111111" stroke-width="1"/>
+<polyline points="550,1296 665,1296 665,1245 1960,1245 1960,1394 2170,1394" fill="none" stroke="#f4b400" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="690" y="1223" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#f4b400" text-anchor="start" alignment-baseline="hanging">BTN5 switch -&gt; GPIO 26</text>
+<polyline points="550,1424 735,1424" fill="none" stroke="#178f46" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="735,1424.0 785,1424.0" fill="none" stroke="#178f46" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="785" y="1408" width="130" height="32" rx="9" fill="#e7c99a" stroke="#946b2d" stroke-width="2"/>
+<polyline points="915,1424.0 965,1424.0" fill="none" stroke="#178f46" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="850.0" y="1424.0" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" fill="#1f2933" text-anchor="middle" alignment-baseline="middle">100 ohm</text>
+<polyline points="965,1424 1168,1424 1168,1444 1315,1444" fill="none" stroke="#178f46" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="1168.0" cy="1444.0" rx="7.0" ry="7.0" fill="#178f46" stroke="#178f46" stroke-width="1"/>
+<text x="930" y="1382" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#178f46" text-anchor="start" alignment-baseline="hanging">GPIO 27 lamp PWM/flash</text>
+<polyline points="1168,1444 1210,1444 1210,1466" fill="none" stroke="#178f46" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="1188" y="1466" width="44" height="72" rx="9" fill="#e7c99a" stroke="#946b2d" stroke-width="2"/>
+<text x="1210.0" y="1502.0" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#1f2933" text-anchor="middle" alignment-baseline="middle">10k</text>
+<polyline points="1210,1538 1210,1558 1515,1558" fill="none" stroke="#111111" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1242" y="1502" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="400" fill="#52606d" text-anchor="start" alignment-baseline="hanging">gate pulldown</text>
+<rect x="1314" y="1274" width="82" height="36" rx="4" fill="#c7cdd4" stroke="#2f343b" stroke-width="2"/>
+<rect x="1280" y="1302" width="150" height="106" rx="10" fill="#2f343b" stroke="#111111" stroke-width="3"/>
+<ellipse cx="1355.0" cy="1326.0" rx="10.0" ry="10.0" fill="#c7cdd4" stroke="#111111" stroke-width="1"/>
+<text x="1355.0" y="1357" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle" alignment-baseline="middle">Q5</text>
+<text x="1355.0" y="1384" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="400" fill="#ffffff" text-anchor="middle" alignment-baseline="middle">IRFB11N50APBF</text>
+<polyline points="1315,1408 1315,1444" fill="none" stroke="#c7cdd4" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1315" y="1466" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" fill="#1f2933" text-anchor="middle" alignment-baseline="middle">G</text>
+<polyline points="1355,1408 1355,1444" fill="none" stroke="#c7cdd4" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1355" y="1466" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" fill="#1f2933" text-anchor="middle" alignment-baseline="middle">D</text>
+<polyline points="1395,1408 1395,1444" fill="none" stroke="#c7cdd4" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1395" y="1466" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" fill="#1f2933" text-anchor="middle" alignment-baseline="middle">S</text>
+<text x="1309" y="1488" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="400" fill="#52606d" text-anchor="middle" alignment-baseline="middle">Gate</text>
+<text x="1355" y="1488" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="400" fill="#52606d" text-anchor="middle" alignment-baseline="middle">Drain</text>
+<text x="1403" y="1488" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="400" fill="#52606d" text-anchor="middle" alignment-baseline="middle">Source</text>
+<polyline points="1355,1444 1355,1336 2170,1336" fill="none" stroke="#f57c00" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1605" y="1313" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" fill="#f57c00" text-anchor="start" alignment-baseline="hanging">BTN5 individual lamp -</text>
+<polyline points="1395,1444 1515,1444" fill="none" stroke="#111111" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="1515.0" cy="1444.0" rx="6.0" ry="6.0" fill="#111111" stroke="#111111" stroke-width="1"/>
+<rect x="2170" y="1250" width="265" height="220" rx="8" fill="#eef2f7" stroke="#9aa5b1" stroke-width="2"/>
+<text x="2302.5" y="1272" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700" fill="#1f2933" text-anchor="middle" alignment-baseline="middle">BTN5 terminal block</text>
+<ellipse cx="2170.0" cy="1288.0" rx="9.0" ry="9.0" fill="#d71920" stroke="#1f2933" stroke-width="2"/>
+<ellipse cx="2435.0" cy="1288.0" rx="9.0" ry="9.0" fill="#ffffff" stroke="#9aa5b1" stroke-width="2"/>
+<text x="2225" y="1288" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700" fill="#d71920" text-anchor="start" alignment-baseline="middle">LED +</text>
+<ellipse cx="2170.0" cy="1336.0" rx="9.0" ry="9.0" fill="#f57c00" stroke="#1f2933" stroke-width="2"/>
+<ellipse cx="2435.0" cy="1336.0" rx="9.0" ry="9.0" fill="#ffffff" stroke="#9aa5b1" stroke-width="2"/>
+<text x="2225" y="1336" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700" fill="#f57c00" text-anchor="start" alignment-baseline="middle">LED -</text>
+<ellipse cx="2170.0" cy="1394.0" rx="9.0" ry="9.0" fill="#f4b400" stroke="#1f2933" stroke-width="2"/>
+<ellipse cx="2435.0" cy="1394.0" rx="9.0" ry="9.0" fill="#ffffff" stroke="#9aa5b1" stroke-width="2"/>
+<text x="2225" y="1394" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700" fill="#f4b400" text-anchor="start" alignment-baseline="middle">SW SIG</text>
+<ellipse cx="2170.0" cy="1442.0" rx="9.0" ry="9.0" fill="#111111" stroke="#1f2933" stroke-width="2"/>
+<ellipse cx="2435.0" cy="1442.0" rx="9.0" ry="9.0" fill="#ffffff" stroke="#9aa5b1" stroke-width="2"/>
+<text x="2225" y="1442" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700" fill="#1f2933" text-anchor="start" alignment-baseline="middle">SW GND</text>
+<ellipse cx="2700.0" cy="1360.0" rx="84.0" ry="84.0" fill="#1e88e5" stroke="#1f2933" stroke-width="4"/>
+<ellipse cx="2700.0" cy="1360.0" rx="54.0" ry="54.0" fill="#ffffff55" stroke="#ffffff" stroke-width="2"/>
+<text x="2700" y="1355" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle" alignment-baseline="middle">BTN5</text>
+<text x="2700" y="1465" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700" fill="#1f2933" text-anchor="middle" alignment-baseline="middle">Ingredient 5</text>
+<text x="2700" y="1495" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="400" fill="#52606d" text-anchor="middle" alignment-baseline="middle">illuminated arcade button</text>
+<polyline points="2435,1288 2520,1308" fill="none" stroke="#d71920" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="2435,1336 2520,1344" fill="none" stroke="#f57c00" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="2525" y="1293" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#1f2933" text-anchor="start" alignment-baseline="hanging">lamp</text>
+<polyline points="2435,1394 2520,1385" fill="none" stroke="#f4b400" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="2435,1442 2520,1418" fill="none" stroke="#111111" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="2525" y="1396" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#1f2933" text-anchor="start" alignment-baseline="hanging">switch</text>
+<rect x="70" y="1715" width="1500" height="160" rx="10" fill="#ffffff" stroke="#9aa5b1" stroke-width="2"/>
+<text x="92" y="1735" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700" fill="#1f2933" text-anchor="start" alignment-baseline="hanging">Visible wiring notes</text>
+<text x="92" y="1773.0" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400" fill="#1f2933" text-anchor="start" alignment-baseline="hanging">All grounds must be common. Do not connect lamp negatives together if individual flashing is required. Shared +V is OK; switched</text>
+<text x="92" y="1797.78" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400" fill="#1f2933" text-anchor="start" alignment-baseline="hanging">low side controls each lamp. Use INPUT_PULLUP for button inputs. These uxcell buttons use 12V LEDs; observe LED polarity.</text>
+<rect x="70" y="1595" width="1500" height="105" rx="10" fill="#fff7ed" stroke="#d97706" stroke-width="2"/>
+<text x="92" y="1613" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700" fill="#9a3412" text-anchor="start" alignment-baseline="hanging">MOSFET note</text>
+<text x="92" y="1649.0" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400" fill="#1f2933" text-anchor="start" alignment-baseline="hanging">IRFB11N50APBF is overkill and not logic-level, but acceptable for small lamp loads; replace with a logic-level MOSFET if lamps</text>
+<text x="92" y="1673.78" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400" fill="#1f2933" text-anchor="start" alignment-baseline="hanging">do not fully turn on.</text>
+<rect x="1660" y="1595" width="1270" height="280" rx="10" fill="#ffffff" stroke="#9aa5b1" stroke-width="2"/>
+<text x="1682" y="1617" font-family="Segoe UI, Arial, sans-serif" font-size="27" font-weight="700" fill="#1f2933" text-anchor="start" alignment-baseline="hanging">Legend</text>
+<polyline points="1684,1661 1750,1661" fill="none" stroke="#d71920" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1765" y="1649" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="400" fill="#1f2933" text-anchor="start" alignment-baseline="hanging">red: shared +5V/lamp supply positive</text>
+<polyline points="1684,1691 1750,1691" fill="none" stroke="#111111" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1765" y="1679" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="400" fill="#1f2933" text-anchor="start" alignment-baseline="hanging">black: common ground</text>
+<polyline points="1684,1721 1750,1721" fill="none" stroke="#f4b400" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1765" y="1709" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="400" fill="#1f2933" text-anchor="start" alignment-baseline="hanging">yellow/blue: switch signal to ESP32 input</text>
+<polyline points="1684,1751 1750,1751" fill="none" stroke="#178f46" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1765" y="1739" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="400" fill="#1f2933" text-anchor="start" alignment-baseline="hanging">green: ESP32 lamp output to MOSFET gate</text>
+<polyline points="1684,1781 1750,1781" fill="none" stroke="#f57c00" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1765" y="1769" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="400" fill="#1f2933" text-anchor="start" alignment-baseline="hanging">orange: individual lamp negative to MOSFET drain</text>
+<text x="2240" y="1662.0" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400" fill="#1f2933" text-anchor="start" alignment-baseline="hanging">Switch side: one switch terminal to GND, one to GPIO. Lamp</text>
+<text x="2240" y="1685.6" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400" fill="#1f2933" text-anchor="start" alignment-baseline="hanging">side: LED+ to +V, LED- to MOSFET drain.</text>
+</g>
+</svg>
