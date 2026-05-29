@@ -508,6 +508,67 @@ def make_module_part(key: str, title: str) -> Part:
     )
 
 
+def make_master_controller_part() -> Part:
+    body = (
+        '<rect x="0" y="0" width="430" height="190" rx="12" fill="#f8fafc" stroke="#334155" stroke-width="2.2"/>'
+        + '<rect x="54" y="28" width="190" height="92" rx="9" fill="#111827" stroke="#475569" stroke-width="2"/>'
+        + '<rect x="96" y="122" width="106" height="28" rx="5" fill="#e2e8f0" stroke="#64748b"/>'
+        + text(270, 30, "Master Controller ESP32", 17, "#0f172a", 860)
+        + text(270, 58, "Waveshare ESP32-P4-POE-ETH / NH", 13, "#1f2933", 700)
+        + text(270, 84, "Ethernet carries network + PoE", 12, WIRE["ethernet"], 760)
+        + text(270, 108, "GPIO5: Start Game button input", 12, WIRE["gpio"], 850)
+        + text(270, 132, "Button uses INPUT_PULLUP", 12, "#7c2d12", 830)
+        + text(270, 156, "Printer/modules use Ethernet, not GPIO", 12, "#1f2933", 760)
+        + text(62, 82, "ESP32", 18, "#ffffff", 850)
+        + text(106, 142, "RJ45 + PoE", 11, "#334155", 850)
+        + text(16, 56, "ETH", 12, WIRE["ethernet"], 850)
+        + text(16, 142, "GND", 12, WIRE["gnd"], 850)
+        + text(410, 105, "GPIO5", 12, WIRE["gpio"], 850, "end")
+        + text(410, 143, "GND", 12, WIRE["gnd"], 850, "end")
+    )
+    return custom_part(
+        "master_controller_esp32_poe_node",
+        "Master Controller ESP32 PoE board",
+        "ESP32",
+        430,
+        190,
+        body,
+        [
+            Connector("eth", "Ethernet + PoE input", 0, 52, WIRE["ethernet"]),
+            Connector("gnd", "Master ESP32 GND reference to COMMON_GND", 0, 138, WIRE["gnd"]),
+            Connector("gpio5", "GPIO5 Start Game button input", 430, 100, WIRE["gpio"]),
+            Connector("gnd_btn", "GND pin for Start Game button", 430, 138, WIRE["gnd"]),
+        ],
+        buses={"gnd": ["gnd", "gnd_btn"]},
+    )
+
+
+def make_start_button_part() -> Part:
+    body = (
+        '<rect x="0" y="0" width="190" height="112" rx="9" fill="#ecfdf5" stroke="#047857" stroke-width="2"/>'
+        + '<circle cx="150" cy="56" r="26" fill="#bbf7d0" stroke="#047857" stroke-width="3"/>'
+        + '<circle cx="150" cy="56" r="14" fill="#22c55e" stroke="#166534" stroke-width="2"/>'
+        + text(10, 25, "Start Game", 15, "#064e3b", 850)
+        + text(10, 49, "Momentary NO", 11, "#1f2933", 700)
+        + text(10, 72, "GPIO5 -> SIG", 11, WIRE["gpio"], 820)
+        + text(10, 94, "GND -> GND", 11, WIRE["gnd"], 820)
+        + text(178, 42, "SIG", 10, WIRE["gpio"], 850, "end")
+        + text(178, 82, "GND", 10, WIRE["gnd"], 850, "end")
+    )
+    return custom_part(
+        "master_start_game_button",
+        "Master Controller Start Game button",
+        "START",
+        190,
+        112,
+        body,
+        [
+            Connector("sig", "Start button signal to GPIO5", 0, 38, WIRE["gpio"]),
+            Connector("gnd", "Start button ground", 0, 78, WIRE["gnd"]),
+        ],
+    )
+
+
 def make_accessory_block_part(key: str, title: str, lines: list[str]) -> Part:
     body_lines = text_lines(18, 54, lines, 11, "#1f2933", 720, 540, gap=4)
     body = (
@@ -546,7 +607,7 @@ def build_parts() -> dict[str, Part]:
         "pan_esp": make_module_part("pan_motion_esp32_poe_node", "Pan Motion ESP32 PoE board"),
         "pot_esp": make_module_part("pot_temperature_esp32_poe_node", "Pot Temperature ESP32 PoE board"),
         "garnish_esp": make_module_part("garnish_placement_esp32_poe_node", "Garnish ESP32 PoE board"),
-        "master_esp": make_module_part("master_controller_esp32_poe_node", "Master Controller ESP32 PoE board"),
+        "master_esp": make_master_controller_part(),
     }
     terminals = {
         "simon_term": make_accessory_block_part(
@@ -625,6 +686,7 @@ def build_parts() -> dict[str, Part]:
         "switch": make_poe_switch_part(),
         "router": make_router_part(),
         "printer": make_printer_part(),
+        "start_button": make_start_button_part(),
         "rail12": make_rail_part(
             "rail_12v_show_actual_loads",
             "12V_SHOW / 12V ACTUAL LOADS",
@@ -835,6 +897,7 @@ def build_instances(parts: dict[str, Part]) -> tuple[list[Instance], list[Wire]]
     add("switch", "switch", "TP-Link LiteWave LS108GP 8-port PoE switch", 850, 250)
     add("router", "router", "Optional router / DHCP source", 1040, 92)
     add("master_esp", "master_esp", "Master Controller ESP32 PoE board", 850, 640)
+    add("start_button", "start_button", "Start Game button", 1288, 660)
     add("printer", "printer", "Epson receipt printer", 850, 845)
 
     add("buck1", "buck1", "Buck #1 optional 5V_AUX", 850, 1080)
@@ -1011,6 +1074,38 @@ def build_instances(parts: dict[str, Part]) -> tuple[list[Instance], list[Wire]]
     routed_wire("switch", "p7", "printer", "eth", [(1104, 610), (810, 610), (810, 900)], WIRE["ethernet"], "Ethernet from switch to Epson printer", 8)
     routed_wire("switch", "p8", "router", "eth", [(1276, 210), (1230, 210)], WIRE["ethernet"], "Optional router/DHCP source to switch port 8", 8)
 
+    # Master Controller local GPIO.
+    routed_wire(
+        "master_esp",
+        "gpio5",
+        "start_button",
+        "sig",
+        [(1284, abs_pos("master_esp", "gpio5")[1]), (1284, abs_pos("start_button", "sig")[1])],
+        WIRE["gpio"],
+        "Master Controller GPIO5 to Start Game button signal",
+        7,
+    )
+    routed_wire(
+        "master_esp",
+        "gnd",
+        "gndrail",
+        "tap16",
+        [(abs_pos("master_esp", "gnd")[0], abs_pos("gndrail", "tap16")[1])],
+        WIRE["gnd"],
+        "Master Controller ESP32 GND reference to COMMON_GND",
+        8,
+    )
+    routed_wire(
+        "master_esp",
+        "gnd_btn",
+        "start_button",
+        "gnd",
+        [(1284, abs_pos("master_esp", "gnd_btn")[1]), (1284, abs_pos("start_button", "gnd")[1])],
+        WIRE["gnd"],
+        "Start Game button GND to Master Controller GND pin",
+        8,
+    )
+
     # 12V adapters, buck converters, and accessory rails.
     routed_wire("adapter_a", "pos", "rail12", "tap0", [(830, 1084), (1180, 1084), (1180, 1343)], WIRE["v12"], "Adapter A +12V to 12V_SHOW / actual loads terminal block", 12)
     routed_wire("adapter_d", "pos", "buck1", "in_pos", [(830, 1169), (830, 1124)], WIRE["v12"], "Adapter D +12V to Buck #1 input", 10)
@@ -1177,6 +1272,17 @@ def write_checklist() -> None:
 | Pan Motion | PoE over Ethernet | Hall sensors from ESP32 3.3V; cooktop LED from 5V_LED or 12V_SHOW by strip type; DFPlayer/audio from 5V_AUDIO_SERVO | ESP32 sends LED data and serial to DFPlayer. All grounds common. |
 | Pot Temperature | PoE over Ethernet | Encoder on ESP32 GPIO; cooktop LED from 5V_LED or 12V_SHOW; temp strip/ring from 5V_LED | Encoder uses INPUT_PULLUP. ESP32 and LED rail grounds common. |
 | Garnish Placement | PoE over Ethernet | Touch electrodes only to ESP32 touch pins through 1k resistors; RGB strip from 5V_LED; servo from 5V_AUDIO_SERVO | DONE button to ESP32 GPIO/GND. ESP32, servo, and LED grounds common. |
+| Master Controller | PoE over Ethernet | Start Game button only; Epson printer is Ethernet | GPIO5 to one side of the Start Game button, other side to GND. Configure GPIO5 with INPUT_PULLUP. |
+
+## Master Controller ESP32 Pin Map
+
+| Function | Master Controller ESP32 connection | Destination | Notes |
+|---|---|---|---|
+| Power/network | RJ45 Ethernet / PoE | LS108GP port 6 | PoE powers the ESP32 controller only. |
+| Start Game button signal | GPIO5 | One side of momentary normally-open Start Game button | `INPUT_PULLUP`; unpressed = HIGH, pressed = LOW. |
+| Start Game button ground | GND | Other side of Start Game button / COMMON_GND | This is the only local GPIO wiring on the Master Controller ESP32. |
+| Module commands and score replies | Ethernet UDP port 42100 | Simon, chopping, pan, pot-temp, and garnish ESP32 boards | No GPIO start/reset harness between controller and modules. |
+| Receipt printer | Ethernet TCP port 9100 | Epson TM-T20IV / TM-T20V-family printer | Printer uses its own Epson power supply; no ESP32 GPIO pins. |
 
 ## Grounding Notes
 

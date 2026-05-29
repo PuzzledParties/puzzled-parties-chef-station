@@ -33,6 +33,17 @@
 | Pan Motion | PoE over Ethernet | Hall sensors from ESP32 3.3V; cooktop LED from 5V_LED or 12V_SHOW by strip type; DFPlayer/audio from 5V_AUDIO_SERVO | ESP32 sends LED data and serial to DFPlayer. All grounds common. |
 | Pot Temperature | PoE over Ethernet | Encoder on ESP32 GPIO; cooktop LED from 5V_LED or 12V_SHOW; temp strip/ring from 5V_LED | Encoder uses INPUT_PULLUP. ESP32 and LED rail grounds common. |
 | Garnish Placement | PoE over Ethernet | Touch electrodes only to ESP32 touch pins through 1k resistors; RGB strip from 5V_LED; servo from 5V_AUDIO_SERVO | DONE button to ESP32 GPIO/GND. ESP32, servo, and LED grounds common. |
+| Master Controller | PoE over Ethernet | Start Game button only; Epson printer is Ethernet | GPIO5 to one side of the Start Game button, other side to GND. Configure GPIO5 with INPUT_PULLUP. |
+
+## Master Controller ESP32 Pin Map
+
+| Function | Master Controller ESP32 connection | Destination | Notes |
+|---|---|---|---|
+| Power/network | RJ45 Ethernet / PoE | LS108GP port 6 | PoE powers the ESP32 controller only. |
+| Start Game button signal | GPIO5 | One side of momentary normally-open Start Game button | `INPUT_PULLUP`; unpressed = HIGH, pressed = LOW. |
+| Start Game button ground | GND | Other side of Start Game button / COMMON_GND | This is the only local GPIO wiring on the Master Controller ESP32. |
+| Module commands and score replies | Ethernet UDP port 42100 | Simon, chopping, pan, pot-temp, and garnish ESP32 boards | No GPIO start/reset harness between controller and modules. |
+| Receipt printer | Ethernet TCP port 9100 | Epson TM-T20IV / TM-T20V-family printer | Printer uses its own Epson power supply; no ESP32 GPIO pins. |
 
 ## Grounding Notes
 
