@@ -674,12 +674,12 @@
    </g>
   </g>
  </g>
- <path d="M7156.64,15312.1L7156.64,15412.1" fill="none" opacity="1" stroke="#8c8c8c" stroke-linecap="round" stroke-linejoin="round" stroke-width="30"/>
- <path d="M7156.64,15356.5L7156.64,15412.1" fill="none" opacity="0.2" stroke="#00ff00" stroke-linecap="round" stroke-linejoin="round" stroke-width="30"/>
- <path d="M7056.66,15312.1L7056.66,15412.1" fill="none" opacity="1" stroke="#8c8c8c" stroke-linecap="round" stroke-linejoin="round" stroke-width="30"/>
- <path d="M7056.66,15356.5L7056.66,15412.1" fill="none" opacity="0.2" stroke="#00ff00" stroke-linecap="round" stroke-linejoin="round" stroke-width="30"/>
  <path d="M6956.68,15312.1L6956.68,15412.1" fill="none" opacity="1" stroke="#8c8c8c" stroke-linecap="round" stroke-linejoin="round" stroke-width="30"/>
  <path d="M6956.68,15356.5L6956.68,15412.1" fill="none" opacity="0.2" stroke="#00ff00" stroke-linecap="round" stroke-linejoin="round" stroke-width="30"/>
+ <path d="M7056.66,15312.1L7056.66,15412.1" fill="none" opacity="1" stroke="#8c8c8c" stroke-linecap="round" stroke-linejoin="round" stroke-width="30"/>
+ <path d="M7056.66,15356.5L7056.66,15412.1" fill="none" opacity="0.2" stroke="#00ff00" stroke-linecap="round" stroke-linejoin="round" stroke-width="30"/>
+ <path d="M7156.64,15312.1L7156.64,15412.1" fill="none" opacity="1" stroke="#8c8c8c" stroke-linecap="round" stroke-linejoin="round" stroke-width="30"/>
+ <path d="M7156.64,15356.5L7156.64,15412.1" fill="none" opacity="0.2" stroke="#00ff00" stroke-linecap="round" stroke-linejoin="round" stroke-width="30"/>
  <g partID="11220">
   <g transform="translate(5200,15466.7)">
    <g id="breadboard" >
@@ -1165,12 +1165,12 @@
    </g>
   </g>
  </g>
- <path d="M7156.64,11312.1L7156.64,11412.1" fill="none" opacity="1" stroke="#8c8c8c" stroke-linecap="round" stroke-linejoin="round" stroke-width="30"/>
- <path d="M7156.64,11356.5L7156.64,11412.1" fill="none" opacity="0.2" stroke="#00ff00" stroke-linecap="round" stroke-linejoin="round" stroke-width="30"/>
- <path d="M7056.66,11312.1L7056.66,11412.1" fill="none" opacity="1" stroke="#8c8c8c" stroke-linecap="round" stroke-linejoin="round" stroke-width="30"/>
- <path d="M7056.66,11356.5L7056.66,11412.1" fill="none" opacity="0.2" stroke="#00ff00" stroke-linecap="round" stroke-linejoin="round" stroke-width="30"/>
  <path d="M6956.68,11312.1L6956.68,11412.1" fill="none" opacity="1" stroke="#8c8c8c" stroke-linecap="round" stroke-linejoin="round" stroke-width="30"/>
  <path d="M6956.68,11356.5L6956.68,11412.1" fill="none" opacity="0.2" stroke="#00ff00" stroke-linecap="round" stroke-linejoin="round" stroke-width="30"/>
+ <path d="M7056.66,11312.1L7056.66,11412.1" fill="none" opacity="1" stroke="#8c8c8c" stroke-linecap="round" stroke-linejoin="round" stroke-width="30"/>
+ <path d="M7056.66,11356.5L7056.66,11412.1" fill="none" opacity="0.2" stroke="#00ff00" stroke-linecap="round" stroke-linejoin="round" stroke-width="30"/>
+ <path d="M7156.64,11312.1L7156.64,11412.1" fill="none" opacity="1" stroke="#8c8c8c" stroke-linecap="round" stroke-linejoin="round" stroke-width="30"/>
+ <path d="M7156.64,11356.5L7156.64,11412.1" fill="none" opacity="0.2" stroke="#00ff00" stroke-linecap="round" stroke-linejoin="round" stroke-width="30"/>
  <g partID="10850">
   <g transform="translate(5200,11466.7)">
    <g id="breadboard" >
@@ -1656,12 +1656,12 @@
    </g>
   </g>
  </g>
- <path d="M7156.64,7312.06L7156.64,7412.06" fill="none" opacity="1" stroke="#8c8c8c" stroke-linecap="round" stroke-linejoin="round" stroke-width="30"/>
- <path d="M7156.64,7356.5L7156.64,7412.06" fill="none" opacity="0.2" stroke="#00ff00" stroke-linecap="round" stroke-linejoin="round" stroke-width="30"/>
- <path d="M7056.66,7312.06L7056.66,7412.06" fill="none" opacity="1" stroke="#8c8c8c" stroke-linecap="round" stroke-linejoin="round" stroke-width="30"/>
- <path d="M7056.66,7356.5L7056.66,7412.06" fill="none" opacity="0.2" stroke="#00ff00" stroke-linecap="round" stroke-linejoin="round" stroke-width="30"/>
  <path d="M6956.68,7312.06L6956.68,7412.06" fill="none" opacity="1" stroke="#8c8c8c" stroke-linecap="round" stroke-linejoin="round" stroke-width="30"/>
  <path d="M6956.68,7356.5L6956.68,7412.06" fill="none" opacity="0.2" stroke="#00ff00" stroke-linecap="round" stroke-linejoin="round" stroke-width="30"/>
+ <path d="M7056.66,7312.06L7056.66,7412.06" fill="none" opacity="1" stroke="#8c8c8c" stroke-linecap="round" stroke-linejoin="round" stroke-width="30"/>
+ <path d="M7056.66,7356.5L7056.66,7412.06" fill="none" opacity="0.2" stroke="#00ff00" stroke-linecap="round" stroke-linejoin="round" stroke-width="30"/>
+ <path d="M7156.64,7312.06L7156.64,7412.06" fill="none" opacity="1" stroke="#8c8c8c" stroke-linecap="round" stroke-linejoin="round" stroke-width="30"/>
+ <path d="M7156.64,7356.5L7156.64,7412.06" fill="none" opacity="0.2" stroke="#00ff00" stroke-linecap="round" stroke-linejoin="round" stroke-width="30"/>
  <g partID="10480">
   <g transform="translate(5200,7466.67)">
    <g id="breadboard" >
@@ -2147,12 +2147,12 @@
    </g>
   </g>
  </g>
- <path d="M7156.64,3312.06L7156.64,3412.06" fill="none" opacity="1" stroke="#8c8c8c" stroke-linecap="round" stroke-linejoin="round" stroke-width="30"/>
- <path d="M7156.64,3356.5L7156.64,3412.06" fill="none" opacity="0.2" stroke="#00ff00" stroke-linecap="round" stroke-linejoin="round" stroke-width="30"/>
- <path d="M7056.66,3312.06L7056.66,3412.06" fill="none" opacity="1" stroke="#8c8c8c" stroke-linecap="round" stroke-linejoin="round" stroke-width="30"/>
- <path d="M7056.66,3356.5L7056.66,3412.06" fill="none" opacity="0.2" stroke="#00ff00" stroke-linecap="round" stroke-linejoin="round" stroke-width="30"/>
  <path d="M6956.68,3312.06L6956.68,3412.06" fill="none" opacity="1" stroke="#8c8c8c" stroke-linecap="round" stroke-linejoin="round" stroke-width="30"/>
  <path d="M6956.68,3356.5L6956.68,3412.06" fill="none" opacity="0.2" stroke="#00ff00" stroke-linecap="round" stroke-linejoin="round" stroke-width="30"/>
+ <path d="M7056.66,3312.06L7056.66,3412.06" fill="none" opacity="1" stroke="#8c8c8c" stroke-linecap="round" stroke-linejoin="round" stroke-width="30"/>
+ <path d="M7056.66,3356.5L7056.66,3412.06" fill="none" opacity="0.2" stroke="#00ff00" stroke-linecap="round" stroke-linejoin="round" stroke-width="30"/>
+ <path d="M7156.64,3312.06L7156.64,3412.06" fill="none" opacity="1" stroke="#8c8c8c" stroke-linecap="round" stroke-linejoin="round" stroke-width="30"/>
+ <path d="M7156.64,3356.5L7156.64,3412.06" fill="none" opacity="0.2" stroke="#00ff00" stroke-linecap="round" stroke-linejoin="round" stroke-width="30"/>
  <g partID="10110">
   <g transform="translate(5200,3466.67)">
    <g id="breadboard" >

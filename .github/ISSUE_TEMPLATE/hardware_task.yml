@@ -1,0 +1,26 @@
+name: Hardware Task
+description: Wiring, enclosure, panel, component, or bench-test work.
+title: "[Hardware] "
+labels: ["hardware"]
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What should be true when this task is done?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Relevant parts, diagrams, photos, measurements, or constraints.
+  - type: textarea
+    id: done
+    attributes:
+      label: Done When
+      description: Checklist for completion.
+      value: |
+        - [ ] 
+    validations:
+      required: true

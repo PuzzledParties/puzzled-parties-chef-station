@@ -1,0 +1,26 @@
+name: Firmware Task
+description: ESP32 code, game behavior, input/output, or audio work.
+title: "[Firmware] "
+labels: ["firmware"]
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What behavior or code should exist when this is done?
+    validations:
+      required: true
+  - type: textarea
+    id: implementation
+    attributes:
+      label: Implementation Notes
+      description: Pins, libraries, timing constraints, or expected architecture.
+  - type: textarea
+    id: test
+    attributes:
+      label: Test Plan
+      description: How should this be tested on the bench?
+      value: |
+        - [ ] 
+    validations:
+      required: true

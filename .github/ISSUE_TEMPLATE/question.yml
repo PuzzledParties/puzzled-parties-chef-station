@@ -1,0 +1,22 @@
+name: Question / Decision
+description: Track an unresolved design choice or project question.
+title: "[Question] "
+labels: ["question"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: What needs to be decided?
+    validations:
+      required: true
+  - type: textarea
+    id: options
+    attributes:
+      label: Options
+      description: Known options or tradeoffs.
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Outcome
+      description: Fill this in once decided.

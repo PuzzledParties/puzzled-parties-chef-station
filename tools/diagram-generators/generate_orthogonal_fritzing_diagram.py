@@ -9,13 +9,13 @@ from dataclasses import dataclass, field
 from pathlib import Path
 
 
-ROOT = Path(__file__).resolve().parent
-OUT_DIR = ROOT / "library_art_fritzing"
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+OUT_DIR = PROJECT_ROOT / "hardware" / "fritzing" / "library-art"
 FZZ_PATH = OUT_DIR / "chef_station_simon_4btn_audio_editable.fzz"
 EXPORT_DIR = OUT_DIR / "fritzing_svg_export"
 FRITZING = Path(r"C:\Program Files\Fritzing\Fritzing.exe")
 PARTS = Path(r"C:\Program Files\Fritzing\fritzing-parts")
-ESP32_FZPZ = ROOT / "downloaded_parts" / "DOIT_Esp32_DevKit_v1_improved.fzpz"
+ESP32_FZPZ = PROJECT_ROOT / "hardware" / "fritzing" / "downloaded-parts" / "DOIT_Esp32_DevKit_v1_improved.fzpz"
 
 
 BUTTONS = [
