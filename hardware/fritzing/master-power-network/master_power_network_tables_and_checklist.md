@@ -20,7 +20,7 @@
 | 3 | Pan Motion ESP32 PoE board | Ethernet network | PoE powers ESP32 controller only. |
 | 4 | Pot Temperature ESP32 PoE board | Ethernet network | PoE powers ESP32 controller only. |
 | 5 | Garnish Placement ESP32 PoE board | Ethernet network | PoE powers ESP32 controller only. |
-| 6 | Raspberry Pi master controller, if used | Ethernet network | Separate official Pi power supply unless a proper PoE HAT is explicitly used. |
+| 6 | Master Controller ESP32 PoE board | Ethernet network | PoE powers ESP32 controller only. |
 | 7 | Epson TM-T20IV / TM-T20V-family printer | Ethernet network | Separate Epson manufacturer power supply. Not PoE. |
 | 8 | Optional router/DHCP source or spare | DHCP/network management if needed | Router uses its own power if used. |
 
@@ -38,7 +38,7 @@
 
 - All grounds must be common where GPIO/data/control signals cross between PoE ESP32 boards and external 5V/12V accessories.
 - Connect Adapter A/B/C/D negatives, Buck #1/#2/#3 grounds, LED strip ground, DFPlayer/audio ground, servo ground, Simon lamp ground, and any relevant ESP32 GND pins to COMMON_GND.
-- Raspberry Pi module commands travel over Ethernet, so no Raspberry Pi GPIO sync ground is required for module start/reset.
+- Module commands travel over Ethernet, so no separate GPIO sync harness is required for module start/reset.
 - Do not route high-current LED, servo, or audio return current through ESP32 ground pins. Use a ground terminal block or bus.
 - Grounds may be common; separate 12V positives and separate buck 5V positives must not be tied together.
 
@@ -76,14 +76,14 @@
 
 - ESP32 modules can receive IP addresses from a router/DHCP source or use static IPs.
 - If there is no router, create and label a static IP plan before the event.
-- The master controller communicates with modules over Ethernet.
+- The Master Controller ESP32 communicates with modules over Ethernet.
 - The Epson printer is addressed by IP.
 - The LS108GP may be unmanaged; use an optional router/DHCP source if network management is needed.
 - Do not rely on internet access during the event.
 
 ## Assumptions And Substitutions
 
-- The diagram includes the optional Raspberry Pi master controller / print host because it is useful for score aggregation and Ethernet receipt printing.
+- The master controller in this build is a Waveshare ESP32-P4-POE-ETH / NH board.
 - Hardware START_SYNC / RESET_SYNC wiring is intentionally omitted. Module start/reset/score traffic is planned over Ethernet.
 - Exact LS108GP and Waveshare ESP32-P4-POE-ETH/NH Fritzing parts were not available in the installed library, so the sketch embeds custom editable helper parts with labeled connectors.
 - No third-party parts were downloaded.

@@ -1,8 +1,8 @@
 # Puzzled Parties Chef Station
 
 Chef Station is the hardware/software project for interactive kitchen-game
-features. The current build includes the shared power/network layout, master
-score/print controller, and the Simon, chopping, pan motion, pot temperature,
+features. The current build includes the shared power/network layout, the
+Master Controller ESP32, and the Simon, chopping, pan motion, pot temperature,
 and garnish placement modules.
 
 GitHub is the source of truth for the project: tasks live in Issues, work happens on branches, reviews happen through Pull Requests, and build decisions live in `docs/decisions`.
@@ -29,9 +29,6 @@ hardware/
 firmware/
   esp32-chef-station/    ESP32 firmware home
 
-software/
-  master-controller/     Raspberry Pi master score/print host
-
 docs/
   build-notes/           Running notes from assembly/testing
   decisions/             Decision records for hardware/software choices
@@ -46,7 +43,6 @@ tools/
 
 - `docs/build-wiring-diagrams.md` - iPad-friendly index of the build wiring diagrams, checklists, and editable Fritzing files.
 - `hardware/fritzing/master-power-network/` - master power and network layout.
-- `hardware/fritzing/master-controller-score-print/` - master controller, score, and receipt printer wiring.
 - `hardware/fritzing/library-art/chef_station_simon_4btn_audio_editable.fzz` - current editable Fritzing sketch.
 - `hardware/fritzing/library-art/chef_station_simon_4btn_audio_editable.png` - current PNG preview.
 - `hardware/fritzing/library-art/fritzing_svg_export/chef_station_simon_4btn_audio_editable_breadboard.svg` - current Fritzing SVG export.
@@ -56,7 +52,6 @@ tools/
 - `hardware/fritzing/pot-temperature-heat-balance/` - pot temperature / heat balance wiring.
 - `hardware/fritzing/garnish-placement/` - garnish placement wiring.
 - `tools/diagram-generators/generate_orthogonal_fritzing_diagram.py` - generator for the latest native Fritzing sketch.
-- `software/master-controller/run_master.py` - Raspberry Pi master controller for the 150s main phase plus 30s garnish phase.
 
 ## Important Electrical Notes
 
@@ -88,18 +83,3 @@ The script writes the editable `.fzz` and asks Fritzing to export SVGs through:
 ```powershell
 & 'C:\Program Files\Fritzing\Fritzing.exe' -svg .\hardware\fritzing\library-art\fritzing_svg_export
 ```
-
-## Running The Master Controller
-
-The Raspberry Pi master controller owns the full three-minute station clock:
-150 seconds for Simon, chop, pan motion, and pot balance, then 30 seconds for
-garnish placement.
-
-Dry-run from the repo root:
-
-```powershell
-python .\software\master-controller\run_master.py --dry-run --auto-start --once --time-scale 0.02
-```
-
-Pi hardware setup, Ethernet module-command, and ESC/POS details live in
-`software/master-controller/README.md`.

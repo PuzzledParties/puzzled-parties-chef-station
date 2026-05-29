@@ -259,7 +259,6 @@ def make_ac_strip_part() -> Part:
     y_values = {
         "ac_switch": 116,
         "ac_epson": 220,
-        "ac_pi": 324,
         "ac_adapter_a": 478,
         "ac_adapter_b": 592,
         "ac_adapter_c": 706,
@@ -270,7 +269,6 @@ def make_ac_strip_part() -> Part:
         for cid, name, y in [
             ("ac_switch", "AC to LS108GP adapter", y_values["ac_switch"]),
             ("ac_epson", "AC to Epson printer PSU", y_values["ac_epson"]),
-            ("ac_pi", "AC to Raspberry Pi PSU", y_values["ac_pi"]),
             ("ac_adapter_a", "AC to 12V adapter A", y_values["ac_adapter_a"]),
             ("ac_adapter_b", "AC to 12V adapter B", y_values["ac_adapter_b"]),
             ("ac_adapter_c", "AC to 12V adapter C", y_values["ac_adapter_c"]),
@@ -281,7 +279,6 @@ def make_ac_strip_part() -> Part:
     for label, y in [
         ("PoE switch PSU", y_values["ac_switch"]),
         ("Epson PSU", y_values["ac_epson"]),
-        ("Pi PSU, if used", y_values["ac_pi"]),
         ("12V Adapter A", y_values["ac_adapter_a"]),
         ("12V Adapter B", y_values["ac_adapter_b"]),
         ("12V Adapter C", y_values["ac_adapter_c"]),
@@ -412,7 +409,7 @@ def make_poe_switch_part() -> Part:
         Connector("p3", "Port 3 PoE to Pan Motion ESP32", 560, 144, WIRE["ethernet"]),
         Connector("p4", "Port 4 PoE to Pot Temperature ESP32", 560, 180, WIRE["ethernet"]),
         Connector("p5", "Port 5 PoE to Garnish ESP32", 560, 216, WIRE["ethernet"]),
-        Connector("p6", "Port 6 Ethernet to Raspberry Pi", 160, 320, WIRE["ethernet"]),
+        Connector("p6", "Port 6 PoE to Master Controller ESP32", 160, 320, WIRE["ethernet"]),
         Connector("p7", "Port 7 Ethernet to Epson printer", 254, 320, WIRE["ethernet"]),
         Connector("p8", "Port 8 optional router/DHCP or spare", 426, 0, WIRE["ethernet"]),
     ]
@@ -450,31 +447,6 @@ def make_router_part() -> Part:
         138,
         body,
         [Connector("eth", "Ethernet uplink to switch", 190, 138, WIRE["ethernet"])],
-    )
-
-
-def make_pi_part() -> Part:
-    body = (
-        '<rect x="0" y="0" width="430" height="176" rx="12" fill="#ecfdf5" stroke="#047857" stroke-width="2.2"/>'
-        + '<rect x="262" y="38" width="116" height="76" rx="8" fill="#166534" stroke="#22c55e"/>'
-        + text(180, 32, "Optional Raspberry Pi", 20, "#064e3b", 850, "middle")
-        + text(180, 60, "master score / print host", 14, "#1f2933", 720, "middle")
-        + text(180, 88, "Official Pi PSU unless proper PoE HAT", 13, "#7c2d12", 820, "middle")
-        + text(180, 116, "Sends module commands over Ethernet UDP", 13, "#1f2933", 680, "middle")
-        + text(18, 58, "ETH", 12, WIRE["ethernet"], 850)
-        + text(18, 114, "PWR", 12, WIRE["dc_misc"], 850)
-    )
-    return custom_part(
-        "raspberry_pi_master",
-        "Optional Raspberry Pi master controller / print host",
-        "PI",
-        430,
-        176,
-        body,
-        [
-            Connector("eth", "Ethernet to switch", 0, 55, WIRE["ethernet"]),
-            Connector("pwr", "Official Raspberry Pi PSU input", 0, 110, WIRE["dc_misc"]),
-        ],
     )
 
 
@@ -574,6 +546,7 @@ def build_parts() -> dict[str, Part]:
         "pan_esp": make_module_part("pan_motion_esp32_poe_node", "Pan Motion ESP32 PoE board"),
         "pot_esp": make_module_part("pot_temperature_esp32_poe_node", "Pot Temperature ESP32 PoE board"),
         "garnish_esp": make_module_part("garnish_placement_esp32_poe_node", "Garnish ESP32 PoE board"),
+        "master_esp": make_module_part("master_controller_esp32_poe_node", "Master Controller ESP32 PoE board"),
     }
     terminals = {
         "simon_term": make_accessory_block_part(
@@ -642,12 +615,6 @@ def build_parts() -> dict[str, Part]:
             "Manufacturer supply",
             "Printer DC input only",
         ),
-        "pi_psu": make_supply_part(
-            "raspberry_pi_official_power_supply",
-            "Raspberry Pi official PSU",
-            "Use Pi-rated USB-C supply",
-            "Pi power input only",
-        ),
         "adapter_a": make_12v_adapter_part("adjustable_12v_adapter_a", "12V Adapter A", "12V_SHOW actual-load branch"),
         "adapter_b": make_12v_adapter_part("adjustable_12v_adapter_b", "12V Adapter B", "Feeds Buck #2 / 5V_LED"),
         "adapter_c": make_12v_adapter_part("adjustable_12v_adapter_c", "12V Adapter C", "Feeds Buck #3 / audio/servo"),
@@ -657,7 +624,6 @@ def build_parts() -> dict[str, Part]:
         "buck3": make_buck_part("buck_converter_3_audio_servo", "Buck #3", "5V_AUDIO_SERVO"),
         "switch": make_poe_switch_part(),
         "router": make_router_part(),
-        "pi": make_pi_part(),
         "printer": make_printer_part(),
         "rail12": make_rail_part(
             "rail_12v_show_actual_loads",
@@ -861,7 +827,6 @@ def build_instances(parts: dict[str, Part]) -> tuple[list[Instance], list[Wire]]
     add("ac", "ac_strip", "AC power entry / power strip", 40, 250)
     add("switch_psu", "switch_psu", "LS108GP manufacturer power adapter", 450, 250)
     add("epson_psu", "epson_psu", "Epson manufacturer printer PSU", 450, 390)
-    add("pi_psu", "pi_psu", "Raspberry Pi official PSU", 450, 530)
     add("adapter_a", "adapter_a", "Adjustable 12V adapter A", 450, 1040)
     add("adapter_d", "adapter_d", "Adjustable 12V adapter D", 450, 1125)
     add("adapter_b", "adapter_b", "Adjustable 12V adapter B", 450, 1245)
@@ -869,7 +834,7 @@ def build_instances(parts: dict[str, Part]) -> tuple[list[Instance], list[Wire]]
 
     add("switch", "switch", "TP-Link LiteWave LS108GP 8-port PoE switch", 850, 250)
     add("router", "router", "Optional router / DHCP source", 1040, 92)
-    add("pi", "pi", "Optional Raspberry Pi master controller / print host", 850, 640)
+    add("master_esp", "master_esp", "Master Controller ESP32 PoE board", 850, 640)
     add("printer", "printer", "Epson receipt printer", 850, 845)
 
     add("buck1", "buck1", "Buck #1 optional 5V_AUX", 850, 1080)
@@ -902,8 +867,8 @@ def build_instances(parts: dict[str, Part]) -> tuple[list[Instance], list[Wire]]
             "Pan ESP32 board: PoE",
             "Pot ESP32 board: PoE",
             "Garnish ESP32 board: PoE",
+            "Master Controller ESP32 board: PoE",
             "Epson printer: Ethernet only, separate PSU",
-            "Raspberry Pi: Ethernet only, separate PSU unless PoE HAT",
             "Keep total PoE load under 62W switch budget.",
         ],
         3030,
@@ -920,7 +885,6 @@ def build_instances(parts: dict[str, Part]) -> tuple[list[Instance], list[Wire]]
             "PoE switch adapter: powers LS108GP.",
             "LS108GP PoE: powers ESP32 controller boards only.",
             "Epson PSU: powers receipt printer.",
-            "Raspberry Pi PSU: powers Pi master controller.",
             "12V Adapter A: 12V_SHOW actual loads.",
             "12V Adapter B: Buck #2 / 5V_LED.",
             "12V Adapter C: Buck #3 / 5V_AUDIO_SERVO.",
@@ -939,7 +903,7 @@ def build_instances(parts: dict[str, Part]) -> tuple[list[Instance], list[Wire]]
         [
             "Safety and separation callouts",
             "Keep AC wiring enclosed and strain-relieved.",
-            "Use manufacturer supplies for switch, Epson, and Pi.",
+            "Use manufacturer supplies for switch and Epson.",
             "Do not expose AC terminals.",
             "Do not use the open-frame 5V/60A supply unless fused distribution is added.",
             "Do not power LEDs, servos, lamps, or amps from ESP32 PoE boards.",
@@ -976,7 +940,7 @@ def build_instances(parts: dict[str, Part]) -> tuple[list[Instance], list[Wire]]
         [
             "Network behavior",
             "ESP32 modules receive IPs from router/DHCP or use static IPs.",
-            "Master controller communicates with modules over Ethernet.",
+            "Master Controller ESP32 communicates with modules over Ethernet.",
             "Printer is addressed by IP.",
             "PoE switch may be unmanaged.",
             "No router: static IP plan required.",
@@ -1013,7 +977,6 @@ def build_instances(parts: dict[str, Part]) -> tuple[list[Instance], list[Wire]]
     # AC distribution.
     routed_wire("ac", "ac_switch", "switch_psu", "ac_in", [(420, 366), (420, 310)], WIRE["ac"], "AC power to LS108GP adapter", 5)
     routed_wire("ac", "ac_epson", "epson_psu", "ac_in", [(420, 470), (420, 450)], WIRE["ac"], "AC power to Epson printer PSU", 5)
-    routed_wire("ac", "ac_pi", "pi_psu", "ac_in", [(420, 574), (420, 590)], WIRE["ac"], "AC power to Raspberry Pi PSU", 5)
     routed_wire("ac", "ac_adapter_a", "adapter_a", "ac_in", [(420, 728), (420, 1106)], WIRE["ac"], "AC power to 12V Adapter A", 5)
     routed_wire("ac", "ac_adapter_d", "adapter_d", "ac_in", [(410, 1070), (410, 1191)], WIRE["ac"], "AC power to 12V Adapter D", 5)
     routed_wire("ac", "ac_adapter_b", "adapter_b", "ac_in", [(402, 842), (402, 1311)], WIRE["ac"], "AC power to 12V Adapter B", 5)
@@ -1022,7 +985,6 @@ def build_instances(parts: dict[str, Part]) -> tuple[list[Instance], list[Wire]]
     # Manufacturer DC supplies and network host/printer power.
     routed_wire("switch_psu", "out", "switch", "dc_in", [(780, 310), (780, 502)], WIRE["dc_misc"], "53.5V DC adapter output to LS108GP", 7)
     routed_wire("epson_psu", "out", "printer", "pwr", [(780, 450), (780, 968)], WIRE["dc_misc"], "Epson manufacturer PSU to printer", 7)
-    routed_wire("pi_psu", "out", "pi", "pwr", [(805, 590), (805, 750)], WIRE["dc_misc"], "Official Pi PSU to Raspberry Pi", 7)
 
     # Ethernet and PoE network.
     module_map = [
@@ -1045,7 +1007,7 @@ def build_instances(parts: dict[str, Part]) -> tuple[list[Instance], list[Wire]]
             f"Ethernet + PoE from LS108GP {port} to {module_key}",
             8,
         )
-    routed_wire("switch", "p6", "pi", "eth", [(1010, 610), (820, 610), (820, 695)], WIRE["ethernet"], "Ethernet from switch to Raspberry Pi", 8)
+    routed_wire("switch", "p6", "master_esp", "eth", [(1010, 610), (820, 610), (820, 692)], WIRE["ethernet"], "Ethernet + PoE from switch to Master Controller ESP32", 8)
     routed_wire("switch", "p7", "printer", "eth", [(1104, 610), (810, 610), (810, 900)], WIRE["ethernet"], "Ethernet from switch to Epson printer", 8)
     routed_wire("switch", "p8", "router", "eth", [(1276, 210), (1230, 210)], WIRE["ethernet"], "Optional router/DHCP source to switch port 8", 8)
 
@@ -1202,7 +1164,7 @@ def write_checklist() -> None:
 | 3 | Pan Motion ESP32 PoE board | Ethernet network | PoE powers ESP32 controller only. |
 | 4 | Pot Temperature ESP32 PoE board | Ethernet network | PoE powers ESP32 controller only. |
 | 5 | Garnish Placement ESP32 PoE board | Ethernet network | PoE powers ESP32 controller only. |
-| 6 | Raspberry Pi master controller, if used | Ethernet network | Separate official Pi power supply unless a proper PoE HAT is explicitly used. |
+| 6 | Master Controller ESP32 PoE board | Ethernet network | PoE powers ESP32 controller only. |
 | 7 | Epson TM-T20IV / TM-T20V-family printer | Ethernet network | Separate Epson manufacturer power supply. Not PoE. |
 | 8 | Optional router/DHCP source or spare | DHCP/network management if needed | Router uses its own power if used. |
 
@@ -1220,7 +1182,7 @@ def write_checklist() -> None:
 
 - All grounds must be common where GPIO/data/control signals cross between PoE ESP32 boards and external 5V/12V accessories.
 - Connect Adapter A/B/C/D negatives, Buck #1/#2/#3 grounds, LED strip ground, DFPlayer/audio ground, servo ground, Simon lamp ground, and any relevant ESP32 GND pins to COMMON_GND.
-- Raspberry Pi module commands travel over Ethernet, so no Raspberry Pi GPIO sync ground is required for module start/reset.
+- Module commands travel over Ethernet, so no separate GPIO sync harness is required for module start/reset.
 - Do not route high-current LED, servo, or audio return current through ESP32 ground pins. Use a ground terminal block or bus.
 - Grounds may be common; separate 12V positives and separate buck 5V positives must not be tied together.
 
@@ -1258,14 +1220,14 @@ def write_checklist() -> None:
 
 - ESP32 modules can receive IP addresses from a router/DHCP source or use static IPs.
 - If there is no router, create and label a static IP plan before the event.
-- The master controller communicates with modules over Ethernet.
+- The Master Controller ESP32 communicates with modules over Ethernet.
 - The Epson printer is addressed by IP.
 - The LS108GP may be unmanaged; use an optional router/DHCP source if network management is needed.
 - Do not rely on internet access during the event.
 
 ## Assumptions And Substitutions
 
-- The diagram includes the optional Raspberry Pi master controller / print host because it is useful for score aggregation and Ethernet receipt printing.
+- The master controller in this build is a Waveshare ESP32-P4-POE-ETH / NH board.
 - Hardware START_SYNC / RESET_SYNC wiring is intentionally omitted. Module start/reset/score traffic is planned over Ethernet.
 - Exact LS108GP and Waveshare ESP32-P4-POE-ETH/NH Fritzing parts were not available in the installed library, so the sketch embeds custom editable helper parts with labeled connectors.
 - No third-party parts were downloaded.
