@@ -25,11 +25,16 @@ hardware/fritzing/library-art/chef_station_simon_4btn_audio_editable.fzz
 
 ## Current Electrical Assumptions
 
+- All Chef Station boards are Waveshare ESP32-P4-POE-ETH unless a task or
+  decision record explicitly says otherwise.
 - Arcade button LEDs use the lamp supply rail, currently documented as 12V.
-- PAM8403 amplifier uses 5V only.
-- ESP32, lamp supply negative, PAM8403 GND, MOSFET sources, switch grounds, and pulldown grounds all share common ground.
+- Button inputs use GPIO16, GPIO17, GPIO18, and GPIO19.
+- Lamp gate outputs use GPIO20, GPIO21, GPIO22, and GPIO23.
+- Avoid GPIO24/GPIO25 for lamps because the Waveshare header labels them as USB `D-`/`D+`.
+- Audio uses the Waveshare board's onboard ES8311 codec and NS4150B amplifier.
+- ESP32-P4 GND, lamp supply negative, MOSFET sources, switch grounds, and pulldown grounds all share common ground.
 - Button inputs use `INPUT_PULLUP`.
-- Speaker connects across PAM8403 `L+` and `L-`.
+- Speaker connects to the Waveshare MX1.25 2-pin speaker header.
 
 ## Making Changes
 
